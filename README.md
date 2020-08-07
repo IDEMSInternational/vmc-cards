@@ -1,5 +1,9 @@
 # VMC Cards
 
+## [Preview the cards here!](https://idemsinternational.github.io/vmc-cards/)
+
+## Background
+
 This is a proof of concept for letting people edit a deck of cards for use in the virtual maths camp website, without requiring them to download the full website repository.
 
 Hopefully this strikes a compromise between previewing the cards, and being easy to edit for users with low bandwidth.
