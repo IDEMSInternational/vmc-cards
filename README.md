@@ -22,6 +22,7 @@ var cards = [
     }
 ]
 ```
+Note that the json objects need to be comma separated so if you are copying and pasting from the last card you might need to add a comma.
 Do not modify the first or last line of the ```cards.js``` file.
 Make sure the properties on the left of each object stay in quotes! e.g ```"rank": "q"``` not ```rank: "q"```
 
