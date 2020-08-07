@@ -16,7 +16,7 @@ var cards = [
         "text": "Testing..."
     },
     {
-        "rank": "7",
+        "rank": 7,
         "suit": "clubs",
         "text": "A new card for testing"
     }

@@ -5,8 +5,8 @@ var cards = [
         "text": "Testing..."
     },
     {
-        "rank": "7",
+        "rank": 7,
         "suit": "clubs",
-        "text": "Testing..."
+        "text": "Another card..."
     }
 ]
