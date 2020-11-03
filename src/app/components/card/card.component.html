@@ -1,0 +1,14 @@
+
+<!-- Hearts -->
+<section class="cards">
+	<!-- 2 -->
+	<section  [class]="'card card--'+card.Suit" attr.value={{card.Value}} *ngFor="let card of deck">
+		<div class="card__inner card__inner--centered">
+			<div class="card__column">
+                As you can see, this directive starts with the keyword "class" followed by the name of the CSS class you want to toggle, separated by a dot.
+			</div>
+		</div>
+    </section>
+    
+    
+</section>
