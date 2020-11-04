@@ -1,8 +1,7 @@
-
-<!-- Hearts -->
 <section class="cards">
-	<!-- 2 -->
-	<section  [class]="'card card--'+card.Suit" attr.value={{card.Value}} *ngFor="let card of deck">
+    <h1 class="title">Spades</h1>
+
+    <section  [class]="'card card--'+card.Suit" attr.value={{card.Value}} *ngFor="let card of spades">
         <img class = "card-image" src="/assets/images/qr/qr1.png" alt="image">
 
 		<div class="card__inner card__inner--centered">
@@ -12,6 +11,44 @@
         </div>
         <span class="vmc-text">VMC <br>{{card.Value}}{{card.Suit.charAt(0).toUpperCase()}}</span>
     </section>
-    
+
+    <h1 class="title">Diamonds</h1>
+
+    <section  [class]="'card card--'+card.Suit" attr.value={{card.Value}} *ngFor="let card of diamonds">
+        <img class = "card-image" src="/assets/images/qr/qr1.png" alt="image">
+
+		<div class="card__inner card__inner--centered">
+			<div class="card__column">
+                As you can see, this directive starts with the keyword "class" followed by the name of the CSS class you want to toggle, separated by a dot.
+            </div>
+        </div>
+        <span class="vmc-text">VMC <br>{{card.Value}}{{card.Suit.charAt(0).toUpperCase()}}</span>
+    </section>
+
+    <h1 class="title">Clubs</h1>
+
+    <section  [class]="'card card--'+card.Suit" attr.value={{card.Value}} *ngFor="let card of clubs">
+        <img class = "card-image" src="/assets/images/qr/qr1.png" alt="image">
+
+		<div class="card__inner card__inner--centered">
+			<div class="card__column">
+                As you can see, this directive starts with the keyword "class" followed by the name of the CSS class you want to toggle, separated by a dot.
+            </div>
+        </div>
+        <span class="vmc-text">VMC <br>{{card.Value}}{{card.Suit.charAt(0).toUpperCase()}}</span>
+    </section>
+
+    <h1 class="title">Hearts</h1>
+
+    <section  [class]="'card card--'+card.Suit" attr.value={{card.Value}} *ngFor="let card of hearts">
+        <img class = "card-image" src="/assets/images/qr/qr1.png" alt="image">
+
+		<div class="card__inner card__inner--centered">
+			<div class="card__column">
+                As you can see, this directive starts with the keyword "class" followed by the name of the CSS class you want to toggle, separated by a dot.
+            </div>
+        </div>
+        <span class="vmc-text">VMC <br>{{card.Value}}{{card.Suit.charAt(0).toUpperCase()}}</span>
+    </section>
     
 </section>
