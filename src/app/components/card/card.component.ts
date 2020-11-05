@@ -1,4 +1,6 @@
 import { Component, OnInit } from "@angular/core";
+import { HttpClient } from "@angular/common/http";
+
 
 @Component({
   selector: "app-card",
@@ -11,6 +13,8 @@ export class CardComponent implements OnInit {
   values = ["A", "2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K"];
   deck = [];
   */
+
+  content;
 
   spades = [];
   suit1 = ["spade"];
@@ -28,7 +32,7 @@ export class CardComponent implements OnInit {
   suit4 = ["heart"];
   values4 = ["A", "2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K"];
 
-  constructor() {}
+  constructor(private http: HttpClient) {}
 
   ngOnInit(): void {
     //this.deck = this.getDeck();
@@ -36,6 +40,7 @@ export class CardComponent implements OnInit {
     this.diamonds = this.getDiamonds();
     this.clubs = this.getClubs();
     this.hearts = this.getHearts();
+    this.getCardContent();
   }
 
   /*
@@ -102,5 +107,13 @@ export class CardComponent implements OnInit {
     }
 
     return hearts;
+  }
+
+  getCardContent(){
+    const url = "/assets/card-content/fifteen.json";
+    this.http.get(url).subscribe((data) =>{
+      this.content = data;
+      console.log("card content", this.content);
+    })
   }
 }
