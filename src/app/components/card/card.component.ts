@@ -110,7 +110,7 @@ export class CardComponent implements OnInit {
   }
 
   getCardContent(){
-    const url = "/assets/card-content/fifteen.json";
+    const url = "/assets/card-content/clubs/alphanumerics.json";
     this.http.get(url).subscribe((data) =>{
       this.content = data;
       console.log("card content", this.content);
