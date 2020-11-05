@@ -1,0 +1,27 @@
+{
+  "title": "Pieces of Cake",
+  "metadata": {
+    "type": "counting"
+  },
+  "main_version": {
+    "statement": "<p>What is the biggest number of pieces of cake you can obtain with 5 cuts? Cuts can be done along any long straight line.</p>",
+    "correct_answer": "16",
+    "hint": "<p>Start with a small number of cuts, e.g. 1,2,3. Think how to add another cut such to get the biggest number of pieces. What happens if many cuts pass through the same point? </p>",
+    "explanation": "<p>In the case of 1 cut one gets 2 pieces. For 2 cuts you get 4 pieces. When it comes to 3 cuts, students might notice that if all cuts pass for the same point, then we obtain 6 pieces. However, this is not the maximal number of pieces you can get. If you add the third cut such that it does not pass through the intersection of the previous two, then we get 7 pieces. Students can explicitly compute that the number of pieces for 4 cuts is 11. Again, one has to be careful that there are not more than two cuts intersecting in one point, otherwise we would not get the maximal number of pieces. Students might draw 5 cuts and count 16 pieces. Otherwise they might realise from the sequence they are computing that if P(C) is the maximal number of pieces one gets by using C cuts, then P(C+1)=P(C)+C+1.\nTherefore for P(5)=P(4)+4+1=11+4+1=16.</p>",
+    "further_instructions": "<p>[For games: More detailed instructions.]</p>",
+    "strategy_tips": "<p>[For games: strategy related questions to think about.]</p>"
+  },
+  "extension_1": {
+    "statement": "<p>From previous examples, try to spot the pattern. Can you tell what is the biggest number of pieces you can get with 99 cuts?  </p>",
+    "hint": "<p>After you found out the pattern, try to find a compact formula for the maximal number of pieces. Triangular numbers might help.</p>",
+    "correct_answer": "4951",
+    "explanation": "<p>Students will have to understand the recursive relation P(C+1)=P(C)+C+1 for the maximal number of pieces giving the cuts. However, this is not practical to use for the case of 99 cuts. Students have to think how to get the explicit formula: P(C)=(C+1)C/2+1. Either by intuition or by the following consideration: \nP(C+1)=P(C)+C+1=P(C-1)+(C-1)+C+2=...=P(1)+1+...+C+C=2+1+...+C+C=1+...+(C+1)+1=(C+2)(C+1)/2+1. Where the last step is by what students might know from triangular numbers.\nTherefore we have P(99)=99*100/2+1=4951.\nThis problem is related to the number of regions (pieces of the cake) in a plane bounded by a generic configuration of lines (cuts). Generic means that there are no parallel lines and that no more than two lines intersect in the same points. This guarantees that the number of pieces of cake is maximal. Given C lines on a plane (in a generic configuration), then adding an extra line such that it intersects all the previous lines would create C+1 new regions (around each intersection point of the new line with the previous ones, we add two new regions. However one of the two is counted also in the next intersection point). This leads to P(C+1)=P(C)+C+1.</p>"
+  },
+  "additional_information": {
+    "about": "<p>[Background information, e.g. trivia, where the puzzle/etc is from, ...]</p>",
+    "references": [
+      "<p>[URLs to sources or related content]</p>",
+      "<p>[one URL per bullet point]</p>"
+    ]
+  }
+}
