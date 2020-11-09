@@ -5,7 +5,7 @@ import { CardComponent } from "./components/card/card.component";
 import { HomeComponent } from "./components/home/home.component";
 
 const routes: Routes = [
-  { path: "cards", component: CardComponent },
+  { path: ":slug", component: CardComponent },
   { path: "", component: HomeComponent },
 ];
 
