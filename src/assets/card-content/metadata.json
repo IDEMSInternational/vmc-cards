@@ -40,7 +40,7 @@
     {"title": "Square numbers and triangular numbers", "type": "funfact", "slug": "square-numbers-and-triangular-numbers", "card_value":"10", "card_suit":"heart"},
     {"title": "Card Sums", "type": "game", "slug": "card-sums", "card_value":"Q", "card_suit":"spade"},
     {"title": "Fifteen", "type": "game", "slug": "fifteen", "card_value":"1", "card_suit":"spade"},
-    {"title": "Gomuku", "type": "game", "slug": "gomuku", "card_value":"7", "card_suit":"spade"},
+    {"title": "Gomoku", "type": "game", "slug": "gomoku", "card_value":"7", "card_suit":"spade"},
     {"title": "Latin Squares", "type": "game", "slug": "latin-squares", "card_value":"6", "card_suit":"spade"},
     {"title": "Nim", "type": "game", "slug": "nim", "card_value":"4", "card_suit":"spade"},
     {"title": "Patience", "type": "game", "slug": "patience", "card_value":"2", "card_suit":"spade"},
