@@ -15,7 +15,8 @@ export class CardService {
   public readCardContent(slug: string, suit: string) {
     const url = `/assets/card-content/${suit}/${slug}.json`;
     const res = this.http.get(url);
-    return res;
+    const res2 = this.http.get(url);
+    return res2;
   }
 
   public readAllCards() {

@@ -9,19 +9,33 @@ import { CardService } from "src/app/card.service";
 })
 export class CardComponent implements OnInit {
   content;
+  state;
+  updatedContent;
 
-  constructor(private http: HttpClient, public cardService: CardService) {}
+  constructor(private http: HttpClient, public cardService: CardService) {
+    this.getCardContent();
+  }
 
   ngOnInit(): void {
-    this.getCardContent();
+    this.state = history.state;
   }
 
   getCardContent() {
     this.cardService
-      .readCardContent("honey-bees", "clubs")
+      .readCardContent(history.state.data.slug, history.state.data.card_suit)
       .subscribe((data) => {
         this.content = data;
+        this.replaceImageURLs(this.content);
         console.log("card content", this.content);
       });
+  }
+
+  async replaceImageURLs(cardContent) {
+    const originalContent = JSON.stringify(cardContent);
+    const updatedContent = originalContent.replace(/\images/g, "assets/images");
+    const newContent = JSON.parse(updatedContent);
+    console.log("contentx", newContent);
+    this.updatedContent = newContent;
+    return newContent;
   }
 }
