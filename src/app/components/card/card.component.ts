@@ -1,4 +1,4 @@
-import { Component, OnInit } from "@angular/core";
+import { Component, OnInit, ViewEncapsulation } from "@angular/core";
 import { HttpClient } from "@angular/common/http";
 import { CardService } from "src/app/card.service";
 
@@ -6,6 +6,7 @@ import { CardService } from "src/app/card.service";
   selector: "app-card",
   templateUrl: "./card.component.html",
   styleUrls: ["./card.component.less"],
+  encapsulation: ViewEncapsulation.None,
 })
 export class CardComponent implements OnInit {
   content;
