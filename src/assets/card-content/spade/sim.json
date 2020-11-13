@@ -9,15 +9,10 @@
     "strategy_tips": "<p>Try to make moves in a way that removes options from your opponent. You might want to try and complete triangles that are of mixed colour.</p>"
   },
   "extension_1": {
-    "statement": "<p>Draw a 5 x 5 grid of dots. Two players take it in turn to colour a dot (use different colours or an x and a +). The winner is the first player to make a square with four of their points. Squares can be tilted as well as straight.</p>"
+    "statement": "<p>Draw a 5 by 5 grid of dots. Two players take it in turn to colour a dot (use different colours or an x and a +). The winner is the first player to make a square with four of their points. Squares can be tilted as well as straight.</p>"
   },
   "additional_information": {
     "about": "<p>The Sim pencil game was invented in 1969 by Gustavus Simmons, a cryptographer, who described it in the Journal of Recreational Mathematics. Frank P. Ramsey proved that there always has to be a winner in this game by the \"Theorem on Friends and Strangers\". He showed that on completing all the edges of the graph, there must be one triangle that is all the same colour.</p>",
-    "references": [
-      "<p>https://www.whatdowedoallday.com/sim-pencil-game/</p>",
-      "<p><a href=\"http://web.math.ucsb.edu/~padraic/ucsb_2013_14/mathcs103_s2014/images/SIM_game.pdf\">http://web.math.ucsb.edu/~padraic/ucsb_2013_14/mathcs103_s2014/images/SIM_game.pdf</a></p>",
-      "<p><a href=\"https://nrich.maths.org/2526\">https://nrich.maths.org/2526</a></p>",
-      "<p>https://en.wikipedia.org/wiki/Theorem_on_friends_and_strangers</p>"
-    ]
+    "references": ""
   }
 }

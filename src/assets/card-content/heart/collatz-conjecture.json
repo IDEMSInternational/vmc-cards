@@ -6,7 +6,7 @@
   "main_version": {
     "statement": "<p>Think of a positive integer (whole number). If it is even, halve it. It if is odd, multiply it by 3 and add 1. Repeat the process with your new number and keep going. Stop if you get to the number 1. Nobody knows if a number exists that doesn't end up at 1.</p>",
     "hint": "<p>For example, if you choose the number 6 you would get this sequence 6, 3, 10, 5, 16, 8, 4, 2, 1. So it took 8 steps to get to 1. Try some numbers of your own.</p>",
-    "explanation": "<p>This activity is interesting because it is easy to understand the rules and start generating sequences, but no one knows whether all numbers end up at 1; it is an unsolved problem in mathematics. The longest sequence for a number smaller than 100 is for 97, which takes 118 steps but finally gets to 1. The number just before, 96, only takes 12 steps! Using computers, all numbers up to roughly <img alt=\"\" src=\"images/Collatz_Conjecture_image_0.png\" class=\"Collatz_Conjecture_image_0\" /> have been checked and they all go to 1.</p>"
+    "explanation": "<p>This activity is interesting because it is easy to understand the rules and start generating sequences, but no one knows whether all numbers end up at 1; it is an unsolved problem in mathematics. The longest sequence for a number smaller than 100 is for 97, which takes 118 steps but finally gets to 1. The number just before, 96, only takes 12 steps! Using computers, all numbers up to roughly 2.95\u00d710\u00b2\u2070 have been checked and they all go to 1.</p>"
   },
   "extension_1": {
     "statement": "<p>What is the biggest number that takes exactly 8 steps to get to 1?</p>",

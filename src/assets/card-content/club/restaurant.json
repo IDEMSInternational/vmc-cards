@@ -7,7 +7,7 @@
     "statement": "<p>At a restaurant each table has 3 legs, each chair has 4 legs and all the customers and the three members of staff have 2 legs each. There are four chairs at each table. Three quarters of the chairs are occupied by customers and there are 206 legs altogether in the restaurant. How many chairs does the restaurant have?</p>",
     "correct_answer": "32",
     "hint": "<p>Can you work out how many legs there are at each table if three quarters of the chairs have people on them?</p>",
-    "explanation": "<p>The three members of staff have six legs so take this off the total, giving 206-6=200. Now the tables, chairs and customers have 200 legs. On average, at each table there are 3 table legs, 16 chair legs and 6 customer legs (as only three quarters of the chairs are taken).This gives 25 legs per table. 200 divided by 25 is 8, hence there are 8 tables, hence 32 chairs. </p>"
+    "explanation": "<p>The three members of staff have six legs so take this off the total, giving 206 - 6 = 200. Now the tables, chairs and customers have 200 legs. On average, at each table there are 3 table legs, 16 chair legs and 6 customer legs (as only three quarters of the chairs are taken).This gives 3 + 16 + 6 = 25 legs per table. The number of tables is therefore 200 \u2215 25 = 8, hence the number of chairs is 8\u00d74 = 32. </p>"
   },
   "extension_1": {
     "statement": "<p>I have 30 coins. Some of the coins are 1\u00a2, some are 2\u00a2 and some are 6\u00a2. The value of the 6\u00a2 coins is worth the same amount as the total value of the 1\u00a2 coins and the 2\u00a2 coins combined. Given that I have a different amount of each type of coin, what is the total value of all of the coins (in \u00a2)?</p>",
