@@ -24,7 +24,7 @@
     {"title": "Shaking Hands", "type": "counting", "slug": "shaking-hands", "card_value":"6", "card_suit":"diamond"},
     {"title": "Table Handshakes", "type": "counting", "slug": "table-handshakes", "card_value":"A", "card_suit":"diamond"},
     {"title": "Triangular Slices", "type": "counting", "slug": "triangular-slices", "card_value":"2", "card_suit":"diamond"},
-    {"title": "Paving Paths", "type": "counting", "slug": "paving-paths", "card_value":"5", "card_suit":"diamond"},
+    {"title": "Paving Paths", "type": "counting", "slug": "paving-paths", "card_value":"K", "card_suit":"diamond"},
     {"title": "Abundant Numbers", "type": "funfact", "slug": "abundant-numbers", "card_value":"6", "card_suit":"heart"},
     {"title": "Benfords's Law", "type": "funfact", "slug": "benford_s-law", "card_value":"J", "card_suit":"heart"},
     {"title": "Birthday Probability", "type": "funfact", "slug": "birthday-probability", "card_value":"A", "card_suit":"heart"},
