@@ -6,7 +6,7 @@ import { ActivatedRoute } from "@angular/router";
   selector: "app-card",
   templateUrl: "./card.component.html",
   styleUrls: ["./card.component.less"],
-  encapsulation: ViewEncapsulation.None,
+  encapsulation: ViewEncapsulation.ShadowDom,
 })
 export class CardComponent implements OnInit {
   content;
