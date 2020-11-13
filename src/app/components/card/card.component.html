@@ -1,13 +1,13 @@
-<section class="cards" *ngIf="updatedContent">
-    <h1 class="title">{{state.data.title}}</h1>
+<section class="cards" *ngIf="updatedContent && state">
+    <h1 class="title">{{state.title}}</h1>
 
-    <section  [class]="'card card--'+state.data.card_suit" attr.value={{state.data.card_value}}>
-        <img class = "card-image" src="/assets/images/qr/https---virtualmathscamp.com-card-{{state.data.card_value}}{{state.data.card_suit.charAt(0).toUpperCase()}}.html.png" alt="image">
+    <section  [class]="'card card--'+state.card_suit" attr.value={{state.card_value}}>
+        <img class = "card-image" src="/assets/images/qr/https---virtualmathscamp.com-card-{{state.card_value}}{{state.card_suit.charAt(0).toUpperCase()}}.html.png" alt="image">
 
 		<div class="card__inner card__inner--centered">
 			<div class="card__column" [innerHTML]="updatedContent.main_version.statement">
             </div>
         </div>
-        <span class="vmc-text">VMC <br>{{state.data.card_value}}{{state.data.card_suit.charAt(0).toUpperCase()}}</span>
+        <span class="vmc-text">VMC <br>{{state.card_value}}{{state.card_suit.charAt(0).toUpperCase()}}</span>
     </section>    
 </section>

@@ -1,7 +1,7 @@
 <div *ngIf="cards">
     <mat-card 
         class="card" 
-        [routerLink]="[card.slug]"
+        [routerLink]="[card.card_suit, card.slug]"
         [state] = "{data: card}"
         *ngFor="let card of cards"> {{card.title}} <span class="number">{{card.card_value}}{{card.card_suit.charAt(0).toUpperCase()}}</span></mat-card>
 </div>
