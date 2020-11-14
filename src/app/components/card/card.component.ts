@@ -52,4 +52,6 @@ export class CardComponent implements OnInit {
       this.state = ncard;
     });
   }
+
+ 
 }
