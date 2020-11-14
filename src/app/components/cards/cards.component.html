@@ -1,13 +1,12 @@
 
     <section class="cards" *ngIf="deck">
+        <section  [class]="'card card--'+card.card_suit" attr.value={{card.card_value}} *ngFor="let card of deck" [routerLink]="[card.card_suit, card.slug]">
+            <img class = "card-image" src="/assets/images/qr/https---virtualmathscamp.com-card-{{card.card_value}}{{card.card_suit.charAt(0).toUpperCase()}}.html.png" alt="image">
 
-    <section  [class]="'card card--'+card.card_suit" attr.value={{card.card_value}} *ngFor="let card of deck">
-        <img class = "card-image" src="/assets/images/qr/https---virtualmathscamp.com-card-{{card.card_value}}{{card.card_suit.charAt(0).toUpperCase()}}.html.png" alt="image">
-
-		<div class="card__inner card__inner--centered">
-			<div class="card__column" [innerHTML]="card.statement">
+            <div class="card__inner card__inner--centered">
+                <div class="card__column" [innerHTML]="card.statement">
+                </div>
             </div>
-        </div>
-        <span class="vmc-text">Chatbot <br>VMC_{{card.card_value}}{{card.card_suit.charAt(0).toUpperCase()}}</span>
-    </section>    
+            <span class="vmc-text">Chatbot <br>VMC_{{card.card_value}}{{card.card_suit.charAt(0).toUpperCase()}}</span>
+        </section>    
 </section>
