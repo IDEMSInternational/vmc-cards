@@ -16,20 +16,15 @@ export class CardsComponent implements OnInit {
   }
 
   ngOnInit(): void {}
-  async combineData() {
-    await this.cardService.readAllCards().subscribe((data) => {
-      //this.deck = data;
-      //let d = data;
-      data.forEach(async (element, i) => {
-        await this.cardService
-          .readCardContent(element.slug)
-          .subscribe((data) => {
-            element.titles = data.title;
-            element.type = data.metadata.type;
-            element.statement = this.replaceImageURLS(
-              data.main_version.statement
-            );
-          });
+  combineData() {
+    this.cardService.readAllCards().subscribe((data) => {
+      data.forEach((element, i) => {
+        this.cardService.readCardContent(element.slug).subscribe((data) => {
+          element.type = data.metadata.type;
+          element.statement = this.replaceImageURLS(
+            data.main_version.statement
+          );
+        });
       });
       this.deck = data;
       console.log("deck update", this.deck);

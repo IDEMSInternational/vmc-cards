@@ -26,5 +26,4 @@ export class CardService {
     this.cards = this.http.get(url);
     return this.cards;
   }
-
 }

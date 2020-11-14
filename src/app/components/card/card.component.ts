@@ -10,7 +10,7 @@ import { ActivatedRoute } from "@angular/router";
 })
 export class CardComponent implements OnInit {
   content;
-  state;
+  card;
   updatedContent;
   cards;
 
@@ -27,7 +27,7 @@ export class CardComponent implements OnInit {
       .subscribe((data) => {
         this.content = data;
         this.replaceImageURLs(this.content);
-        console.log("card content", this.content);
+        //console.log("card content", this.content);
       });
   }
 
@@ -46,7 +46,7 @@ export class CardComponent implements OnInit {
       let ncard = this.cards.find(
         (t) => t.slug === this.route.snapshot.params.slug
       );
-      this.state = ncard;
+      this.card = ncard;
     });
   }
 }
