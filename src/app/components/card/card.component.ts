@@ -23,10 +23,7 @@ export class CardComponent implements OnInit {
 
   getCardContent() {
     this.cardService
-      .readCardContent(
-        this.route.snapshot.params.slug,
-        this.route.snapshot.params.suit
-      )
+      .readCardContent(this.route.snapshot.params.slug)
       .subscribe((data) => {
         this.content = data;
         this.replaceImageURLs(this.content);
@@ -52,6 +49,4 @@ export class CardComponent implements OnInit {
       this.state = ncard;
     });
   }
-
- 
 }

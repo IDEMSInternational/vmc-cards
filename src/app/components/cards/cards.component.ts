@@ -22,7 +22,7 @@ export class CardsComponent implements OnInit {
       //let d = data;
       data.forEach(async (element, i) => {
         await this.cardService
-          .readCardContent(element.slug, "cards")
+          .readCardContent(element.slug)
           .subscribe((data) => {
             element.titles = data.title;
             element.type = data.metadata.type;

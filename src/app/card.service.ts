@@ -15,8 +15,8 @@ export class CardService {
     private route: ActivatedRoute
   ) {}
 
-  public readCardContent(slug: string, suit: string) {
-    const url = `/assets/card-content/${suit}/${slug}.json`;
+  public readCardContent(slug: string) {
+    const url = `/assets/card-content/cards/${slug}.json`;
     this.card = this.http.get(url);
     return this.card;
   }
