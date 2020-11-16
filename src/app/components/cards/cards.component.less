@@ -43,7 +43,7 @@ body {
     width: 12px;
     text-align: center;
     letter-spacing: -2px;
-    font-size: 19px;
+    font-size: 25px;
   }
 
   &:before {
@@ -65,7 +65,7 @@ body {
       content: attr(value) " ♥";
     }
   }
-
+  
   &--spade {
     color: @card-color-black;
 
@@ -80,7 +80,7 @@ body {
 
     &:before,
     &:after {
-      content: attr(value) " ♦️";
+      content: attr(value) " ♦";
     }
   }
 
@@ -89,7 +89,7 @@ body {
 
     &:before,
     &:after {
-      content: attr(value) " ♣️";
+      content: attr(value) " ♣";
     }
   }
 }
@@ -140,11 +140,11 @@ body {
   }
 
   .card--diamond &:before {
-    content: "♦️";
+    content: "♦";
   }
 
   .card--club &:before {
-    content: "♣️";
+    content: "♣";
   }
 
   &--rotated,
