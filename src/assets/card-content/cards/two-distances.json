@@ -4,7 +4,7 @@
     "type": "puzzle"
   },
   "main_version": {
-    "statement": "<p>How many ways are there to draw four dots on a piece of paper such that whichever two dots you choose, the distance between these two points is one of only two values?</p>\n<p>Here is one correct example:</p>\n<p><img alt=\"\" src=\"images/Two_Distances_image_0.png\" class=\"Two_Distances_image_0\" /></p>",
+    "statement": "How many ways are there to draw four dots on a piece of paper such that whichever two dots you choose, the distance between these two points is one of only two values?\n<p>Here is one correct example:</p>\n<p><img alt=\"\" src=\"images/Two_Distances_image_0.png\" class=\"Two_Distances_image_0\" /></p>",
     "correct_answer": "6",
     "hint": "<p>Try drawing an equilateral triangle. That will give you three points that are all the same distance from each other. Where could you put the fourth point?</p>",
     "explanation": "<p><img alt=\"\" src=\"images/Two_Distances_image_1.png\" class=\"Two_Distances_image_1\" /></p>\n<p>Note: Short Edges represented by <strong>blue</strong> while long edges represented by <strong>green</strong></p>\n<p><a href=\"https://www.theguardian.com/science/2019/oct/21/did-you-solve-it-the-four-points-two-distances-problem\">https://www.theguardian.com/science/2019/oct/21/did-you-solve-it-the-four-points-two-distances-problem</a> - should recreate these after we decide on style.</p>\n<p><a href=\"http://datagenetics.com/blog/october12019/index.html\">http://datagenetics.com/blog/october12019/index.html</a>  - looks good on here too</p>"

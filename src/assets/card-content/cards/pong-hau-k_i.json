@@ -4,7 +4,7 @@
     "type": "game"
   },
   "main_version": {
-    "statement": "<p><img alt=\"\" src=\"images/Pong_Hau_K_i_image_0.png\" class=\"Pong_Hau_K_i_image_0\" /></p>\n<p>Draw the grid shown with five points and seven connecting lines. Two players place two counters of the same colour/design in the grid as shown.</p>\n<p>Decide who will go first. The first player moves one of their pieces to the centre point. Then players take turns moving a counter along a line to an empty point until one player cannot move a counter and loses.</p>",
+    "statement": "<p><img alt=\"\" src=\"images/Pong_Hau_K_i_image_0.png\" class=\"Pong_Hau_K_i_image_0\" /></p>\nDraw the grid shown with five points and seven connecting lines. Two players place two counters of the same colour/design in the grid as shown.\n<p>Decide who will go first. The first player moves one of their pieces to the centre point. Then players take turns moving a counter along a line to an empty point until one player cannot move a counter and loses.</p>",
     "further_instructions": "<p>If the same moves are repeated three times, you can decide the game is tied. Each time you play, you should change who goes first or swap starting positions (if you were in the top two positions the first time, take the bottom two positions next time).</p>",
     "strategy_tips": "<p>Think about whether it is better to go first or second? What is the position you must achieve in order to block the other player?</p>"
   },
