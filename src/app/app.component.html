@@ -1,4 +1,4 @@
-<mat-toolbar color="primary">
+<mat-toolbar class="toolbar" color="primary">
  <!--
    <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
     <mat-icon>menu</mat-icon>
@@ -6,9 +6,9 @@
 -->
   <span class ="title" routerLink="/">Virtual Maths Camp</span>
   <span class="example-spacer"></span>
-  <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon" routerLink="/">
-   Cards
-  </button>
+ 
+  <button mat-flat-button color="accent" (click)="export()"><mat-icon>print</mat-icon>
+    Export</button>
 
 </mat-toolbar>
 <router-outlet></router-outlet>

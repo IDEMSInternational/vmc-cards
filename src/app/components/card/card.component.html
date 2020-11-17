@@ -1,6 +1,5 @@
     
     <section class="cards" *ngIf="updatedContent && card">
-        <button mat-flat-button color="accent" (click)="exportCard()" class="export-btn">Export card</button>
         <h1 class="card-title">{{card.title}}</h1>   
         <section  [class]="'card card--'+card.card_suit" attr.value={{card.card_value}} id="cardPDF">
             <img class = "card-image" src="/assets/images/qr/https---virtualmathscamp.com-card-{{card.card_value}}{{card.card_suit.charAt(0).toUpperCase()}}.html.png" alt="image">
