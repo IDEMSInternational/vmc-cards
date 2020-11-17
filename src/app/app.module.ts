@@ -8,9 +8,10 @@ import { AppComponent } from "./app.component";
 import { CardComponent } from "./components/card/card.component";
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import { CardsComponent } from "./components/cards/cards.component";
+import { BookletComponent } from './components/booklet/booklet.component';
 
 @NgModule({
-  declarations: [AppComponent, CardComponent, CardsComponent],
+  declarations: [AppComponent, CardComponent, CardsComponent, BookletComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
