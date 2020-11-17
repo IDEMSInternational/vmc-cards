@@ -54,6 +54,8 @@ export class CardComponent implements OnInit {
   }
 
   exportCard() {
+    window.print();
+    /*
     const data = document.getElementById("cardPDF");
     console.log("id ", data);
     html2canvas(data).then((canvas) => {
@@ -68,5 +70,6 @@ export class CardComponent implements OnInit {
       pdf.addImage(contentDataURL, "png", 0, 0, 63, 0);
       pdf.save(this.card.title);
     });
+    */
   }
 }
