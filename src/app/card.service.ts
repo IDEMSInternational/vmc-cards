@@ -6,22 +6,24 @@ import { Router, ActivatedRoute } from "@angular/router";
   providedIn: "root",
 })
 export class CardService {
+  cards;
+  card;
+
   constructor(
     private http: HttpClient,
     private router: Router,
     private route: ActivatedRoute
   ) {}
 
-  public readCardContent(slug: string, suit: string) {
-    const url = `/assets/card-content/${suit}/${slug}.json`;
-    const res = this.http.get(url);
-    const res2 = this.http.get(url);
-    return res2;
+  public readCardContent(slug: string) {
+    const url = `/assets/card-content/cards/${slug}.json`;
+    this.card = this.http.get(url);
+    return this.card;
   }
 
   public readAllCards() {
     const url = "/assets/card-content/metadata.json";
-    const res = this.http.get(url);
-    return res;
+    this.cards = this.http.get(url);
+    return this.cards;
   }
 }

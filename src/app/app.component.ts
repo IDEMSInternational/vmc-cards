@@ -1,5 +1,5 @@
-import { Component } from "@angular/core";
-import { HomeComponent } from "./components/home/home.component";
+import { Component, ViewChild } from "@angular/core";
+import { CardsComponent } from "./components/cards/cards.component";
 @Component({
   selector: "app-root",
   templateUrl: "./app.component.html",
@@ -7,4 +7,8 @@ import { HomeComponent } from "./components/home/home.component";
 })
 export class AppComponent {
   title = "vmc-cards";
+
+  export(){
+    window.print();
+  }
 }

@@ -1,6 +1,10 @@
 import { Component, OnInit, ViewEncapsulation } from "@angular/core";
-import { HttpClient } from "@angular/common/http";
 import { CardService } from "src/app/card.service";
+import { ActivatedRoute } from "@angular/router";
+import jspdf from "jspdf";
+import html2canvas from "html2canvas";
+import { ViewChild } from "@angular/core";
+import { ElementRef } from "@angular/core";
 
 @Component({
   selector: "app-card",
@@ -10,24 +14,23 @@ import { CardService } from "src/app/card.service";
 })
 export class CardComponent implements OnInit {
   content;
-  state;
+  card;
   updatedContent;
+  cards;
 
-  constructor(private http: HttpClient, public cardService: CardService) {
+  constructor(public cardService: CardService, private route: ActivatedRoute) {
     this.getCardContent();
+    this.getCardsMetaData();
   }
 
-  ngOnInit(): void {
-    this.state = history.state;
-  }
-
+  ngOnInit(): void {}
   getCardContent() {
     this.cardService
-      .readCardContent(history.state.data.slug, history.state.data.card_suit)
+      .readCardContent(this.route.snapshot.params.slug)
       .subscribe((data) => {
         this.content = data;
         this.replaceImageURLs(this.content);
-        console.log("card content", this.content);
+        //console.log("card content", this.content);
       });
   }
 
@@ -38,5 +41,35 @@ export class CardComponent implements OnInit {
     console.log("contentx", newContent);
     this.updatedContent = newContent;
     return newContent;
+  }
+
+  getCardsMetaData() {
+    this.cards = this.cardService.readAllCards().subscribe((data) => {
+      this.cards = data;
+      let ncard = this.cards.find(
+        (t) => t.slug === this.route.snapshot.params.slug
+      );
+      this.card = ncard;
+    });
+  }
+
+  exportCard() {
+    window.print();
+    /*
+    const data = document.getElementById("cardPDF");
+    console.log("id ", data);
+    html2canvas(data).then((canvas) => {
+      const contentDataURL = canvas.toDataURL("image/png");
+      // let pdf = new jspdf("p", "mm", "a4");
+      // pdf.addImage(contentDataURL, "png", 0, 0, 210, 0); a4
+      // pdf.addImage(contentDataURL, "png", 0, 0, 63, 0);  -- deck szie
+
+      //pdf.addImage(contentDataURL, "png", 0, 0, 105, 0); - a6
+
+      let pdf = new jspdf("p", "mm", [63.5, 88.8]);
+      pdf.addImage(contentDataURL, "png", 0, 0, 63, 0);
+      pdf.save(this.card.title);
+    });
+    */
   }
 }
