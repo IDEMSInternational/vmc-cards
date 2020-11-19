@@ -55,21 +55,5 @@ export class CardComponent implements OnInit {
 
   exportCard() {
     window.print();
-    /*
-    const data = document.getElementById("cardPDF");
-    console.log("id ", data);
-    html2canvas(data).then((canvas) => {
-      const contentDataURL = canvas.toDataURL("image/png");
-      // let pdf = new jspdf("p", "mm", "a4");
-      // pdf.addImage(contentDataURL, "png", 0, 0, 210, 0); a4
-      // pdf.addImage(contentDataURL, "png", 0, 0, 63, 0);  -- deck szie
-
-      //pdf.addImage(contentDataURL, "png", 0, 0, 105, 0); - a6
-
-      let pdf = new jspdf("p", "mm", [63.5, 88.8]);
-      pdf.addImage(contentDataURL, "png", 0, 0, 63, 0);
-      pdf.save(this.card.title);
-    });
-    */
   }
 }

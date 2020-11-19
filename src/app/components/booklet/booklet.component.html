@@ -113,12 +113,12 @@
 <h2> C4 - House</h2>
 
 <p>From how many vertices (points) is it possible to draw this figure by an uninterrupted movement of the pen, going through each line exactly once?</p>
-<p><img alt="" src="images/House_image_0.png" class="House_image_0" /></p>
+<p><img alt="" src="assets/images/House_image_0.png" class="House_image_0" /></p>
 
 <p><b>Hint: </b> Try starting from the bottom left vertex (point).</p>
 
 <p><b>Explanation: </b> We can draw the figure in one uninterrupted movement if we start at the bottom left or bottom right vertex. For example starting at the bottom left:</p>
-<p><img alt="" src="images/House_image_1.png" class="House_image_1" /></p>
+<p><img alt="" src="assets/images/House_image_1.png" class="House_image_1" /></p>
 <p>This kind of path is called an Euler path, and it is called an Euler circuit if it starts and ends in the same point. The degree of a vertex is the number of edges joining onto that vertex, and vertices are said to be odd or even according to whether the degree is odd or even. Euler circuits exist only in networks where there are no odd vertices, that is where all the vertices have an even number of edges ending there.</p>
 <p>Two edges are used each time the path visits and leaves a vertex because the circuit must use each edge only once. It follows that if the graph has an odd vertex then that vertex must be the start or end of the path and, as a circuit starts and ends at the same vertex, for a circuit to exist all the vertices must be even. When there are two odd vertices a walk can take place that traverses each edge exactly once but this will not be a circuit.</p>
 <p>Can you think why it is impossible to draw any graph with an odd number of odd vertices (e.g. one odd vertex)? Well the reason is that each edge has two ends so the total number of endings is even, so the sum of the degrees of all the vertices in a graph must be even, so there cannot be an odd number of odd vertices.</p>
@@ -128,7 +128,7 @@
 <h3>Extension 1</h3>
 
 <p>From how many vertices (points) is it possible to draw this figure by an uninterrupted movement of the pen, going through each line exactly once?</p>
-<p><img alt="" src="images/House_image_2.png" class="House_image_2" /></p>
+<p><img alt="" src="assets/images/House_image_2.png" class="House_image_2" /></p>
 
 <p><b>Hint: </b> Start with the top vertex. Once you have followed each line, where do you end up? Can you make use of this information to find out where else you could start?</p>
 
@@ -210,7 +210,7 @@
 <h2> C7 - Newspaper</h2>
 
 <p>Below is a single sheet from a newspaper. Given that each sheet has four pages, how many sheets are there altogether?</p>
-<p><img alt="" src="images/Newspaper_image_0.png" class="Newspaper_image_0" /></p>
+<p><img alt="" src="assets/images/Newspaper_image_0.png" class="Newspaper_image_0" /></p>
 
 <p><b>Hint: </b> Can you work backwards from 8 to work out how many sheets would be underneath this one? You might want to use bits of paper and number them to help.</p>
 
@@ -299,7 +299,7 @@
 <p><b>Hint: </b> Try drawing an equilateral triangle. That will give you three points that are all the same distance from each other. Where could you put the fourth point?</p>
 
 <p><b>Explanation: </b> If we call the two distances "short" and "long", then any such drawing of points must have a triangle with one long and two short edges (it's not quite obvious, but if you think about it a bit you can eliminate all other possibilities). Now where does the last point go? To each of the other 3 points, it's connected either via a long or a short edge, giving 8 possibilities. Try out each of them, you will notice that 2 of them do not work out, leaving 6 solutions.</p>
-<p><img alt="" src="images/Two_Distances_image_1.png" class="Two_Distances_image_1" /></p>
+<p><img alt="" src="assets/images/Two_Distances_image_1.png" class="Two_Distances_image_1" /></p>
 <p>Short edges represented by <strong>blue</strong> while long edges represented by <strong>green</strong>. One of these solutions can be extended to 5 points that only use two distances, see bottom right picture.</p>
 
 <p><b>About: </b> Alex Bellos featured this puzzle in his column in the Guardian newspaper in the UK after hearing about it from maths juggler Colin Wright, who heard it from puzzle maven Peter Winkler.</p>
@@ -311,7 +311,7 @@
 <p><b>Hint: </b> Try to figure out what kind of triangles you can make that use 3 of the 6 distances. If you have squared paper, it helps that it is possible to put all the vertices on the grid.</p>
 
 <p><b>Explanation: </b> This set of distances is quite special! For most sets of pairwise distances, there is only one solution, but here there are two.</p>
-<p><img alt="" src="images/Two_Distances_image_2.png" class="Two_Distances_image_2" /></p>
+<p><img alt="" src="assets/images/Two_Distances_image_2.png" class="Two_Distances_image_2" /></p>
 
 <!---->
 
@@ -430,13 +430,13 @@
 <p><b>Hint: </b> What is the answer if there are just 2 people, or 4 people, or 6 people. Can you find a way of making the cases with fewer people help you count the cases with more people?</p>
 
 <p><b>Explanation: </b> For the case with 2 people there is just 1 way: </p>
-<p><img alt="" src="images/Table_Handshakes_image_0.png" class="Table_Handshakes_image_0" /></p>
+<p><img alt="" src="assets/images/Table_Handshakes_image_0.png" class="Table_Handshakes_image_0" /></p>
 <p>For 4 people there are 2 ways:</p>
-<p><img alt="" src="images/Table_Handshakes_image_1.png" class="Table_Handshakes_image_1" /><img alt="" src="images/Table_Handshakes_image_2.png" class="Table_Handshakes_image_2" /></p>
+<p><img alt="" src="assets/images/Table_Handshakes_image_1.png" class="Table_Handshakes_image_1" /><img alt="" src="assets/images/Table_Handshakes_image_2.png" class="Table_Handshakes_image_2" /></p>
 <p>For 6 people, we can consider the options for who number 1 shakes hands with. Number 1 cannot shake hands with number 3 or 5 as that would leave someone cut off from the group. If number 1 shakes hands with number 2 like this:</p>
-<p><img alt="" src="images/Table_Handshakes_image_3.png" class="Table_Handshakes_image_3" /></p>
+<p><img alt="" src="assets/images/Table_Handshakes_image_3.png" class="Table_Handshakes_image_3" /></p>
 <p>Then we know that the other four people can shake hands in 2 different ways (using our result from before). Number 1 could shake hands with number 6 and there would also be 2 different ways for the other four to shake hands. Finally number 1 could shake hands with number 4, and that would just leave one option:</p>
-<p><img alt="" src="images/Table_Handshakes_image_4.png" class="Table_Handshakes_image_4" /></p>
+<p><img alt="" src="assets/images/Table_Handshakes_image_4.png" class="Table_Handshakes_image_4" /></p>
 <p>So the result for 6 people is: 5 = 2 + 1 + 2.</p>
 <p>For eight people number 1 could shake hands with number 2 (leaving a group of 6 people which we now know there are 5 ways to shake hands), number 4 (leaving a group of 4, so 2 ways) number 6 (leaving a group of 4, so 2 ways) or number 6 (leaving a group of 6 so 5 ways). So the answer for eight people is 5 + 2 + 2 + 5.</p>
 
@@ -469,16 +469,16 @@
 <h2> D2 - Triangular Slices</h2>
 
 <p>Consider the cake below – a six-sided hexagon. Now split it into triangles by cutting along diagonals which can only meet at the vertices, one example is given in red. This splitting into triangles is called a triangulation, in how many ways can you do this?</p>
-<p><img alt="" src="images/Triangular_Slices_image_0.png" class="Triangular_Slices_image_0" /></p>
+<p><img alt="" src="assets/images/Triangular_Slices_image_0.png" class="Triangular_Slices_image_0" /></p>
 
 <p><b>Hint: </b> In how many ways could you do it if the cake were a square? What if it were a five-sided pentagon? Can you use the symmetries of your cake to count faster?</p>
 
 <p><b>Explanation: </b> It is best to start with a simpler question and look for patterns. Start by looking at a square. There are two different ways we could slice the cake. </p>
-<p><img alt="" src="images/Triangular_Slices_image_1.png" class="Triangular_Slices_image_1" /></p>
+<p><img alt="" src="assets/images/Triangular_Slices_image_1.png" class="Triangular_Slices_image_1" /></p>
 <p>For a pentagon there are five ways:</p>
-<p><img alt="" src="images/Triangular_Slices_image_2.png" class="Triangular_Slices_image_2" /></p>
+<p><img alt="" src="assets/images/Triangular_Slices_image_2.png" class="Triangular_Slices_image_2" /></p>
 <p>For a hexagon there are 14 ways as you can see below:</p>
-<p><img alt="" src="images/Triangular_Slices_image_3.png" class="Triangular_Slices_image_3" /></p>
+<p><img alt="" src="assets/images/Triangular_Slices_image_3.png" class="Triangular_Slices_image_3" /></p>
 <p>In this diagram you can see the solution is found by thinking of 6 + 3 + 2 + 3 = 14, but you can arrive at the solution by doing 5 + 2 + 2 + 5 = 14 where 5 is the answer for a pentagon and 2 is the answer for a square. The equivalent combination for the pentagon is 2 + 1 + 2 = 5, where 1 is the result of the triangle (which has of course only one option) and 2 is the result for a square.</p>
 <p>This is a more useful technique for moving on to thinking of polygons with more vertices.</p>
 
@@ -543,7 +543,7 @@ The iᵗʰ summand corresponds to the number of triangulations possible when the
 <h2> D4 - Colouring</h2>
 
 <p>How many tricolour flags are possible with 5 available colours such that two adjacent stripes must NOT be the same colour.</p>
-<p><img alt="" src="images/Colouring_image_0.png" class="Colouring_image_0" /></p>
+<p><img alt="" src="assets/images/Colouring_image_0.png" class="Colouring_image_0" /></p>
 
 <p><b>Hint: </b> Think about how many different colours could go in the first section, then the second ...</p>
 
@@ -554,20 +554,20 @@ The iᵗʰ summand corresponds to the number of triangulations possible when the
 <h3>Extension 1</h3>
 
 <p>In how many different ways can I paint the five walls of a pentagonal room using red, blue and green paint so that no two neighbouring walls are the same colour?</p>
-<p><img alt="" src="images/Colouring_image_1.png" class="Colouring_image_1" /></p>
+<p><img alt="" src="assets/images/Colouring_image_1.png" class="Colouring_image_1" /></p>
 
 <p><b>Hint: </b> Fix one colour, say start with the top wall red, and try to list all the different options for the other walls.  </p>
 
 <p><b>Explanation: </b> First of all you start with either red, blue or green and use one of the other colours for the second side and so on around the pentagon. When you get to the last side it cannot be the same as the fourth side or the first one.</p>
 <p>We can represent the choices of colours in a tree diagram, At the top (known as the root of the tree) we paint the first side. Here we choose red). The first split is the choice of either green or blue for the second side. The next split is the choice for the third side which depends on your choice of the second side. Any path from the root to end of the tree (known as a leaf) gives you a choice for all of the five edges. We see if we started with red, we have 10 different colourings. </p>
 <p>As we can make similar diagrams if we had chosen green or blue in the first position, we have a total of 3×10 = 30 different colourings. </p>
-<p><img alt="" src="images/Colouring_image_2.png" class="Colouring_image_2" /></p>
+<p><img alt="" src="assets/images/Colouring_image_2.png" class="Colouring_image_2" /></p>
 
 <!---->
 <h2> D5 - Avoid the River</h2>
 
 <p>Start from home (H) and go to school (S). You can walk along the 4 by 4 grid by making steps only towards east or north. You cannot cross the river (blue line)! In how many ways can you reach your school?</p>
-<p><img alt="" src="images/Avoid_the_River_image_0.png" class="Avoid_the_River_image_0" /></p>
+<p><img alt="" src="assets/images/Avoid_the_River_image_0.png" class="Avoid_the_River_image_0" /></p>
 
 <p><b>Hint: </b> In how many ways you can go from home to school in a 2 by 2 grid? What about in a 3 by 3 grid?</p>
 
@@ -643,7 +643,7 @@ Cₙ = Cₙ₋₁ + C₁×Cₙ₋₂ + C₂×Cₙ₋₃ + … + Cₙ₋₂×C₁
 <p><b>Hint: </b> Start with a small number of cuts, e.g. 1, 2, 3. How can you add another cut to get the biggest number of pieces? Remember it doesn't say that the pieces have to be the same size! What happens if many cuts pass through the same point?</p>
 
 <p><b>Explanation: </b> With one cut you always get 2 pieces. With two cuts you can get 4 pieces. With three cuts, if all cuts pass through the same point you get 6 pieces. However, you can get 7 pieces if the third cut doesn't pass through the same point as the previous two. Use this idea to get the maximum number with four cuts. So to get the most pieces, make sure that no more than two cuts pass through the same point, otherwise you get less pieces. With four cuts you can get 11 pieces. Do the same again for five cuts, start with the four cuts that give 7 pieces and add a cut without passing through any meeting points (intersections) and you can get 16 pieces.</p>
-<p><img alt="" src="images/Pieces_of_Cake_image_0.png" class="Pieces_of_Cake_image_0" /></p>
+<p><img alt="" src="assets/images/Pieces_of_Cake_image_0.png" class="Pieces_of_Cake_image_0" /></p>
 
 <p><b>About: </b> If you were allowed to cut the cake in any direction, not just from the top, with just three cuts you could cut it into 8 pieces (rather than only 6)!</p>
 
@@ -714,7 +714,7 @@ Therefore, P(99) = ½×99×100 = 4951.</p>
 <h2> D9 - Counting Squares</h2>
 
 <p>How many squares are there in the 10 by 10 square grid below?</p>
-<p><img alt="" src="images/Counting_Squares_image_0.png" class="Counting_Squares_image_0" /></p>
+<p><img alt="" src="assets/images/Counting_Squares_image_0.png" class="Counting_Squares_image_0" /></p>
 
 <p><b>Hint: </b> Can you start with a 4 by 4 square and work out how many squares there are? Remember to keep track of how many 1 by 1, 2 by 2, 3 by 3 and 4 by 4 squares you find.</p>
 
@@ -725,14 +725,14 @@ Therefore, P(99) = ½×99×100 = 4951.</p>
 <h3>Extension 1</h3>
 
 <p>How many different squares can you make by joining dots on a 5 by 5 lattice?</p>
-<p><img alt="" src="images/Counting_Squares_image_1.png" class="Counting_Squares_image_1" /></p>
+<p><img alt="" src="assets/images/Counting_Squares_image_1.png" class="Counting_Squares_image_1" /></p>
 
 <p><b>Hint: </b> Squares can be different sizes and rotations!</p>
 
 <p><b>Explanation: </b> There are 50 squares, made up as follows:</p>
 <p>Non-rotated: sixteen 1 by 1, nine 2 by 2, four 3 by 3 and one 4 by 4</p>
 <p>Rotated: 9 + 1 + 8 + 2 (varying sizes and tilt angle)</p>
-<p><img alt="" src="images/Counting_Squares_image_2.png" class="Counting_Squares_image_2" /></p>
+<p><img alt="" src="assets/images/Counting_Squares_image_2.png" class="Counting_Squares_image_2" /></p>
 
 <h3>Extension 2</h3>
 
@@ -751,7 +751,7 @@ Therefore, P(99) = ½×99×100 = 4951.</p>
 <h2> D10 - Going to School</h2>
 
 <p>Start from home (H) and go to school (S). You can walk along the 2 by 5 grid by making steps only towards east or north. In how many ways can you reach your school?</p>
-<p><img alt="" src="images/Going_to_School_image_0.png" class="Going_to_School_image_0" /></p>
+<p><img alt="" src="assets/images/Going_to_School_image_0.png" class="Going_to_School_image_0" /></p>
 
 <p><b>Hint: </b> What is the total number of steps you have to make? Think about when you could make the two steps north.
 You could first try to find the answer if the grid was 2 by 3 and 2 by 4.</p>
@@ -984,9 +984,9 @@ We can now build the sequence easily: each term in the sequence can be found by 
 <p><b>Hint: </b> Can you colour a map of Africa with five colours so that no two countries that touch are filled in with the same colour? Can you also succeed with four colours? How about three colours?</p>
 
 <p><b>Explanation: </b> The four color theorem says that given any separation of a plane into contiguous regions, producing a figure called a map, no more than four colours are required to colour the regions of the map so that no two adjacent regions have the same colour. We can see why it is not possible with three colours by looking at the situation around Rwanda: </p>
-<p><img alt="" src="images/Four_Colours_image_0.png" class="Four_Colours_image_0" /></p>
+<p><img alt="" src="assets/images/Four_Colours_image_0.png" class="Four_Colours_image_0" /></p>
 <p>If we try using red, blue and green we can get this far:</p>
-<p><img alt="" src="images/Four_Colours_image_1.png" class="Four_Colours_image_1" /></p>
+<p><img alt="" src="assets/images/Four_Colours_image_1.png" class="Four_Colours_image_1" /></p>
 <p>But we can't colour Rwanda using red (because it shares a border with Uganda and Burundi) green (because of Tanzania) or blue (Democratic Republic of Congo). We definitely need another colour. </p>
 <p>The proof that only four colours are needed is very tricky, but the extension will give you an insight into how it is done.</p>
 
@@ -997,10 +997,10 @@ We can now build the sequence easily: each term in the sequence can be found by 
 <p>Can you draw a map with 12 countries such that every country has exactly five neighbours, and then colour it in using only 4 colours?</p>
 
 <p><b>Hint: </b> Your map should essentially look like this:</p>
-<p><img alt="" src="images/Four_Colours_image_2.png" class="Four_Colours_image_2" /></p>
+<p><img alt="" src="assets/images/Four_Colours_image_2.png" class="Four_Colours_image_2" /></p>
 
 <p><b>Explanation: </b> The idea of the proof of the four colour theorem is to find necessary conditions for being a minimal counterexample (this means a minimal non-4-colourable map) and thus to concentrate on maps with these necessary conditions. One of these many necessary conditions is to show that in a minimal counterexample with 12 countries, all countries must have exactly five neighbours. However this can be coloured in like this:</p>
-<p><img alt="" src="images/Four_Colours_image_3.png" class="Four_Colours_image_3" /></p>
+<p><img alt="" src="assets/images/Four_Colours_image_3.png" class="Four_Colours_image_3" /></p>
 <p>The proof involves checking around 1500 maps like this!</p>
 
 <!---->
@@ -1121,7 +1121,7 @@ We can now build the sequence easily: each term in the sequence can be found by 
 <p><b>Hint: </b> Triangular numbers can be drawn with dots in the shape of a triangle. Square numbers can be drawn with dots in the shape of a square grid. See if you can work this one out visually first. Can you express it algebraically as well?</p>
 
 <p><b>Explanation: </b> We first show this visually, in the image below you can see that 4 = 1 + 3,  9 = 3 + 6, 16 = 6 + 10, and 25 = 10 + 15. </p>
-<p><img alt="" src="images/Square_Numbers_and_Triangular_Numbers_image_0.png" class="Square_Numbers_and_Triangular_Numbers_image_0" /></p>
+<p><img alt="" src="assets/images/Square_Numbers_and_Triangular_Numbers_image_0.png" class="Square_Numbers_and_Triangular_Numbers_image_0" /></p>
 <p>If we take T = triangular and S = square, then we can draw the S-number as an S-grid of points, the smaller T-number forms the upper T of points, the larger T-number forms the lower T AND the diagonal of points.</p>
 <p>These are consecutive triangular numbers making a square.</p>
 <p>The side length in points of the bigger T-number is the square root of the S-number. </p>
@@ -1135,9 +1135,9 @@ We can now build the sequence easily: each term in the sequence can be found by 
 <p><b>Hint: </b> Starting with a small triangular number might help. Can you use the pattern of triangles and squares to help you? What square could be the sum of the 250ᵗʰ triangular number and another triangular number? Think about the 250ᵗʰ square number and how it relates to the 250ᵗʰ triangular number.</p>
 
 <p><b>Explanation: </b> Let us look at a smaller example first. We could find the 5ᵗʰ triangular number using this square:</p>
-<p><img alt="" src="images/Square_Numbers_and_Triangular_Numbers_image_1.png" class="Square_Numbers_and_Triangular_Numbers_image_1" /></p>
+<p><img alt="" src="assets/images/Square_Numbers_and_Triangular_Numbers_image_1.png" class="Square_Numbers_and_Triangular_Numbers_image_1" /></p>
 <p>We are looking for the number of purple squares. We can do ½×(5×5 - 5) = 10 to get the pink triangle. And then adding on the 5 squares in the diagonal gives the purple triangle. So we have 15.</p>
-<p><img alt="" src="images/Square_Numbers_and_Triangular_Numbers_image_2.png" class="Square_Numbers_and_Triangular_Numbers_image_2" /></p>
+<p><img alt="" src="assets/images/Square_Numbers_and_Triangular_Numbers_image_2.png" class="Square_Numbers_and_Triangular_Numbers_image_2" /></p>
 <p>For the 250ᵗʰ triangular number, we are looking for the number of squares in the black "triangle". It will be roughly ½×250×250, except that the diagonal will be included. So we calculate ½×(250×250 - 5) to find the blue triangle and then add 250 on to find the black triangle. The answer is 31375.</p>
 <p>We can extend this logic to find a formula for the nth triangular number</p>
 <p>½×(n×n - n) + n = ½×(n² +2×n - n) = ½×(n² + n) = ½×n×(n + 1)</p>
@@ -1151,15 +1151,15 @@ We can now build the sequence easily: each term in the sequence can be found by 
 <h2> HJ - Benford's Law</h2>
 
 <p>When you look at numbers found in real-world data sets, for most sets of numbers the first digit is more often a 1 than any other digit. 2 is a more common first digit than 3, and so on up to 9. In fact, the first digits often follow the same pattern (distribution).</p>
-<p><img alt="" src="images/Benford_s_Law_image_0.png" class="Benford_s_Law_image_0" /></p>
+<p><img alt="" src="assets/images/Benford_s_Law_image_0.png" class="Benford_s_Law_image_0" /></p>
 
 <p><b>Hint: </b> Have a look at some data sets that span many orders of magnitude. For example, what are the first digits of: the first 100 prime numbers (or more!), the populations of the countries in Africa, the heights of the tallest buildings in the world?</p>
 
 <p><b>Explanation: </b> Many data sets (for example, populations of countries, heights of buildings, stock prices) or famous sequences (Fibonnacci numbers, prime numbers) are spread over very different scales (orders of magnitude). Many of these big sets of data arise from decreasing power laws. A simple example might be  </p>
 <p>y = k×10⁽⁻ᵃˣ⁾ where k, a &gt; 0. Choosing a = 0.1 and k = 1000 gives the following:</p>
-<p><img alt="" src="images/Benford_s_Law_image_1.png" class="Benford_s_Law_image_1" /></p>
+<p><img alt="" src="assets/images/Benford_s_Law_image_1.png" class="Benford_s_Law_image_1" /></p>
 <p>Power laws will look like a straight line on semi-log graph paper - where the y-axis is on a log-scale paper. We can show this by rewriting our formula for the power law y = k×10⁽⁻ᵃˣ⁾ = 10ᵇ×10⁽⁻ᵃˣ⁾ = 10⁽⁻ᵃˣ⁺ᵇ⁾ , and then applying a logarithm on both sides: log₁₀(y) = - a×x + b. This is the equation when the y-axis is on a log scale. The same example is shown below:</p>
-<p><img alt="" src="images/Benford_s_Law_image_2.png" class="Benford_s_Law_image_2" /></p>
+<p><img alt="" src="assets/images/Benford_s_Law_image_2.png" class="Benford_s_Law_image_2" /></p>
 <p>The horizontal lines represent 1, 2, 3, 4, …, 10, 20, 30, …, 100, 200, 300, … and note they are unevenly spaced on the y axis! The largest spaces are between 1 and 2, between 10 and 20, and between 100 and 200. The smallest spaces are between 9 and 10, 90 and 100.</p>
 <p>Try picking random values of x, and reading off corresponding values of y from our (power law) straight line. Because of the spacing of the horizontal lines we see that we are most likely to get a value of y with first digit 1, then we are next likely to get a value of y with a first digit 2, etc. These probabilities are what leads to Benford's Law. </p>
 
@@ -1236,7 +1236,7 @@ We can now build the sequence easily: each term in the sequence can be found by 
 <h3>Extension 1</h3>
 
 <p>Try playing the game again, but with the cards arranged like this to start with. </p>
-<p><img alt="" src="images/Fifteen_image_0.png" class="Fifteen_image_0" /></p>
+<p><img alt="" src="assets/images/Fifteen_image_0.png" class="Fifteen_image_0" /></p>
 <p>What do you notice about the way the numbers are arranged? Does it remind you of any other game?</p>
 
 <!---->
@@ -1378,7 +1378,7 @@ We can now build the sequence easily: each term in the sequence can be found by 
 
 <h2> S9 - Pong Hau K'i</h2>
 
-<p><img alt="" src="images/Pong_Hau_K_i_image_0.png" class="Pong_Hau_K_i_image_0" /></p>
+<p><img alt="" src="assets/images/Pong_Hau_K_i_image_0.png" class="Pong_Hau_K_i_image_0" /></p>
 <p>Draw the grid shown with five points and seven connecting lines. Two players place two counters of the same colour/design in the grid as shown.</p>
 <p>Decide who will go first. The first player moves one of their pieces to the centre point. Then players take turns moving a counter along a line to an empty point until one player cannot move a counter and loses.</p>
 
@@ -1390,7 +1390,7 @@ We can now build the sequence easily: each term in the sequence can be found by 
 
 <h3>Extension 1</h3>
 
-<p><img alt="" src="images/Pong_Hau_K_i_image_1.png" class="Pong_Hau_K_i_image_1" /></p>
+<p><img alt="" src="assets/images/Pong_Hau_K_i_image_1.png" class="Pong_Hau_K_i_image_1" /></p>
 <p>This game is called Shisima and is played in Kenya. Two players each need 3 counters of the same colour/design.</p>
 <p>Place the counters on three consecutive points on the outside of the octagon, across from each other. There must be an empty point on both ends of each player's set of counters. </p>
 <p>Players take turns moving their counters one space along a line. </p>
@@ -1398,7 +1398,7 @@ We can now build the sequence easily: each term in the sequence can be found by 
 
 <h3>Extension 2</h3>
 
-<p><img alt="" src="images/Pong_Hau_K_i_image_2.png" class="Pong_Hau_K_i_image_2" /></p>
+<p><img alt="" src="assets/images/Pong_Hau_K_i_image_2.png" class="Pong_Hau_K_i_image_2" /></p>
 <p>Two players each need 3 counters of the same colour/design. Take it in turns to add one counter to the grid until all six counters have been placed. Then players take turns moving a counter to an empty space until one player has managed to get three of their counters in a row.</p>
 
 <!---->
@@ -1441,7 +1441,7 @@ We can now build the sequence easily: each term in the sequence can be found by 
 <h2> SQ - Card Sums</h2>
 
 <p>Remove the 10, J, Q, K, and Joker cards and shuffle the rest of the pack.</p>
-<p><img alt="" src="images/Card_Sums_image_0.png" class="Card_Sums_image_0" /></p>
+<p><img alt="" src="assets/images/Card_Sums_image_0.png" class="Card_Sums_image_0" /></p>
 <p>Any number of players can play. Deal 6 cards face up on a table. Everyone has 1 minute to decide how to set them out in the layout above to make the biggest total of the two multiplications. A counts as 1. The player with the highest score wins.</p>
 
 <p><b>Further instructions: </b> It might help if everyone has pen and paper. After one minute, everyone says their highest total. The person who says the highest number explains how they came to that number, by arranging the cards. If they are correct they win a point, if incorrect, the person with the next highest total attempts to justify their answer. If two people have the same answer they get a point each.</p>
