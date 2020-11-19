@@ -1,15 +1,11 @@
 import { Component, OnInit, ViewEncapsulation } from "@angular/core";
 import { CardService } from "src/app/card.service";
 import { ActivatedRoute } from "@angular/router";
-import jspdf from "jspdf";
-import html2canvas from "html2canvas";
-import { ViewChild } from "@angular/core";
-import { ElementRef } from "@angular/core";
 
 @Component({
   selector: "app-card",
   templateUrl: "./card.component.html",
-  styleUrls: ["./card.component.less"],
+  styleUrls: ["../cards.component.scss"],
   encapsulation: ViewEncapsulation.None,
 })
 export class CardComponent implements OnInit {

@@ -1,0 +1,58 @@
+/********************************************************************
+  Specific styles for when printing via interface
+********************************************************************/
+.card {
+  width: 2.5in;
+  height: 3.5in;
+}
+.cards-container {
+  width: 21cm;
+  margin: auto;
+}
+
+// general print styles
+.print {
+  .card {
+    // ensure any borders fill inside space instead of adding to height
+    box-sizing: border-box;
+    box-shadow: none;
+    background: white;
+  }
+  .toolbar {
+    display: none;
+  }
+}
+.print-Kenya {
+  .card {
+    width: 2.5in;
+    height: 3.5in;
+  }
+}
+.print-Hungary {
+  .card {
+    width: 21cm;
+    height: 29.7cm;
+    margin: auto;
+    padding: 1cm;
+    page-break-after: always;
+    border-radius: 0;
+  }
+}
+
+@media print {
+  .card {
+    margin: 0;
+    border: initial;
+    border-radius: initial;
+    width: initial;
+    min-height: initial;
+    box-shadow: initial;
+    background: initial;
+  }
+}
+
+// set page margin and hide date/title
+@page {
+  size: auto;
+  margin: 0mm;
+}
