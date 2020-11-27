@@ -1,9 +1,11 @@
 <section class="cards-container" *ngIf="deck">
-  <section
+  <section *ngFor="let card of deck">
+    {{card.title}}
+    <section
     [class]="'card card--' + card.card_suit"
     [attr.data-suit]="card.card_suit"
     attr.value="{{ card.card_value }}"
-    *ngFor="let card of deck"
+    
     [routerLink]="[card.slug]"
   >
     <img
@@ -21,4 +23,6 @@
       }}{{ card.card_suit.charAt(0).toUpperCase() }}</span
     >
   </section>
+  </section>
+
 </section>
