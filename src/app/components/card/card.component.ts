@@ -42,9 +42,11 @@ export class CardComponent implements OnInit {
     this.cards = this.cardService.readAllCards().subscribe((data) => {
       this.cards = data;
       let ncard = this.cards.find(
-        (t) => t.slug === this.route.snapshot.params.slug
+        (t) => t.slug === this.route.snapshot.params.slug.replace(".html", "")
       );
       this.card = ncard;
+     
+      console.log("cardn", this.card)
     });
   }
 
