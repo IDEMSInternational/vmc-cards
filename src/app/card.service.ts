@@ -1,13 +1,23 @@
 import { Injectable } from "@angular/core";
 import { HttpClient } from "@angular/common/http";
 import { Router, ActivatedRoute } from "@angular/router";
+import { map } from "rxjs/operators";
+import { Observable } from "rxjs";
+
+type CardMetadata = {
+  "title": string,
+  "type": string,
+  "slug": string,
+  "card_value": string,
+  "card_suit": "club" | "diamond" | "spade" | "heart",
+  statement?: string;
+}
 
 @Injectable({
   providedIn: "root",
 })
 export class CardService {
-  cards;
-  card;
+  cards: CardMetadata[];
 
   constructor(
     private http: HttpClient,
@@ -15,15 +25,36 @@ export class CardService {
     private route: ActivatedRoute
   ) {}
 
-  public readCardContent(slug: string) {
-    const url = `/card/assets/card-content/cards/${slug}.json`;
-    this.card = this.http.get(url);
-    return this.card;
+  public readCardContent(slug: string): Observable<any> {
+    let actualSlug = slug;
+    const cardRegex = /([A|2-9|10|J|Q|K]+)([C|S|H|D]+)/;
+    const matchResult = slug.match(cardRegex);
+    if (matchResult) {
+      let suitMap = {
+        "C": "club",
+        "S": "spade",
+        "H": "heart",
+        "D": "diamond"
+      };
+      let value = matchResult[1];
+      let suit = suitMap[matchResult[2]];
+      if (value && suit) {
+        let matchingCard = this.cards.find((card) => {
+          return card.card_suit === suit && card.card_value === value;
+        });
+        actualSlug = matchingCard.slug;
+      }
+    }
+    const url = `/card/assets/card-content/cards/${actualSlug}.json`;
+    return this.http.get(url);
   }
 
-  public readAllCards() {
+  public readAllCards(): Observable<CardMetadata[]> {
     const url = "/card/assets/card-content/metadata.json";
-    this.cards = this.http.get(url);
-    return this.cards;
+    let observable = this.http.get<CardMetadata[]>(url, { observe: "body" });
+    observable.subscribe((cards: CardMetadata[]) => {
+      this.cards = cards;
+    });
+    return observable;
   }
 }
