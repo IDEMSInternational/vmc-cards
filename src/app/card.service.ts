@@ -16,7 +16,7 @@ export class CardService {
   ) {}
 
   public readCardContent(slug: string) {
-    const url = `/card/assets/card-content/card/${slug}.json`;
+    const url = `/card/assets/card-content/cards/${slug}.json`;
     this.card = this.http.get(url);
     return this.card;
   }
