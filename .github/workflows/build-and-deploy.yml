@@ -23,16 +23,13 @@ jobs:
         run: yarn install
 
       - name: Build
-        run: npx ng build --prod --base-href /card/ --deploy-url /card/
+        run: npm run build
         
       - name: Deploy to Github pages 🚀
         uses: JamesIves/github-pages-deploy-action@4.1.0
         with:
-          branch: master
-          folder: dist/vmc-cards
-          target-folder: card
-          repository-name: IDEMSInternational/virtual-maths-camp-gh-pages
-          ssh-key: ${{ secrets.GH_DEPLOY_KEY }}
+          branch: gh-pages
+          folder: dist/static
 
 
 
