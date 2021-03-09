@@ -16,13 +16,13 @@ export class CardService {
   ) {}
 
   public readCardContent(slug: string) {
-    const url = `/cards/assets/card-content/cards/${slug}.json`;
+    const url = `/card/assets/card-content/card/${slug}.json`;
     this.card = this.http.get(url);
     return this.card;
   }
 
   public readAllCards() {
-    const url = "/cards/assets/card-content/metadata.json";
+    const url = "/card/assets/card-content/metadata.json";
     this.cards = this.http.get(url);
     return this.cards;
   }
