@@ -30,7 +30,7 @@ export class CardsComponent {
   }
 
   replaceImageURLS(content) {
-    const updatedContent = content.replace(/images/g, "/card/assets/images");
+    const updatedContent = content.replace(/images/g, "assets/images");
     return updatedContent;
   }
 }

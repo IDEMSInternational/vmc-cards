@@ -8,6 +8,7 @@ import { AppComponent } from "./app.component";
 import { CardComponent } from "./components/card/card.component";
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import { CardsComponent } from "./components/cards/cards.component";
+import { ScullyLibModule } from '@scullyio/ng-lib';
 
 @NgModule({
   declarations: [AppComponent, CardComponent, CardsComponent],
@@ -17,6 +18,7 @@ import { CardsComponent } from "./components/cards/cards.component";
     HttpClientModule,
     BrowserAnimationsModule,
     MaterialModule,
+    ScullyLibModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

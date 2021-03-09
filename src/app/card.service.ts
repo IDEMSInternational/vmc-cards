@@ -45,12 +45,12 @@ export class CardService {
         actualSlug = matchingCard.slug;
       }
     }
-    const url = `/card/assets/card-content/cards/${actualSlug}.json`;
+    const url = `assets/card-content/cards/${actualSlug}.json`;
     return this.http.get(url);
   }
 
   public readAllCards(): Observable<CardMetadata[]> {
-    const url = "/card/assets/card-content/metadata.json";
+    const url = "assets/card-content/metadata.json";
     let observable = this.http.get<CardMetadata[]>(url, { observe: "body" });
     observable.subscribe((cards: CardMetadata[]) => {
       this.cards = cards;

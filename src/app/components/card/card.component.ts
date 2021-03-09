@@ -32,7 +32,7 @@ export class CardComponent implements OnInit {
 
   async replaceImageURLs(cardContent) {
     const originalContent = JSON.stringify(cardContent);
-    const updatedContent = originalContent.replace(/\images/g, "/card/assets/images");
+    const updatedContent = originalContent.replace(/\images/g, "assets/images");
     const newContent = JSON.parse(updatedContent);
     console.log("contentx", newContent);
     this.updatedContent = newContent;
