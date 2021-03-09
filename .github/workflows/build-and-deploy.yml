@@ -24,3 +24,15 @@ jobs:
 
       - name: Build
         run: npm run build
+        
+      - name: Deploy to Github pages 🚀
+        uses: JamesIves/github-pages-deploy-action@4.1.0
+        with:
+          branch: testing-cards
+          folder: dist
+          target-folder: cards
+          repository-name: IDEMSInternational/virtual-maths-camp-gh-pages
+          ssh-key: ${{ secrets.GH_DEPLOY_KEY }}
+
+
+
