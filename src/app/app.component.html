@@ -1,17 +1,7 @@
-<mat-toolbar class="toolbar" color="primary" *ngIf="!isPrinting">
+<mat-toolbar class="toolbar" color="primary">
   <span class="title" routerLink="/">Virtual Maths Camp</span>
   <span class="example-spacer"></span>
-  <mat-form-field appearance="fill">
-    <mat-select [(value)]="printStyle">
-      <mat-option value="Web">Web</mat-option>
-      <mat-option value="Kenya">Kenya</mat-option>
-      <mat-option value="Hungary">Hungary</mat-option>
-    </mat-select>
-  </mat-form-field>
-  <button mat-flat-button color="accent" (click)="export()">
-    <mat-icon>print</mat-icon> Export
-  </button>
 </mat-toolbar>
-<div [class]="printStyle === 'Web' ? 'Web' : 'print print-' + printStyle">
+<div>
   <router-outlet></router-outlet>
 </div>

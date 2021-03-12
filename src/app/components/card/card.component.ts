@@ -26,7 +26,7 @@ export class CardComponent implements OnInit {
       .subscribe((data) => {
         this.content = data;
         this.replaceImageURLs(this.content);
-        //console.log("card content", this.content);
+        console.log("card content", this.content);
       });
   }
 
@@ -34,7 +34,6 @@ export class CardComponent implements OnInit {
     const originalContent = JSON.stringify(cardContent);
     const updatedContent = originalContent.replace(/\images/g, "assets/images");
     const newContent = JSON.parse(updatedContent);
-    console.log("contentx", newContent);
     this.updatedContent = newContent;
     return newContent;
   }
@@ -43,9 +42,11 @@ export class CardComponent implements OnInit {
     this.cards = this.cardService.readAllCards().subscribe((data) => {
       this.cards = data;
       let ncard = this.cards.find(
-        (t) => t.slug === this.route.snapshot.params.slug
+        (t) => t.slug === this.route.snapshot.params.slug.replace(".html", "")
       );
       this.card = ncard;
+     
+      console.log("cardn", this.card)
     });
   }
 

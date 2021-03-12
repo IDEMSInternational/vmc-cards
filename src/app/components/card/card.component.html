@@ -1,6 +1,7 @@
-<section class="cards" *ngIf="updatedContent && card">
+<section class="cards" *ngIf="content && card">
   <h1 class="card-title">{{ card.title }}</h1>
-  <section
+  <section>
+    <section
     [class]="'card card--' + card.card_suit"
     attr.value="{{ card.card_value }}"
     id="cardPDF"
@@ -16,7 +17,7 @@
     <div class="card__inner card__inner--centered" id="test2">
       <div
         class="card__column"
-        [innerHTML]="updatedContent.main_version.statement"
+        [innerHTML]="content.main_version.statement"
       ></div>
     </div>
     <span class="vmc-text"
@@ -24,4 +25,106 @@
       }}{{ card.card_suit.charAt(0).toUpperCase() }}</span
     >
   </section>
+
+
+
+
+
+
+  
+  <div>
+    <div class="content-title" *ngIf="card.title">
+      <h2>Title: {{card.title}}</h2>
+    </div>
+    <div class="card-type" *ngIf="content.metadata">
+      <h2>Type: {{content.metadata.type}}</h2>
+    </div>
+    <div class="main_version" *ngIf="content.main_version">
+      <h2>Main Version</h2>
+      
+      <span *ngIf="content.main_version.statement">
+        Statement:
+        <p>{{content.main_version.statement}}</p>
+      </span>
+      <span *ngIf="content.main_version.correct_answer">
+        Correct Answer:
+        <p>{{content.main_version.correct_answer}}</p>
+      </span>
+      <span *ngIf="content.main_version.hint">
+        Hint:
+        <p>{{content.main_version.hint}}</p>
+      </span>
+      <span *ngIf="content.main_version.explanation">
+        Explanation:
+        <p>{{content.main_version.explanation}}</p>
+      </span>
+      <span *ngIf="content.main_version.further_instructions">
+        Further Instructions:
+        <p>{{content.main_version.further_instructions}}</p>
+      </span>
+      <span *ngIf="content.main_version.strategy_tips">
+        Strategy Tips:
+        <p>{{content.main_version.strategy_tips}}</p>
+      </span>
+      
+    </div>
+    <div class="extension_1" *ngIf="content.extension_1">
+      <h2>Extension 1</h2>
+      <span *ngIf="content.extension_1.statement"> 
+        Statement:
+      <p>{{content.extension_1.statement}}</p>
+      </span>
+      <span *ngIf="content.extension_1.hint">
+        Hint:
+        <p>{{content.extension_1.hint}}</p>
+      </span>
+      
+      <span *ngIf="content.extension_1.correct_answer">
+        Correct Answer:
+        <p>{{content.extension_1.correct_answer}}</p>
+      </span>
+      <span *ngIf="content.extension_1.explanation">
+        Explanation:
+        <p>{{content.extension_1.explanation}}</p>  
+      </span>
+      
+    </div>
+    <div class="extension_2" *ngIf="content.extension_2">
+      <h2>Extension 2</h2>
+      <span *ngIf="content.extension_2.statement">
+        Statement:
+        <p>{{content.extension_2.statement}}</p>  
+      </span>
+      <span *ngIf="content.extension_2.hint">
+        Hint:
+        <p>{{content.extension_2.hint}}</p>  
+      </span>
+      <span *ngIf="content.extension_2.correct_answer">
+        Correct Answer:
+        <p>{{content.extension_2.correct_answer}}</p>
+      </span>
+      
+      <span *ngIf="content.extension_2.explanation">
+        Explanation:
+        <p>{{content.extension_2.explanation}}</p>
+      </span>
+    </div>
+    
+    <div class="additional_information" *ngIf="content.additional_information">
+      <h2>
+        Additional Information
+      </h2>
+      <span *ngIf="content.additional_information.about">
+        About
+        <p>{{content.additional_information.about}}</p>  
+      </span>
+      <span *ngIf="content.additional_information.references">
+        References
+        <p>{{content.additional_information.references}}</p>
+      </span>
+    </div>
+  </div>
+ 
+  </section>
+ 
 </section>
