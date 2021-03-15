@@ -1,4 +1,4 @@
-<section class="cards" *ngIf="updatedContent && card">
+<section class="cards" *ngIf="card">
   <h1 class="card-title">{{ card.title }}</h1>
   <section
     [class]="'card card--' + card.card_suit"
@@ -16,7 +16,7 @@
     <div class="card__inner card__inner--centered" id="test2">
       <div
         class="card__column"
-        [innerHTML]="updatedContent.main_version.statement"
+        [innerHTML]="card.main_version.statement"
       ></div>
     </div>
     <span class="vmc-text"

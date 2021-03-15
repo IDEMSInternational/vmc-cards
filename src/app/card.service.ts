@@ -3,15 +3,7 @@ import { HttpClient } from "@angular/common/http";
 import { Router, ActivatedRoute } from "@angular/router";
 import { map } from "rxjs/operators";
 import { Observable } from "rxjs";
-
-type CardMetadata = {
-  "title": string,
-  "type": string,
-  "slug": string,
-  "card_value": string,
-  "card_suit": "club" | "diamond" | "spade" | "heart",
-  statement?: string;
-}
+import { Card, CardMetadata } from "./models/card.model";
 
 @Injectable({
   providedIn: "root",
@@ -25,10 +17,10 @@ export class CardService {
     private route: ActivatedRoute
   ) {}
 
-  public readCardContent(slug: string): Observable<any> {
+  public getCard(slug: string): Observable<Card> {
     let actualSlug = slug;
     const cardRegex = /([A|2-9|10|J|Q|K]+)([C|S|H|D]+)/;
-    const matchResult = slug.match(cardRegex);
+    const matchResult = slug.toUpperCase().match(cardRegex);
     if (matchResult) {
       let suitMap = {
         "C": "club",
@@ -46,7 +38,11 @@ export class CardService {
       }
     }
     const url = `assets/card-content/cards/${actualSlug}.json`;
-    return this.http.get(url);
+    return this.http.get(url)
+      .pipe(map((cardContent) => {
+        const cardMetadata = this.cards.find((cardMetadata) => cardMetadata.slug === actualSlug);
+        return { ...cardContent, ...cardMetadata };
+      }));
   }
 
   public readAllCards(): Observable<CardMetadata[]> {
