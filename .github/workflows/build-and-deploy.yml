@@ -25,9 +25,6 @@ jobs:
       - name: Build
         run: npm run build
         
-      - name: index.html as 404
-        run: cp dist/static/index.html cp dist/static/404.html
-        
       - name: Deploy to Github pages 🚀
         uses: JamesIves/github-pages-deploy-action@4.1.0
         with:
