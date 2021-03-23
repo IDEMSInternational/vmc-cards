@@ -1,0 +1,35 @@
+name: Build and deploy to Github pages
+
+on:
+  push:
+    branches:
+      - master
+      - workflow-testing
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+        with:
+          lfs: true
+
+      - uses: actions/cache@v2
+        with:
+          path: '**/node_modules'
+          key: ${{ runner.os }}-modules-${{ hashFiles('**/yarn.lock') }}
+
+      - name: Install packages
+        run: yarn install
+
+      - name: Build
+        run: npm run build
+        
+      - name: Deploy to Github pages 🚀
+        uses: JamesIves/github-pages-deploy-action@4.1.0
+        with:
+          branch: gh-pages
+          folder: dist/static
+
+
+

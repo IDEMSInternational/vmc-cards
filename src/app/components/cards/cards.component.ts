@@ -15,16 +15,16 @@ export class CardsComponent {
   }
 
   combineData() {
-    this.cardService.readAllCards().subscribe((data) => {
-      data.forEach((element, i) => {
-        this.cardService.readCardContent(element.slug).subscribe((data) => {
-          element.type = data.metadata.type;
+    this.cardService.readAllCards().subscribe((cardDeck) => {
+      cardDeck.forEach((element, i) => {
+        this.cardService.getCard(element.slug).subscribe((card) => {
+          element.type = card.metadata.type;
           element.statement = this.replaceImageURLS(
-            data.main_version.statement
+            card.main_version.statement
           );
         });
       });
-      this.deck = data;
+      this.deck = cardDeck;
       console.log("deck update", this.deck);
     });
   }
