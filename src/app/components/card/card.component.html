@@ -42,10 +42,13 @@
     <div class="main_version" *ngIf="content.main_version">
       <h2>Main Version</h2>
       
+      <!--
       <span *ngIf="content.main_version.statement">
         <h3>Statement:</h3>
         <p [innerHTML]="content.main_version.statement"></p>
       </span>
+      -->
+     
       <span *ngIf="content.main_version.correct_answer">
         <h3>Correct Answer:</h3>
         <p [innerHTML]="content.main_version.correct_answer"></p>
