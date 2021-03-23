@@ -24,13 +24,11 @@ export class CardComponent implements OnInit {
     this.cardService
       .readCardContent(this.route.snapshot.params.slug)
       .subscribe((data) => {
-        this.content = data;
-        this.replaceImageURLs(this.content);
-        console.log("card content", this.content);
+        this.content = this.replaceImageURLs(data);
       });
   }
 
-  async replaceImageURLs(cardContent) {
+  replaceImageURLs(cardContent) {
     const originalContent = JSON.stringify(cardContent);
     const updatedContent = originalContent.replace(/\images/g, "assets/images");
     const newContent = JSON.parse(updatedContent);
@@ -45,8 +43,8 @@ export class CardComponent implements OnInit {
         (t) => t.slug === this.route.snapshot.params.slug.replace(".html", "")
       );
       this.card = ncard;
-     
-      console.log("cardn", this.card)
+
+      console.log("cardn", this.card);
     });
   }
 
