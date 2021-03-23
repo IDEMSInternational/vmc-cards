@@ -45,8 +45,8 @@ export class CardComponent implements OnInit {
         (t) => t.slug === this.route.snapshot.params.slug.replace(".html", "")
       );
       this.card = ncard;
-     
-      console.log("cardn", this.card)
+
+      console.log("cardn", this.card);
     });
   }
 
