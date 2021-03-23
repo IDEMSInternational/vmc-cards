@@ -1,13 +1,133 @@
+<section class="cards" *ngIf="content && card">
+  <h1 class="card-title">{{ card.title }}</h1>
+  <section>
+    <section
+    [class]="'card card--' + card.card_suit"
+    attr.value="{{ card.card_value }}"
+    id="cardPDF"
+  >
+    <img
+      class="card-image"
+      src="/assets/images/qr/https---virtualmathscamp.com-card-{{
+        card.card_value
+      }}{{ card.card_suit.charAt(0).toUpperCase() }}.html.png"
+      alt="image"
+    />
+
+    <div class="card__inner card__inner--centered" id="test2">
+      <div
+        class="card__column"
+        [innerHTML]="content.main_version.statement"
+      ></div>
+    </div>
+    <span class="vmc-text"
+      >Chatbot <br />VMC_{{ card.card_value
+      }}{{ card.card_suit.charAt(0).toUpperCase() }}</span
+    >
+  </section>
+
+
+
+
+
+
+  
+  <div >
+    <div class="content-title" *ngIf="card.title">
+      <h2>Title: {{card.title}}</h2>
+    </div>
+    <div class="card-type" *ngIf="content.metadata">
+      <h2>Type: {{content.metadata.type}}</h2>
+    </div>
+    <div class="main_version" *ngIf="content.main_version">
+      <h2>Main Version</h2>
+      
+      <!--
+      <span *ngIf="content.main_version.statement">
+        <h3>Statement:</h3>
+        <p [innerHTML]="content.main_version.statement"></p>
+      </span>
+      -->
+     
+      <span *ngIf="content.main_version.correct_answer">
+        <h3>Correct Answer:</h3>
+        <p [innerHTML]="content.main_version.correct_answer"></p>
+      </span>
+      <span *ngIf="content.main_version.hint">
+        <h3>Hint:</h3>
+        <p [innerHTML]="content.main_version.hint"></p>
+      </span>
+      <span *ngIf="content.main_version.explanation">
+        <h3>Explanation:</h3>
+        <p [innerHTML]="content.main_version.explanation"></p>
+      </span>
+      <span *ngIf="content.main_version.further_instructions">
+        <h3>Further Instructions:</h3>
+        <p [innerHTML]="content.main_version.further_instructions"></p>
+      </span>
+      <span *ngIf="content.main_version.strategy_tips">
+        <h3>Strategy Tips:</h3>
+        <p [innerHTML]="content.main_version.strategy_tips"></p>
+      </span>
+      
+    </div>
+    <div class="extension_1" *ngIf="content.extension_1">
+      <h2>Extension 1</h2>
+      <span *ngIf="content.extension_1.statement"> 
+       <h3>Statement:</h3> 
+      <p [innerHTML]="content.extension_1.statement"></p>
+      </span>
+      <span *ngIf="content.extension_1.hint">
+        <h3>Hint:</h3>
+        <p [innerHTML]="content.extension_1.hint"></p>
+      </span>
+      
+      <span *ngIf="content.extension_1.correct_answer">
+        <h3>Correct Answer:</h3>
+        <p [innerHTML]="content.extension_1.correct_answer"></p>
+      </span>
+      <span *ngIf="content.extension_1.explanation">
+        <h3>Explanation:</h3>
+        <p [innerHTML]="content.extension_1.explanation"></p>  
+      </span>
+      
+    </div>
+    <div class="extension_2" *ngIf="content.extension_2">
+      <h2>Extension 2</h2>
+      <span *ngIf="content.extension_2.statement">
+       <h3>Statement:</h3> 
+        <p [innerHTML]="content.extension_2.statement"></p>  
+      </span>
+      <span *ngIf="content.extension_2.hint">
+       <h3> Hint:</h3>
+        <p [innerHTML]="content.extension_2.hint"></p>  
+      </span>
+      <span *ngIf="content.extension_2.correct_answer">
+        <h3>Correct Answer:</h3>
+        <p [innerHTML]="content.extension_2.correct_answer"></p>
+      </span>
+      
+      <span *ngIf="content.extension_2.explanation">
+        <h3>Explanation:</h3>
+        <p [innerHTML]="content.extension_2.explanation"></p>
+      </span>
+    </div>
     
-    <section class="cards" *ngIf="updatedContent && card">
-        <h1 class="card-title">{{card.title}}</h1>   
-        <section  [class]="'card card--'+card.card_suit" attr.value={{card.card_value}} id="cardPDF">
-            <img class = "card-image" src="/assets/images/qr/https---virtualmathscamp.com-card-{{card.card_value}}{{card.card_suit.charAt(0).toUpperCase()}}.html.png" alt="image">
-    
-            <div class="card__inner card__inner--centered" id="test2">
-                <div class="card__column" [innerHTML]="updatedContent.main_version.statement">
-                </div>
-            </div>
-            <span class="vmc-text">Chatbot <br>VMC_{{card.card_value}}{{card.card_suit.charAt(0).toUpperCase()}}</span>
-        </section>    
-    </section>
+    <div class="additional_information" *ngIf="content.additional_information">
+      <h2>
+        Additional Information
+      </h2>
+      <span *ngIf="content.additional_information.about">
+       <h3>About</h3> 
+        <p [innerHTML]="content.additional_information.about"></p>  
+      </span>
+      <span *ngIf="content.additional_information.references">
+       <h3>References</h3> 
+        <p [innerHTML]="content.additional_information.references"></p>
+      </span>
+    </div>
+  </div>
+ 
+  </section>
+ 
+</section>

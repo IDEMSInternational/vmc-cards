@@ -1,14 +1,12 @@
-import { Component, ViewChild } from "@angular/core";
-import { CardsComponent } from "./components/cards/cards.component";
+import { ChangeDetectorRef, Component, ViewEncapsulation } from "@angular/core";
 @Component({
   selector: "app-root",
   templateUrl: "./app.component.html",
-  styleUrls: ["./app.component.less"],
+  styleUrls: ["./app.component.scss"],
+  encapsulation: ViewEncapsulation.None,
 })
 export class AppComponent {
   title = "vmc-cards";
 
-  export(){
-    window.print();
-  }
+  constructor(private cdr: ChangeDetectorRef) {}
 }

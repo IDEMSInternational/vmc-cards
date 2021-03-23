@@ -1,21 +1,19 @@
 import { Component, OnInit, ViewEncapsulation } from "@angular/core";
-import { async } from "rxjs/internal/scheduler/async";
 import { CardService } from "src/app/card.service";
 
 @Component({
   selector: "app-cards",
   templateUrl: "./cards.component.html",
-  styleUrls: ["./cards.component.less"],
-  encapsulation: ViewEncapsulation.ShadowDom,
+  styleUrls: ["../cards.component.scss"],
+  encapsulation: ViewEncapsulation.None,
 })
-export class CardsComponent implements OnInit {
+export class CardsComponent {
   deck = null;
 
   constructor(public cardService: CardService) {
     this.combineData();
   }
 
-  ngOnInit(): void {}
   combineData() {
     this.cardService.readAllCards().subscribe((data) => {
       data.forEach((element, i) => {
@@ -32,7 +30,7 @@ export class CardsComponent implements OnInit {
   }
 
   replaceImageURLS(content) {
-    const updatedContent = content.replace(/\images/g, "assets/images");
+    const updatedContent = content.replace(/images/g, "assets/images");
     return updatedContent;
   }
 }

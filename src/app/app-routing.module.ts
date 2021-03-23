@@ -6,8 +6,8 @@ import { CardsComponent } from "./components/cards/cards.component";
 import { BookletComponent } from "./components/booklet/booklet.component";
 
 const routes: Routes = [
-  { path: ":slug", component: CardComponent },
   { path: "p/booklet", component: BookletComponent },
+  { path: "card/:slug", component: CardComponent },
   { path: "", component: CardsComponent },
 ];
 

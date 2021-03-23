@@ -16,8 +16,12 @@ export class CardService {
   ) {}
 
   public readCardContent(slug: string) {
-    const url = `/assets/card-content/cards/${slug}.json`;
-    this.card = this.http.get(url);
+    let slicedSlug = null;
+    slicedSlug = slug.replace(".html", "");
+    const url = `/assets/card-content/cards/${slicedSlug}.json`;
+    if (slicedSlug) {
+      this.card = this.http.get(url);
+    }
     return this.card;
   }
 
