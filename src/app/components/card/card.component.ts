@@ -17,6 +17,7 @@ export class CardComponent implements OnInit {
     this.cardService.readAllCards().subscribe((data) => {
       this.cardService.getCard(this.route.snapshot.params.slug).subscribe((card) => {
         this.card = this.replaceImageURLs(card);
+        console.log(this.card)
       });
     });
   }
@@ -27,7 +28,6 @@ export class CardComponent implements OnInit {
     const originalContent = JSON.stringify(cardContent);
     const updatedContent = originalContent.replace(/\images/g, "assets/images");
     const newContent = JSON.parse(updatedContent);
-    console.log("contentx", newContent);
     return newContent as Card;
   }
 

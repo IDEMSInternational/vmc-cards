@@ -1,125 +1,110 @@
 <section class="cards" *ngIf="card">
-  <h1 class="card-title">{{ card.title }}</h1>
+  <mat-card class="content-title" *ngIf="card.title && card.metadata">
+      <mat-card-title>
+        {{card.title}}
+      </mat-card-title>
+      <mat-card-subtitle>
+        {{card.metadata.type}}
+      </mat-card-subtitle>    
+  </mat-card>
   <section>
-    <section
-    [class]="'card card--' + card.card_suit"
-    attr.value="{{ card.card_value }}"
-    id="cardPDF"
-  >
-    <img
-      class="card-image"
-      src="assets/images/qr/https---virtualmathscamp.com-card-{{
-        card.card_value
-      }}{{ card.card_suit.charAt(0).toUpperCase() }}.html.png"
-      alt="image"
-    />
-
-    <div class="card__inner card__inner--centered" id="test2">
-      <div
-        class="card__column"
-        [innerHTML]="card.main_version.statement"
-      ></div>
-    </div>
-    <span class="vmc-text"
-      >Chatbot <br />VMC_{{ card.card_value
-      }}{{ card.card_suit.charAt(0).toUpperCase() }}</span
-    >
-  </section>
-
-
-
-
-
-
-  
+    <img class="card-image" src="{{'assets/print-cards/' +card.card_value.toLowerCase()+card.card_suit.charAt(0).toLowerCase()+'.png'}}"/>
   <div >
-    <div class="content-title" *ngIf="card.title">
-      <h2>Title: {{card.title}}</h2>
-    </div>
-    <div class="card-type" *ngIf="card.metadata">
-      <h2>Type: {{card.metadata.type}}</h2>
-    </div>
-    <div class="main_version" *ngIf="card.main_version">
-      <h2>Main Version</h2>
-      
-  
-      <span class="main_answer" *ngIf="card.main_version.correct_answer">
-        Correct Answer:
-        <p [innerHTML]="card.main_version.correct_answer"></p>
-      </span>
-      <span class="main_hint" *ngIf="card.main_version.hint">
-        Hint:
-        <p [innerHTML]="card.main_version.hint"></p>
-      </span>
-      <span class="main_explanation" *ngIf="card.main_version.explanation">
-        Explanation:
-        <p [innerHTML]="card.main_version.explanation"></p>
-      </span>
-      <span class="main_instructions" *ngIf="card.main_version.further_instructions">
-        Further Instructions:
-        <p [innerHTML]="card.main_version.further_instructions"></p>
-      </span>
-      <span class="main_tips" *ngIf="card.main_version.strategy_tips">
-        Strategy Tips:
-        <p [innerHTML]="card.main_version.strategy_tips"></p>
-      </span>
-      
-    </div>
-    <div class="extension_1" *ngIf="card.extension_1">
-      <h2>Extension 1</h2>
-      <span class="ext_1_statement" *ngIf="card.extension_1.statement"> 
-        Statement:
-      <p [innerHTML]="card.extension_1.statement"></p>
-      </span>
-      <span class="ext_1_hint" *ngIf="card.extension_1.hint">
-        Hint:
-        <p [innerHTML]="card.extension_1.hint"></p>
-      </span>
-      
-      <span class="ext_1_answer" *ngIf="card.extension_1.correct_answer">
-        Correct Answer:
-        <p>{{card.extension_1.correct_answer}}</p>
-      </span>
-      <span class="ext_1_explanation" *ngIf="card.extension_1.explanation">
-        Explanation:
-        <p [innerHTML]="card.extension_1.explanation"></p>  
-      </span>
-      
-    </div>
-    <div class="extension_2" *ngIf="card.extension_2">
-      <h2>Extension 2</h2>
-      <span class="ext_2_statement" *ngIf="card.extension_2.statement">
-        Statement:
-        <p [innerHTML]="card.extension_2.statement"></p>  
-      </span>
-      <span class="ext_2_hint" *ngIf="card.extension_2.hint">
-        Hint:
-        <p [innerHTML]="card.extension_2.hint"></p>  
-      </span>
-      <span class="ext_2_answer" *ngIf="card.extension_2.correct_answer">
-        Correct Answer:
-        <p [innerHTML]="card.extension_2.correct_answer"></p>
-      </span>
-      
-      <span class="ext_2_explanation" *ngIf="card.extension_2.explanation">
-        Explanation:
-        <p [innerHTML]="card.extension_2.explanation"></p>
-      </span>
-    </div>
+    <mat-card class="main_version" *ngIf="card.main_version">
+        <mat-card-title>Main Version</mat-card-title>
+        <button mat-raised-button color="primary">Show Hint</button>
+
     
-    <div class="additional_information" *ngIf="card.additional_information">
-      <h2>
-        Additional Information
-      </h2>
-      <span *ngIf="card.additional_information.about">
-        About
-        <p [innerHTML]="card.additional_information.about"></p>  
-      </span>
-      <span *ngIf="card.additional_information.references">
-        References
-        <p [innerHTML]="card.additional_information.references"></p>
-      </span>
-    </div>
+        <span class="main_hint" *ngIf="card.main_version.hint">
+          <mat-card-subtitle > Hint:</mat-card-subtitle>
+          <p [innerHTML]="card.main_version.hint"></p>
+          <button mat-raised-button color="accent">Show Answer</button>
+        </span>
+
+        <span class="main_answer" *ngIf="card.main_version.correct_answer">
+          <mat-card-subtitle> Correct Answer:</mat-card-subtitle>
+          <p [innerHTML]="card.main_version.correct_answer"></p>
+          <button mat-raised-button color="primary">Show Explanation</button>
+
+        </span>
+        <div class="explanation">
+          <span class="main_explanation" *ngIf="card.main_version.explanation">
+            <mat-card-subtitle> Explanation:</mat-card-subtitle>
+            <p [innerHTML]="card.main_version.explanation"></p>
+          </span>
+          <span class="main_instructions" *ngIf="card.main_version.further_instructions">
+            <mat-card-subtitle> Further Instructions:</mat-card-subtitle>
+            <p [innerHTML]="card.main_version.further_instructions"></p>
+          </span>
+          <span class="main_tips" *ngIf="card.main_version.strategy_tips">
+            <mat-card-subtitle> Strategy Tips:</mat-card-subtitle>
+            <p [innerHTML]="card.main_version.strategy_tips"></p>
+          </span>
+        </div>
+      
+        </mat-card>
+   
+    <mat-card class="extension_1" *ngIf="card.extension_1">
+        <mat-card-title>Extension 1</mat-card-title>
+        <span class="ext_1_statement" *ngIf="card.extension_1.statement"> 
+          <mat-card-subtitle> Statement:</mat-card-subtitle>
+        <p [innerHTML]="card.extension_1.statement"></p>
+        </span>
+        <span class="ext_1_hint" *ngIf="card.extension_1.hint">
+          <mat-card-subtitle> Hint:</mat-card-subtitle>
+
+          <p [innerHTML]="card.extension_1.hint"></p>
+        </span>
+        
+        <span class="ext_1_answer" *ngIf="card.extension_1.correct_answer">
+          <mat-card-subtitle> Correct Answer:</mat-card-subtitle>
+          <p>{{card.extension_1.correct_answer}}</p>
+        </span>
+        <span class="ext_1_explanation" *ngIf="card.extension_1.explanation">
+          <mat-card-subtitle> Explanation:</mat-card-subtitle>
+
+          <p [innerHTML]="card.extension_1.explanation"></p>  
+        </span>
+      </mat-card>
+  
+
+    <mat-card class="extension_2" *ngIf="card.extension_2">
+    <mat-card-title>Extension 2</mat-card-title>
+        <span class="ext_2_statement" *ngIf="card.extension_2.statement">
+          <mat-card-subtitle> Statement:</mat-card-subtitle>
+          <p [innerHTML]="card.extension_2.statement"></p>  
+        </span>
+        <span class="ext_2_hint" *ngIf="card.extension_2.hint">
+          <mat-card-subtitle> Hint:</mat-card-subtitle>
+          <p [innerHTML]="card.extension_2.hint"></p>  
+        </span>
+        <span class="ext_2_answer" *ngIf="card.extension_2.correct_answer">
+          <mat-card-subtitle> Correct Answer:</mat-card-subtitle>
+          <p [innerHTML]="card.extension_2.correct_answer"></p>
+        </span>
+        
+        <span class="ext_2_explanation" *ngIf="card.extension_2.explanation">
+          <mat-card-subtitle> Explanation:</mat-card-subtitle>
+          <p [innerHTML]="card.extension_2.explanation"></p>
+        </span>
+    </mat-card>
+   
+    <mat-card>
+      <div class="additional_information" *ngIf="card.additional_information">
+        <mat-card-title>Additonal Information</mat-card-title>
+        <span *ngIf="card.additional_information.about">
+          <mat-card-subtitle> About</mat-card-subtitle>
+
+          <p [innerHTML]="card.additional_information.about"></p>  
+        </span>
+        <span *ngIf="card.additional_information.references">
+          <mat-card-subtitle>References</mat-card-subtitle>
+
+          <p [innerHTML]="card.additional_information.references"></p>
+        </span>
+      </div>
+    </mat-card>
+   
   </div>
  
   </section>
