@@ -22,7 +22,7 @@ export class CardComponent implements OnInit {
   showHintContent: Boolean = false;
   showAnswerContent: Boolean = false;
   showExplanationContent: Boolean = false;
-  extensionsContent: Boolean = false;
+  showExtensionsContent: Boolean = false;
   answer: string;
   durationInSeconds = 5;
 
@@ -58,6 +58,9 @@ export class CardComponent implements OnInit {
   }
   showExplanation() {
     this.showExplanationContent = this.showExplanationContent ? false : true;
+  }
+  showExtension() {
+    this.showExtensionsContent = this.showExtensionsContent ? false : true;
   }
   openDialog(): void {
     const dialogRef = this.dialog.open(AnswerDialogComponent, {

@@ -11,7 +11,7 @@
     <img class="card-image" src="{{'assets/print-cards/' +card.card_value.toLowerCase()+card.card_suit.charAt(0).toLowerCase()+'.png'}}"/>
   <div >
  
-      <button *ngIf="card.main_version.correct_answer" mat-raised-button (click)="openDialog()">Try it out!</button>
+    <button *ngIf="card.main_version.correct_answer" mat-raised-button (click)="openDialog()">Try it out!</button>
     <button mat-raised-button color="primary" (click)="showHint()">{{showHintContent?"Hide Hint": "Show Hint to Answer"}}</button>
 
     <div *ngIf="showHintContent">
@@ -50,8 +50,12 @@
       
         </mat-card>
     </div>
-   
-    <div class="extensions" *ngIf="extensionsContent">
+    <div>
+      Check out more extensions of the puzzle
+    </div>
+    <button mat-raised-button color="accent" (click)="showExtension()">{{showExtensionsContent?"Hide Extensions": "Show Extensions"}}</button>
+
+    <div class="extensions" *ngIf="showExtensionsContent">
     <mat-card class="extension_1" *ngIf="card.extension_1">
         <mat-card-title>Extension 1</mat-card-title>
         <span class="ext_1_statement" *ngIf="card.extension_1.statement"> 

@@ -11,6 +11,7 @@ import { AnswerDialogComponent } from "./components/answer-dialog/answer-dialog.
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import { CardsComponent } from "./components/cards/cards.component";
 import { ScullyLibModule } from "@scullyio/ng-lib";
+import { FooterComponent } from './pages/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { ScullyLibModule } from "@scullyio/ng-lib";
     CardComponent,
     CardsComponent,
     AnswerDialogComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserAnimationsModule,
