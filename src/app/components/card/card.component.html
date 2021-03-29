@@ -10,7 +10,8 @@
   <section>
     <img class="card-image" src="{{'assets/print-cards/' +card.card_value.toLowerCase()+card.card_suit.charAt(0).toLowerCase()+'.png'}}"/>
   <div >
-    <button mat-raised-button>Try it out!</button>
+ 
+      <button *ngIf="card.main_version.correct_answer" mat-raised-button (click)="openDialog()">Try it out!</button>
     <button mat-raised-button color="primary" (click)="showHint()">{{showHintContent?"Hide Hint": "Show Hint to Answer"}}</button>
 
     <div *ngIf="showHintContent">

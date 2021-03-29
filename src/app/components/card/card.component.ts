@@ -1,7 +1,15 @@
-import { Component, OnInit, ViewEncapsulation } from "@angular/core";
+import { Component, Inject, OnInit, ViewEncapsulation } from "@angular/core";
 import { CardService } from "src/app/card.service";
 import { ActivatedRoute } from "@angular/router";
 import { Card } from "src/app/models/card.model";
+import { AnswerDialogComponent } from "../answer-dialog/answer-dialog.component";
+import { MatSnackBar } from "@angular/material/snack-bar";
+
+import {
+  MatDialog,
+  MatDialogRef,
+  MAT_DIALOG_DATA,
+} from "@angular/material/dialog";
 
 @Component({
   selector: "app-card",
@@ -15,8 +23,15 @@ export class CardComponent implements OnInit {
   showAnswerContent: Boolean = false;
   showExplanationContent: Boolean = false;
   extensionsContent: Boolean = false;
+  answer: string;
+  durationInSeconds = 5;
 
-  constructor(public cardService: CardService, private route: ActivatedRoute) {
+  constructor(
+    public _snackbar: MatSnackBar,
+    public cardService: CardService,
+    private route: ActivatedRoute,
+    public dialog: MatDialog
+  ) {
     this.cardService.readAllCards().subscribe((data) => {
       this.cardService
         .getCard(this.route.snapshot.params.slug)
@@ -35,32 +50,35 @@ export class CardComponent implements OnInit {
     const newContent = JSON.parse(updatedContent);
     return newContent as Card;
   }
-  showHint(){
+  showHint() {
     this.showHintContent = this.showHintContent ? false : true;
   }
-  showAnswer(){
+  showAnswer() {
     this.showAnswerContent = this.showAnswerContent ? false : true;
   }
-  showExplanation(){
+  showExplanation() {
     this.showExplanationContent = this.showExplanationContent ? false : true;
-  } 
-  exportCard() {
-    window.print();
-    /*
-    const data = document.getElementById("cardPDF");
-    console.log("id ", data);
-    html2canvas(data).then((canvas) => {
-      const contentDataURL = canvas.toDataURL("image/png");
-      // let pdf = new jspdf("p", "mm", "a4");
-      // pdf.addImage(contentDataURL, "png", 0, 0, 210, 0); a4
-      // pdf.addImage(contentDataURL, "png", 0, 0, 63, 0);  -- deck szie
-
-      //pdf.addImage(contentDataURL, "png", 0, 0, 105, 0); - a6
-
-      let pdf = new jspdf("p", "mm", [63.5, 88.8]);
-      pdf.addImage(contentDataURL, "png", 0, 0, 63, 0);
-      pdf.save(this.card.title);
+  }
+  openDialog(): void {
+    const dialogRef = this.dialog.open(AnswerDialogComponent, {
+      width: "250px",
+      data: { answer: this.answer },
     });
-    */
+
+    dialogRef.afterClosed().subscribe((result) => {
+      console.log("The dialog was closed");
+      this.answer = result;
+      console.log("You chose ", this.answer);
+      if (this.answer === this.card.main_version.correct_answer) {
+        this._snackbar.open("You got it correct! ", "VMC", {
+          duration: 3000,
+          panelClass: ["blue-snackbar"],
+        });
+      } else {
+        this._snackbar.open("You may try again! ", "VMC", {
+          duration: 3000,
+        });
+      }
+    });
   }
 }
