@@ -10,15 +10,20 @@ import { Card } from "src/app/models/card.model";
   encapsulation: ViewEncapsulation.None,
 })
 export class CardComponent implements OnInit {
-
   card: Card;
+  showHintContent: Boolean = false;
+  showAnswerContent: Boolean = false;
+  showExplanationContent: Boolean = false;
+  extensionsContent: Boolean = false;
 
   constructor(public cardService: CardService, private route: ActivatedRoute) {
     this.cardService.readAllCards().subscribe((data) => {
-      this.cardService.getCard(this.route.snapshot.params.slug).subscribe((card) => {
-        this.card = this.replaceImageURLs(card);
-        console.log(this.card)
-      });
+      this.cardService
+        .getCard(this.route.snapshot.params.slug)
+        .subscribe((card) => {
+          this.card = this.replaceImageURLs(card);
+          console.log(this.card);
+        });
     });
   }
 
@@ -30,7 +35,15 @@ export class CardComponent implements OnInit {
     const newContent = JSON.parse(updatedContent);
     return newContent as Card;
   }
-
+  showHint(){
+    this.showHintContent = this.showHintContent ? false : true;
+  }
+  showAnswer(){
+    this.showAnswerContent = this.showAnswerContent ? false : true;
+  }
+  showExplanation(){
+    this.showExplanationContent = this.showExplanationContent ? false : true;
+  } 
   exportCard() {
     window.print();
     /*
