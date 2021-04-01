@@ -2,14 +2,6 @@ import { Component, Inject, OnInit, ViewEncapsulation } from "@angular/core";
 import { CardService } from "src/app/card.service";
 import { ActivatedRoute } from "@angular/router";
 import { Card } from "src/app/models/card.model";
-import { AnswerDialogComponent } from "../answer-dialog/answer-dialog.component";
-import { MatSnackBar } from "@angular/material/snack-bar";
-
-import {
-  MatDialog,
-  MatDialogRef,
-  MAT_DIALOG_DATA,
-} from "@angular/material/dialog";
 
 @Component({
   selector: "app-card",
@@ -26,12 +18,7 @@ export class CardComponent implements OnInit {
   answer: string;
   durationInSeconds = 5;
 
-  constructor(
-    public _snackbar: MatSnackBar,
-    public cardService: CardService,
-    private route: ActivatedRoute,
-    public dialog: MatDialog
-  ) {
+  constructor(public cardService: CardService, private route: ActivatedRoute) {
     this.cardService.readAllCards().subscribe((data) => {
       this.cardService
         .getCard(this.route.snapshot.params.slug)
@@ -61,27 +48,8 @@ export class CardComponent implements OnInit {
   }
   showExtension() {
     this.showExtensionsContent = this.showExtensionsContent ? false : true;
-  }
-  openDialog(): void {
-    const dialogRef = this.dialog.open(AnswerDialogComponent, {
-      width: "250px",
-      data: { answer: this.answer },
-    });
-
-    dialogRef.afterClosed().subscribe((result) => {
-      console.log("The dialog was closed");
-      this.answer = result;
-      console.log("You chose ", this.answer);
-      if (this.answer === this.card.main_version.correct_answer) {
-        this._snackbar.open("You got it correct! ", "VMC", {
-          duration: 3000,
-          panelClass: ["blue-snackbar"],
-        });
-      } else {
-        this._snackbar.open("You may try again! ", "VMC", {
-          duration: 3000,
-        });
-      }
-    });
+    this.showHintContent = false;
+    this.showAnswerContent = false;
+    this.showExplanationContent = false;
   }
 }

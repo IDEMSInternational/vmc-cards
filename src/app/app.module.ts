@@ -7,20 +7,13 @@ import { MaterialModule } from "./material.module";
 import { AppRoutingModule } from "./app-routing.module";
 import { AppComponent } from "./app.component";
 import { CardComponent } from "./components/card/card.component";
-import { AnswerDialogComponent } from "./components/answer-dialog/answer-dialog.component";
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import { CardsComponent } from "./components/cards/cards.component";
 import { ScullyLibModule } from "@scullyio/ng-lib";
-import { FooterComponent } from './pages/footer/footer.component';
+import { FooterComponent } from "./pages/footer/footer.component";
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    CardComponent,
-    CardsComponent,
-    AnswerDialogComponent,
-    FooterComponent,
-  ],
+  declarations: [AppComponent, CardComponent, CardsComponent, FooterComponent],
   imports: [
     BrowserAnimationsModule,
     BrowserModule,
