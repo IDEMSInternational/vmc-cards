@@ -4,6 +4,7 @@ import { ActivatedRoute } from "@angular/router";
 import { Card } from "src/app/models/card.model";
 import { Feedback } from "src/app/models/feedback.model";
 import { FeedbackService } from "src/app/feedback.service";
+import { MatSnackBar } from "@angular/material/snack-bar";
 
 @Component({
   selector: "app-card",
@@ -32,7 +33,8 @@ export class CardComponent implements OnInit {
   constructor(
     public cardService: CardService,
     private route: ActivatedRoute,
-    public feedbackService: FeedbackService
+    public feedbackService: FeedbackService,
+    private _snackBar: MatSnackBar
   ) {
     this.cardService.readAllCards().subscribe((data) => {
       this.cardService
@@ -72,9 +74,14 @@ export class CardComponent implements OnInit {
     this.feedbackService.submitFeedback(this.feedback).subscribe(
       (response) => {
         console.log("response", response);
+        this._snackBar.open("Message successfully sent!", "VMC", {
+          duration: 3000,
+        });
       },
       (error) => {
-        console.error("error caught ");
+        this._snackBar.open("There was an error!", "VMC", {
+          duration: 3000,
+        });
       }
     );
 

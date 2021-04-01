@@ -23,10 +23,10 @@ export class CardService {
     const matchResult = slug.toUpperCase().match(cardRegex);
     if (matchResult) {
       let suitMap = {
-        "C": "club",
-        "S": "spade",
-        "H": "heart",
-        "D": "diamond"
+        C: "club",
+        S: "spade",
+        H: "heart",
+        D: "diamond",
       };
       let value = matchResult[1];
       let suit = suitMap[matchResult[2]];
@@ -38,11 +38,14 @@ export class CardService {
       }
     }
     const url = `assets/card-content/cards/${actualSlug}.json`;
-    return this.http.get(url)
-      .pipe(map((cardContent) => {
-        const cardMetadata = this.cards.find((cardMetadata) => cardMetadata.slug === actualSlug);
+    return this.http.get(url).pipe(
+      map((cardContent) => {
+        const cardMetadata = this.cards.find(
+          (cardMetadata) => cardMetadata.slug === actualSlug
+        );
         return { ...cardContent, ...cardMetadata };
-      }));
+      })
+    );
   }
 
   public readAllCards(): Observable<CardMetadata[]> {

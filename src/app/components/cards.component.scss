@@ -1,5 +1,7 @@
 $color: #c0c0c0;
-$background: #f0f0f0;
+//$background: #f0f0f0;
+$background: linear-gradient(#e66465, #9198e5);;
+
 $gutter: 20px;
 $font-size: 12px;
 
@@ -161,7 +163,7 @@ body {
   position: absolute;
   top: 0;
   right: 0%;*/
-  margin-top: 5px;
+  margin:1em;
   width: 271px;
   height: 442px;
 }
@@ -280,6 +282,14 @@ div p {
 .Benford_s_Law_image_2{
   width: 50%;
 }
+.mat-card{
+  background: lavender;
+}
 .content-title{
-//  max-width: 400px;
+
+margin:1em;
+
+}
+.main_version_statements{
+  margin: 1em;
 }

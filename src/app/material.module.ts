@@ -11,6 +11,7 @@ import { MatSelectModule } from "@angular/material/select";
 import { MatInputModule } from "@angular/material/input";
 import { MatFormFieldModule } from "@angular/material/form-field";
 import { MatSnackBarModule } from "@angular/material/snack-bar";
+import { MatExpansionModule } from "@angular/material/expansion";
 
 @NgModule({
   exports: [
@@ -25,6 +26,7 @@ import { MatSnackBarModule } from "@angular/material/snack-bar";
     MatInputModule,
     MatFormFieldModule,
     MatSnackBarModule,
+    MatExpansionModule,
   ],
 })
 export class MaterialModule {}
