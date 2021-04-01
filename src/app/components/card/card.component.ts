@@ -2,6 +2,8 @@ import { Component, Inject, OnInit, ViewEncapsulation } from "@angular/core";
 import { CardService } from "src/app/card.service";
 import { ActivatedRoute } from "@angular/router";
 import { Card } from "src/app/models/card.model";
+import { Feedback } from "src/app/models/feedback.model";
+import { FeedbackService } from "src/app/feedback.service";
 
 @Component({
   selector: "app-card",
@@ -11,6 +13,15 @@ import { Card } from "src/app/models/card.model";
 })
 export class CardComponent implements OnInit {
   card: Card;
+  //feedback: Feedback;
+  public feedback: Feedback = {
+    name: "",
+    country: "",
+    email: "",
+    feedback: "",
+    cardtitle: "",
+  };
+
   showHintContent: Boolean = false;
   showAnswerContent: Boolean = false;
   showExplanationContent: Boolean = false;
@@ -18,7 +29,11 @@ export class CardComponent implements OnInit {
   answer: string;
   durationInSeconds = 5;
 
-  constructor(public cardService: CardService, private route: ActivatedRoute) {
+  constructor(
+    public cardService: CardService,
+    private route: ActivatedRoute,
+    public feedbackService: FeedbackService
+  ) {
     this.cardService.readAllCards().subscribe((data) => {
       this.cardService
         .getCard(this.route.snapshot.params.slug)
@@ -51,5 +66,18 @@ export class CardComponent implements OnInit {
     this.showHintContent = false;
     this.showAnswerContent = false;
     this.showExplanationContent = false;
+  }
+  onSubmit() {
+    this.feedback.cardtitle = this.card.title;
+    this.feedbackService.submitFeedback(this.feedback).subscribe(
+      (response) => {
+        console.log("response", response);
+      },
+      (error) => {
+        console.error("error caught ");
+      }
+    );
+
+    // console.log("You submitted", JSON.stringify(this.feedback));
   }
 }
