@@ -1,0 +1,36 @@
+.footer{
+    background: #673ab7;
+    color: #fff;
+    padding: 35px;
+    font-size: 12px;
+    margin-top: 6px;
+}
+
+@media screen and (max-width: 884px){
+    .footer-list{
+        flex-direction: column;
+    }
+}
+.footer-list{
+    align-items: center;
+    display: flex;
+    flex-flow: row wrap;
+    padding: 8px;
+}
+.footer-logo{
+    flex: 1;
+}
+.footer-version{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1
+}
+.footer-copyright{
+    display: flex;
+    flex: 1;
+    justify-content: flex-end;
+    flex-direction: column;
+    min-width: 225px;
+    margin-top: 16px;
+}

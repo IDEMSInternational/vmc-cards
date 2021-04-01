@@ -1,7 +1,10 @@
-import { Component, OnInit, ViewEncapsulation } from "@angular/core";
+import { Component, Inject, OnInit, ViewEncapsulation } from "@angular/core";
 import { CardService } from "src/app/card.service";
 import { ActivatedRoute } from "@angular/router";
 import { Card } from "src/app/models/card.model";
+import { Feedback } from "src/app/models/feedback.model";
+import { FeedbackService } from "src/app/feedback.service";
+import { MatSnackBar } from "@angular/material/snack-bar";
 
 @Component({
   selector: "app-card",
@@ -10,14 +13,36 @@ import { Card } from "src/app/models/card.model";
   encapsulation: ViewEncapsulation.None,
 })
 export class CardComponent implements OnInit {
-
   card: Card;
+  //feedback: Feedback;
+  public feedback: Feedback = {
+    name: "",
+    country: "",
+    email: "",
+    feedback: "",
+    cardtitle: "",
+  };
 
-  constructor(public cardService: CardService, private route: ActivatedRoute) {
+  showHintContent: Boolean = false;
+  showAnswerContent: Boolean = false;
+  showExplanationContent: Boolean = false;
+  showExtensionsContent: Boolean = false;
+  answer: string;
+  durationInSeconds = 5;
+
+  constructor(
+    public cardService: CardService,
+    private route: ActivatedRoute,
+    public feedbackService: FeedbackService,
+    private _snackBar: MatSnackBar
+  ) {
     this.cardService.readAllCards().subscribe((data) => {
-      this.cardService.getCard(this.route.snapshot.params.slug).subscribe((card) => {
-        this.card = this.replaceImageURLs(card);
-      });
+      this.cardService
+        .getCard(this.route.snapshot.params.slug)
+        .subscribe((card) => {
+          this.card = this.replaceImageURLs(card);
+          console.log(this.card);
+        });
     });
   }
 
@@ -27,27 +52,39 @@ export class CardComponent implements OnInit {
     const originalContent = JSON.stringify(cardContent);
     const updatedContent = originalContent.replace(/\images/g, "assets/images");
     const newContent = JSON.parse(updatedContent);
-    console.log("contentx", newContent);
     return newContent as Card;
   }
+  showHint() {
+    this.showHintContent = this.showHintContent ? false : true;
+  }
+  showAnswer() {
+    this.showAnswerContent = this.showAnswerContent ? false : true;
+  }
+  showExplanation() {
+    this.showExplanationContent = this.showExplanationContent ? false : true;
+  }
+  showExtension() {
+    this.showExtensionsContent = this.showExtensionsContent ? false : true;
+    this.showHintContent = false;
+    this.showAnswerContent = false;
+    this.showExplanationContent = false;
+  }
+  onSubmit() {
+    this.feedback.cardtitle = this.card.title;
+    this.feedbackService.submitFeedback(this.feedback).subscribe(
+      (response) => {
+        console.log("response", response);
+        this._snackBar.open("Message successfully sent!", "VMC", {
+          duration: 3000,
+        });
+      },
+      (error) => {
+        this._snackBar.open("There was an error!", "VMC", {
+          duration: 3000,
+        });
+      }
+    );
 
-  exportCard() {
-    window.print();
-    /*
-    const data = document.getElementById("cardPDF");
-    console.log("id ", data);
-    html2canvas(data).then((canvas) => {
-      const contentDataURL = canvas.toDataURL("image/png");
-      // let pdf = new jspdf("p", "mm", "a4");
-      // pdf.addImage(contentDataURL, "png", 0, 0, 210, 0); a4
-      // pdf.addImage(contentDataURL, "png", 0, 0, 63, 0);  -- deck szie
-
-      //pdf.addImage(contentDataURL, "png", 0, 0, 105, 0); - a6
-
-      let pdf = new jspdf("p", "mm", [63.5, 88.8]);
-      pdf.addImage(contentDataURL, "png", 0, 0, 63, 0);
-      pdf.save(this.card.title);
-    });
-    */
+    // console.log("You submitted", JSON.stringify(this.feedback));
   }
 }

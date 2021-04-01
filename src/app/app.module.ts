@@ -1,5 +1,6 @@
 import { BrowserModule } from "@angular/platform-browser";
 import { NgModule } from "@angular/core";
+import { FormsModule, ReactiveFormsModule } from "@angular/forms";
 import { HttpClientModule } from "@angular/common/http";
 import { MaterialModule } from "./material.module";
 
@@ -8,15 +9,18 @@ import { AppComponent } from "./app.component";
 import { CardComponent } from "./components/card/card.component";
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import { CardsComponent } from "./components/cards/cards.component";
-import { ScullyLibModule } from '@scullyio/ng-lib';
+import { ScullyLibModule } from "@scullyio/ng-lib";
+import { FooterComponent } from "./pages/footer/footer.component";
 
 @NgModule({
-  declarations: [AppComponent, CardComponent, CardsComponent],
+  declarations: [AppComponent, CardComponent, CardsComponent, FooterComponent],
   imports: [
+    BrowserAnimationsModule,
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    BrowserAnimationsModule,
+    FormsModule,
+    ReactiveFormsModule,
     MaterialModule,
     ScullyLibModule,
   ],
