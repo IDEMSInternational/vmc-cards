@@ -4,7 +4,7 @@
     "type": "counting"
   },
   "main_version": {
-    "statement": "<p>There are 5 different paths you could take to get from home to school. In a week (from Monday to Friday) you would like to try a different path every day. In how many ways can you do this? </p>",
+    "statement": "<p>There are 5 different paths you could take to get from home to school. In a week (from Monday to Friday) you would like to try a different path every day. In how many different ways can you organise your walk to school for the week? </p>",
     "correct_answer": "120",
     "hint": "<p>Think about how many options you have to select the first path, then how many you have for the second and so on. Be careful that you can not choose the same path twice in a week.</p>",
     "explanation": "<p>You have 5 possible days of the week and you would like to have one different path per day. ON the first day you have a choice of 5 paths. On the second day, you only have 4 paths left to choose from because you can't take the one you took on Monday. On the third day you have 3 to choose from and so on. The solution is therefore 5\u00d74\u00d73\u00d72\u00d71 =120. This is counting how many ways you can order 5 objects (paths) in 5 positions (days of the week). This is a problem on <em>permutations</em> (without repetition). </p>\n<p>The mathematical symbol ! is called <em>factorial</em> and represents multiplying by decreasing integers until you reach 1. So 5\u00d74\u00d73\u00d72\u00d71 can be written as 5!  </p>"
@@ -23,6 +23,9 @@
   },
   "additional_information": {
     "about": "<p>Factorials were used to count permutations at least as early as the 12th century, by Indian scholars. The notation n! was introduced by the French mathematician Christian Kramp in 1808.</p>\n<p>Factorials get big very quickly. 5! = 120, but 20! = 2432902008176640000.</p>",
-    "references": ""
+    "references": [
+      "<p>https://en.wikipedia.org/wiki/Factorial</p>",
+      "<p>https://www.mathsisfun.com/numbers/factorial.html</p>"
+    ]
   }
 }
