@@ -155,16 +155,31 @@
 
           <p [innerHTML]="card.additional_information.about"></p>  
         </span>
-        <span *ngIf="card.additional_information.references">
-          <mat-card-subtitle>References</mat-card-subtitle>
-
-          <p [innerHTML]="card.additional_information.references"></p>
-        </span>
       </div>
     </mat-card>
    </div>
   </div>
+    <div class="references">
+      <button mat-raised-button color="accent" (click)="showReferences()">
+        <mat-icon>library_books</mat-icon>
+        {{showReferencesContent?"Hide References": "Show References"}}
+      </button>
+      <div *ngIf="showReferencesContent">
+        <span *ngIf="card.additional_information.references">
+          <mat-card>
+            <mat-card-subtitle>
+              References
+            </mat-card-subtitle>
+            <span *ngFor="let reference of card.additional_information.references">
+              <p [innerHTML]="reference"></p>
+            </span>
+          </mat-card>
+         
+        </span>
+      </div>
   
+    </div>
+
 
   </section>
   <section class="feedback">

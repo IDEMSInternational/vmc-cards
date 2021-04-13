@@ -27,6 +27,7 @@ export class CardComponent implements OnInit {
   showAnswerContent: Boolean = false;
   showExplanationContent: Boolean = false;
   showExtensionsContent: Boolean = false;
+  showReferencesContent: Boolean = false;
   answer: string;
   durationInSeconds = 5;
 
@@ -62,6 +63,9 @@ export class CardComponent implements OnInit {
   }
   showExplanation() {
     this.showExplanationContent = this.showExplanationContent ? false : true;
+  }
+  showReferences(){
+    this.showReferencesContent = this.showReferencesContent ? false : true;
   }
   showExtension() {
     this.showExtensionsContent = this.showExtensionsContent ? false : true;
