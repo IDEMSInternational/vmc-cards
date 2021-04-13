@@ -23,6 +23,9 @@
   },
   "additional_information": {
     "about": "<p>The mean is one way of describing a whole set of data with just one number. The median is another way describing the set of data with one number. If the puzzle had asked \"The median of 16 different positive integers is 16. What is the greatest possible value that any of these integers could have?\", then there would be no solution as you could choose any number as large as you like for the biggest number, as the value of the median of 16 numbers depends only on the eight and ninth biggest numbers! </p>",
-    "references": ""
+    "references": [
+      "<p><a href=\"https://www.mathsisfun.com/mean.html\">https://www.mathsisfun.com/mean.html</a></p>",
+      "<p><a href=\"https://www.mathsisfun.com/median.html\">https://www.mathsisfun.com/median.html</a> </p>"
+    ]
   }
 }
