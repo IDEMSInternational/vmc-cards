@@ -24,7 +24,7 @@
   "additional_information": {
     "about": "<p>There is a special name for the operation of dividing by a number and finding the remainder in mathematics - it is called <strong>mod</strong>ular arithmetic. 47 mod 5 = 2 because when you divide 47 by 5 you have a remainder of 2. It is a powerful technique in mathematics to prove facts about numbers. We use it in everyday life when we tell the time with a 24 hour clock. </p>\n<p>(18 + 8) mod 24 = 2 or in other words 8 hours after 6pm is 2am! </p>",
     "references": [
-      "<p>https://betterexplained.com/articles/fun-with-modular-arithmetic/</p>"
+      "<p><a href=\"https://betterexplained.com/articles/fun-with-modular-arithmetic/\" target=”_blank”>https://betterexplained.com/articles/fun-with-modular-arithmetic/</a></p>"
     ]
   }
 }

@@ -24,7 +24,7 @@
   "additional_information": {
     "about": "<p>The sequence of numbers we have discovered 1, 2, 5, 14, 42, ... are called <em>Catalan numbers</em> and they are crucial in the world of combinatorics. There is evidence of their use in China as far back as 1730, but they are named after the Belgian mathematician Eug\u00e8ne Charles Catalan (1814\u20131894).</p>",
     "references": [
-      "<p>https://en.wikipedia.org/wiki/Catalan_number</p>"
+      "<p><a href=\"https://en.wikipedia.org/wiki/Catalan_number\" target=”_blank”>https://en.wikipedia.org/wiki/Catalan_number</a></p>"
     ]
   }
 }

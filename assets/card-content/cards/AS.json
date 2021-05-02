@@ -14,8 +14,8 @@
   "additional_information": {
     "about": "<p>This game is interesting because it is the same as the game tic-tac-toe/naughts and crosses. The technical term for this is <em>isomorphic. </em>In mathematics it is often helpful, when faced with a new problem, to relate it to one you already know how to solve.</p>",
     "references": [
-      "<p>https://www.ms.uky.edu/~lee/ma310sp15/gameoffifteen.pdf</p>",
-      "<p>https://en.wikipedia.org/wiki/Number_Scrabble</p>"
+      "<p><a href=\"https://www.ms.uky.edu/~lee/ma310sp15/gameoffifteen.pdf\" target=”_blank”>https://www.ms.uky.edu/~lee/ma310sp15/gameoffifteen.pdf</a></p>",
+      "<p><a href=\"https://en.wikipedia.org/wiki/Number_Scrabble\" target=”_blank”>https://en.wikipedia.org/wiki/Number_Scrabble</a></p>"
     ]
   }
 }
