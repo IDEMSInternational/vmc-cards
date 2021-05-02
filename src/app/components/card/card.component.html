@@ -171,6 +171,7 @@
               References
             </mat-card-subtitle>
             <span *ngFor="let reference of card.additional_information.references">
+              <a [href]="reference"></a>
               <p [innerHTML]="reference"></p>
             </span>
           </mat-card>

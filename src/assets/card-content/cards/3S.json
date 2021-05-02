@@ -14,8 +14,8 @@
   "additional_information": {
     "about": "<p>21 is a simple version of the set of games, Nim. It is sometimes called a Mis\u00e8re game - meaning a game that you play to lose. It is thought to have originated in China and is first mentioned in European history at the start of the 16\u1d57\u02b0 century. The game was originally played with 21 stones, and you have to pick 1, 2, or 3 stones at a time and the loser is the last one to pick a stone.  </p>",
     "references": [
-      "<p>https://en.wikipedia.org/wiki/Nim</p>",
-      "<p>https://en.wikipedia.org/wiki/Nim#The_21_game</p>"
+      "<p><a href=\"https://en.wikipedia.org/wiki/Nim\" target=”_blank”>https://en.wikipedia.org/wiki/Nim</a> </p>",
+      "<p><a href=\"https://en.wikipedia.org/wiki/Nim#The_21_game\" target=”_blank”>https://en.wikipedia.org/wiki/Nim#The_21_game</a> </p>"
     ]
   }
 }

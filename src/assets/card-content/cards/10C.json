@@ -18,10 +18,10 @@
   "additional_information": {
     "about": "<p>Alex Bellos featured this puzzle in his column in the Guardian newspaper in the UK after hearing about it from maths juggler Colin Wright, who heard it from puzzle maven Peter Winkler.</p>",
     "references": [
-      "<p>https://www.theguardian.com/science/2019/oct/21/can-you-solve-it-the-four-points-two-distances-problem</p>",
-      "<p><a href=\"https://www.solipsys.co.uk/new/FourPointsTwoDistancesProof.html?RSS\">https://www.solipsys.co.uk/new/FourPointsTwoDistancesProof.html?RSS</a></p>",
-      "<p><a href=\"http://datagenetics.com/blog/october12019/index.html\">http://datagenetics.com/blog/october12019/index.html</a></p>",
-      "<p>https://arxiv.org/pdf/math/0304192.pdf</p>"
+      "<p><a href=\"https://arxiv.org/pdf/math/0304192.pdf\" target=”_blank”>https://arxiv.org/pdf/math/0304192.pdf</a> </p>",
+      "<p><a href=\"https://www.theguardian.com/science/2019/oct/21/can-you-solve-it-the-four-points-two-distances-problem\" target=”_blank”>https://www.theguardian.com/science/2019/oct/21/can-you-solve-it-the-four-points-two-distances-problem</a> </p>",
+      "<p><a href=\"https://www.solipsys.co.uk/new/FourPointsTwoDistancesProof.html?RSS\" target=”_blank”>https://www.solipsys.co.uk/new/FourPointsTwoDistancesProof.html?RSS</a> </p>",
+      "<p><a href=\"http://datagenetics.com/blog/october12019/index.html\" target=”_blank”>http://datagenetics.com/blog/october12019/index.html</a> </p>"
     ]
   }
 }

@@ -16,8 +16,8 @@
   "additional_information": {
     "about": "<p>The proof of the four colour theorem was famously tricky, and comes from graph theory, where mathematicians investigate an equivalent problem of colouring vertices of a network so that no edge has endpoints the same colour. The original four-colour proof was attempted by<a href=\"https://en.wikipedia.org/wiki/Alfred_Kempe\"> </a>Alfred Kempe in 1879, but unfortunately Percy John Heawood found an error 11 years later. However his work was not useless, as Percy was able to prove the five-colour theorem (that one can colour a map with no two adjacent regions the sample colour using at most 5 colours) based on Kempe's work. The four colour theorem was finally proved in 1976 by Kenneth Appel, Wolfgang Haken, and John Koch using a computer to check it. This was the first major theorem to be proved using a computer. They checked around 1500 configurations using about 1200 hours of computer time. Some people were sceptical about a proof using a computer but independent verification soon convinced everyone that the four colour theorem had finally been proved.</p>",
     "references": [
-      "<p>https://mathshistory.st-andrews.ac.uk/HistTopics/The_four_colour_theorem/</p>",
-      "<p>https://www.mathsisfun.com/activity/coloring.html</p>"
+      "<p><a href=\"https://mathshistory.st-andrews.ac.uk/HistTopics/The_four_colour_theorem\" target=”_blank”>https://mathshistory.st-andrews.ac.uk/HistTopics/The_four_colour_theorem</a> </p>",
+      "<p><a href=\"https://www.mathsisfun.com/activity/coloring.html\" target=”_blank”>https://www.mathsisfun.com/activity/coloring.html</a> </p>"
     ]
   }
 }

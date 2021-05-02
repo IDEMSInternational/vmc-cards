@@ -14,8 +14,8 @@
   "additional_information": {
     "about": "<p>These types of games are often called Patience or Solitaire. Patience because you need a lot of patience to try and win, and Solitaire because you can play them on your own. Although many variations of Patience are down to chance, it is interesting to use mathematics to analyse the probability of winning.</p>",
     "references": [
-      "<p>https://nrich.maths.org/1194</p>",
-      "<p>https://www.solsuite.com/games/elevens.htm</p>"
+      "<p><a href=\"https://nrich.maths.org/1194\" target=”_blank”>https://nrich.maths.org/1194</a> </p>",
+      "<p><a href=\"https://www.solsuite.com/games/elevens.htm\" target=”_blank”>https://www.solsuite.com/games/elevens.htm</a> </p>"
     ]
   }
 }

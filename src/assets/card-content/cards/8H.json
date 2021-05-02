@@ -16,7 +16,7 @@
   "additional_information": {
     "about": "<p>Interestingly there are 4260 left-truncatable primes but only 83 right-truncatable primes. If you repeatedly remove the first and last digit of a prime number and it stays prime, it is called a left-and-right-truncatable prime. There are 920720315 of those!</p>",
     "references": [
-      "<p>https://en.wikipedia.org/wiki/Truncatable_prime</p>"
+      "<p><a href=\"https://en.wikipedia.org/wiki/Truncatable_prime\" target=”_blank”>https://en.wikipedia.org/wiki/Truncatable_prime</a> </p>"
     ]
   }
 }

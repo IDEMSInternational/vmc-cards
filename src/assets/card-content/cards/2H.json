@@ -16,8 +16,9 @@
   "additional_information": {
     "about": "<p>D. R. Kaprekar (1905 - 1986) was an Indian school maths teacher who loved playing with numbers. He discovered a number of results in number theory and described various properties of numbers.</p>",
     "references": [
-      "<p><a href=\"https://en.wikipedia.org/wiki/D._R._Kaprekar\">https://en.wikipedia.org/wiki/D._R._Kaprekar</a></p>",
-      "<p>https://plus.maths.org/content/mysterious-number-6174</p>"
+      "<p><a href=\"https://en.wikipedia.org/wiki/D._R._Kaprekar\" target=”_blank”>https://en.wikipedia.org/wiki/D._R._Kaprekar</a></p>",
+      "<p><a href=\"https://plus.maths.org/content/mysterious-number-6174\" target=”_blank”>https://plus.maths.org/content/mysterious-number-6174</a> </p>"
+
     ]
   }
 }

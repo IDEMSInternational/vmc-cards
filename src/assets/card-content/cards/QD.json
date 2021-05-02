@@ -24,9 +24,9 @@
   "additional_information": {
     "about": "<p>The sequence of numbers in this puzzle are part of the Fibonacci Sequence sequence: </p>\n<p>0, 1, 1, 2, 3, 5, 8, 13, 21, 34,... It is easy to find the next number by adding the previous two numbers, but you can also find the n\u1d57\u02b0 Fibonacci number in the sequence directly using this formula:</p>\n<p><!-- LaTeX Start -->$$F_n = \\frac{1}{\\sqrt{5}}\\left[ \\left(\\frac{1+\\sqrt{5}}{2}\\right)^{n+1} - \\left(\\frac{1-\\sqrt{5}}{2}\\right)^{n+1}\\right]$$ <!-- LaTeX End --><!-- F\u2099 = (1 \u2215 \u221a5)\u00d7( ((1 + \u221a5) \u2215 2)\u207f\u207a\u00b9 - ((1 - \u221a5) \u2215 2)\u207f\u207a\u00b9 ) --></p>",
     "references": [
-      "<p>http://datagenetics.com/blog/june52020/index.html</p>",
-      "<p><a href=\"http://datagenetics.com/blog/october22015/index.html\">http://datagenetics.com/blog/october22015/index.html</a></p>",
-      "<p>https://www.mathsisfun.com/numbers/fibonacci-sequence.html</p>"
+      "<p><a href=\"http://datagenetics.com/blog/june52020/index.html\" target=”_blank”>http://datagenetics.com/blog/june52020/index.html</a></p>",
+      "<p><a href=\"https://www.mathsisfun.com/numbers/fibonacci-sequence.html\" target=”_blank”>https://www.mathsisfun.com/numbers/fibonacci-sequence.html</a></p>",
+      "<p><a href=\"http://datagenetics.com/blog/october22015/index.html\" target=”_blank”>http://datagenetics.com/blog/october22015/index.html</a></p>"
     ]
   }
 }

@@ -18,7 +18,7 @@
   "additional_information": {
     "about": "<p>A version of this problem was originally solved by Leonard Euler. In a city consisting of 4 islands linked by bridges, he wondered if it is possible to go for a walk and cross each bridge exactly once. If you draw a vertex for each island, and a line between two vertices for each bridge, you get a drawing like in this puzzle.</p>",
     "references": [
-      "<p>https://en.wikipedia.org/wiki/Seven_Bridges_of_K%C3%B6nigsberg</p>"
+      "<p><a href=\"https://en.wikipedia.org/wiki/Seven_Bridges_of_K%C3%B6nigsberg\" target=”_blank”>https://en.wikipedia.org/wiki/Seven_Bridges_of_K%C3%B6nigsberg</a> </p>"
     ]
   }
 }
