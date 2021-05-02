@@ -24,7 +24,7 @@
   "additional_information": {
     "about": "<p>This puzzle is all about finding the number of ways of choosing r items from a choice of n items when the order doesn't matter. The mathematical word for this is <strong>combinations</strong>, and there is a formula for finding them: \u207fC\u1d63 = n! \u2215 (r!\u00d7(n - r)!)</p>\n<p>In this formula n! = n\u00d7(n - 1)\u00d7(n - 2)\u00d7...\u00d71.</p>",
     "references": [
-      "<p>https://www.mathsisfun.com/combinatorics/combinations-permutations.html</p>"
+      "<p><a href=\"https://www.mathsisfun.com/combinatorics/combinations-permutations.html\" target=”_blank”>https://www.mathsisfun.com/combinatorics/combinations-permutations.html</a> </p>"      
     ]
   }
 }

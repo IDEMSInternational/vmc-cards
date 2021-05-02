@@ -24,8 +24,8 @@
   "additional_information": {
     "about": "<p>Combinatorics is an area of mathematics primarily concerned with counting. Two big aspects of combinatorics are finding combinations and permutations. For combinations the order does not matter - like in our football example we didn't mind which order the away team scored the goals. For permutations the order does matter - for example there are six ways to arrange the digits 123.</p>",
     "references": [
-      "<p><a href=\"https://www.mathsisfun.com/combinatorics/combinations-permutations.html\">https://www.mathsisfun.com/combinatorics/combinations-permutations.html</a></p>",
-      "<p>https://betterexplained.com/articles/easy-permutations-and-combinations/</p>"
+      "<p><a href=\"https://www.mathsisfun.com/combinatorics/combinations-permutations.html\" target=”_blank”>https://www.mathsisfun.com/combinatorics/combinations-permutations.html</a></p>",
+      "<p><a href=\"https://betterexplained.com/articles/easy-permutations-and-combinations\" target=”_blank”>https://betterexplained.com/articles/easy-permutations-and-combinations</a> </p>"
     ]
   }
 }

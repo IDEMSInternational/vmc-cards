@@ -16,9 +16,9 @@
   "additional_information": {
     "about": "<p>The formula for the n\u1d57\u02b0 triangular number is also exactly equal to the summation 1 + 2 + 3 + \u2026 + n and so it is a quick way to add up lists of consecutive numbers! This formula was written down by the Irish monk Dicuil in about 816AD but was possibly already known to the Pythagoreans in the 5th century BC.</p>",
     "references": [
-      "<p><a href=\"https://www.geogebra.org/m/ZXAP0QPv\">https://www.geogebra.org/m/ZXAP0QPv</a> </p>",
-      "<p><a href=\"https://nrich.maths.org/2274\">https://nrich.maths.org/2274</a></p>",
-      "<p><a href=\"https://en.wikipedia.org/wiki/Triangular_number#Applications\">https://en.wikipedia.org/wiki/Triangular_number#Applications</a></p>"
+      "<p><a href=\"https://www.geogebra.org/m/ZXAP0QPv\" target=”_blank”>https://www.geogebra.org/m/ZXAP0QPv</a> </p>",
+      "<p><a href=\"https://nrich.maths.org/2274\" target=”_blank”>https://nrich.maths.org/2274</a></p>",
+      "<p><a href=\"https://en.wikipedia.org/wiki/Triangular_number#Applications\" target=”_blank”>https://en.wikipedia.org/wiki/Triangular_number#Applications</a></p>"
     ]
   }
 }

@@ -14,10 +14,11 @@
   "additional_information": {
     "about": "<p>The Sim pencil game was invented in 1969 by Gustavus Simmons, a cryptographer, who described it in the Journal of Recreational Mathematics. Frank P. Ramsey proved that there always has to be a winner in this game by the \"Theorem on Friends and Strangers\". He showed that on completing all the edges of the graph, there must be one triangle that is all the same colour.</p>",
     "references": [
-      "<p>https://www.whatdowedoallday.com/sim-pencil-game/</p>",
-      "<p><a href=\"http://web.math.ucsb.edu/~padraic/ucsb_2013_14/mathcs103_s2014/images/SIM_game.pdf\">http://web.math.ucsb.edu/~padraic/ucsb_2013_14/mathcs103_s2014/images/SIM_game.pdf</a></p>",
-      "<p><a href=\"https://nrich.maths.org/2526\">https://nrich.maths.org/2526</a></p>",
-      "<p>https://en.wikipedia.org/wiki/Theorem_on_friends_and_strangers</p>"
+      "<p><a href=\"https://www.whatdowedoallday.com/sim-pencil-game\" target=”_blank”>https://www.whatdowedoallday.com/sim-pencil-game</a> </p>",
+      "<p><a href=\"http://web.math.ucsb.edu/~padraic/ucsb_2013_14/mathcs103_s2014/images/SIM_game.pdf\" target=”_blank”>http://web.math.ucsb.edu/~padraic/ucsb_2013_14/mathcs103_s2014/images/SIM_game.pdf</a> </p>",
+      "<p><a href=\"https://nrich.maths.org/2526\" target=”_blank”>https://nrich.maths.org/2526</a> </p>",
+      "<p><a href=\"https://en.wikipedia.org/wiki/Theorem_on_friends_and_strangers\" target=”_blank”>https://en.wikipedia.org/wiki/Theorem_on_friends_and_strangers</a> </p>"
+
     ]
   }
 }

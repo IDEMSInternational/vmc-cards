@@ -16,8 +16,8 @@
   "additional_information": {
     "about": "<p>This problem is not a paradox but it is counter-intuitive. The number of people needed seems surprisingly small, perhaps because we imagine ourselves as one of the people in the room and think of only 22 possibilities for a match, rather than thinking of the 253 different pairs of people in the room. </p>\n<p>You can extend the birthday problem - you would only need 88 people to have a greater than 50% chance of 3 people sharing a birthday.</p>\n<p>Have you experienced a surprising coincidence in your life? </p>\n<p>Coincidences like meeting someone with exactly the same birthday as you are unlikely events on their own. However, as with the birthday problem, the number of events can increase exponentially meaning that in a group or over time it is more likely to have coincidences than not!</p>\n<p>If you haven't had a coincidence yet don't worry. If you keep looking it's unlikely that nothing unlikely will ever happen to you! </p>",
     "references": [
-      "<p>https://betterexplained.com/articles/understanding-the-birthday-paradox/</p>",
-      "<p>https://oeis.org/A014088</p>"
+      "<p><a href=\"https://betterexplained.com/articles/understanding-the-birthday-paradox/\" target=”_blank”>https://betterexplained.com/articles/understanding-the-birthday-paradox/</a></p>",
+      "<p><a href=\"https://oeis.org/A014088\" target=”_blank”>https://oeis.org/A014088</a></p>"
     ]
   }
 }

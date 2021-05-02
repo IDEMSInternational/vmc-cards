@@ -14,10 +14,9 @@
   "additional_information": {
     "about": "<p>The number 24 is used because it has so many factors. However, an analysis of all the possible combinations of 4 cards shows that the number 2 would have been the best target number! 99.19% of the combinations could be solved, compared to 80.20% for 24. If you are allowed to use factorials (e.g. 3! = 3\u00d72\u00d71 = 6), then you can solve many more combinations for 24.</p>",
     "references": [
-      "<p>https://nrich.maths.org/7669</p>",
-      "<p><a href=\"https://nrich.maths.org/1262\">https://nrich.maths.org/1262</a></p>",
-      "<p><a href=\"http://www.ijastnet.com/journals/Vol_1_No_5_September_2011/20.pdf\">http://www.ijastnet.com/journals/Vol_1_No_5_September_2011/20.pdf</a></p>",
-      "<p>https://gottfriedville.net/games/24/index.shtml</p>"
+      "<p><a href=\"https://nrich.maths.org/7669\" target=”_blank”>https://nrich.maths.org/7669</a> </p>",
+      "<p><a href=\"https://nrich.maths.org/1262\" target=”_blank”>https://nrich.maths.org/1262</a> </p>",
+      "<p><a href=\"https://gottfriedville.net/games/24/index.shtml\" target=”_blank”>https://gottfriedville.net/games/24/index.shtml</a> </p>"
     ]
   }
 }

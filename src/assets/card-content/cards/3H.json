@@ -16,8 +16,8 @@
   "additional_information": {
     "about": "<p>People have used computers to try and find another palindromic number whose cube root is not palindromic but no one has found one. This might be because there exists one that is bigger than the numbers that have been tested so far, or it might be that no more exist. </p>",
     "references": [
-      "<p>https://proofwiki.org/wiki/Sequence_of_Palindromic_Cubes</p>",
-      "<p>https://oeis.org/</p>"
+      "<p><a href=\"https://oeis.org/\" target=”_blank”>https://oeis.org/</a> </p>",
+      "<p><a href=\"https://proofwiki.org/wiki/Sequence_of_Palindromic_Cubes\" target=”_blank”>https://proofwiki.org/wiki/Sequence_of_Palindromic_Cubes</a> </p>"
     ]
   }
 }
