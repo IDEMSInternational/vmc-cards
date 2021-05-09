@@ -10,11 +10,23 @@
   <section>
     <img class="card-image" src="{{'assets/print-cards/' +card.card_value.toLowerCase()+card.card_suit.charAt(0).toLowerCase()+'.png'}}"/>
   
-  
-    <div class="main_version_statements">   
+    <!--
+   <div>
+      <button mat-raised-button color="primary" (click)="showExtension1()">Show Extension 1</button>
+      <button mat-raised-button color="primary" (click)="showExtension2()">Show Extension 2</button>
+    </div>
+    -->
+ 
+
+   <!--
+<button mat-raised-button color="primary" (click)="showMain()" >{{showMainContent?"Show Main statement": "Hide Main statement"}}</button>
+   -->  
+  <div class="main_version_statements" *ngIf="showMainContent">   
   <div *ngIf="card.card_suit === 'diamond' || card.card_suit === 'club'">
      <!--Puzzles and Counting-->
      <button mat-raised-button color="primary" (click)="showHint()">{{showHintContent?"Hide Hint": "Show Hint to Answer"}}</button>
+
+
      <div *ngIf="showHintContent">
       <mat-card class="main_version" *ngIf="card.main_version">
     
@@ -99,55 +111,91 @@
          </mat-card>
      </div>
      </div>
+</div>
 
-
-    <div class="extensions" *ngIf="showExtensionsContent">
-    <mat-card class="extension_1" *ngIf="card.extension_1">
-        <mat-card-title>Extension 1</mat-card-title>
-        <span class="ext_1_statement" *ngIf="card.extension_1.statement"> 
-          <mat-card-subtitle> Statement:</mat-card-subtitle>
-        <p [innerHTML]="card.extension_1.statement"></p>
-        </span>
-        <span class="ext_1_hint" *ngIf="card.extension_1.hint">
-          <mat-card-subtitle> Hint:</mat-card-subtitle>
-
-          <p [innerHTML]="card.extension_1.hint"></p>
-        </span>
+   <div class="extensions">
+      <div *ngIf="showExtension1Content">
+        <mat-card class="extension_1" *ngIf="card.extension_1">
+          <mat-card-title>Extension 1</mat-card-title>
+          <span class="ext_1_statement" *ngIf="card.extension_1.statement"> 
+            <mat-card-subtitle> Statement:</mat-card-subtitle>
+          <p [innerHTML]="card.extension_1.statement"></p>
+          </span>
+          <button mat-raised-button color="primary" (click)="extension1Hint()">{{showExtension1Hint?"Hide Hint": "Show Hint to Answer"}}</button>
+         
+          <div *ngIf="showExtension1Hint">
+          <span class="ext_1_hint" *ngIf="card.extension_1.hint">
+            <mat-card-subtitle> Hint:</mat-card-subtitle>
+  
+            <p [innerHTML]="card.extension_1.hint"></p>
+            <button mat-raised-button color="primary" (click)="extension1Answer()">{{showExtension1Answer?"Hide Answer": "Show Answer"}}</button>
+  
+          </span>
+  
+          <div *ngIf="showExtension1Answer">
+            <span class="ext_1_answer" *ngIf="card.extension_1.correct_answer">
+              <mat-card-subtitle> Correct Answer:</mat-card-subtitle>
+              <p>{{card.extension_1.correct_answer}}</p>
+              <button mat-raised-button color="primary" (click)="extension1Explanation()">{{showExtension1Explanation?"Hide Extension Explanation": "Show Explanation"}}</button>
+            </span>
+            <div *ngIf="showExtension1Explanation">
+              <span class="ext_1_explanation" *ngIf="card.extension_1.explanation">
+                <mat-card-subtitle> Explanation:</mat-card-subtitle>
+      
+                <p [innerHTML]="card.extension_1.explanation"></p>  
+              </span>
+            </div>
+          </div>
+          </div>
         
-        <span class="ext_1_answer" *ngIf="card.extension_1.correct_answer">
-          <mat-card-subtitle> Correct Answer:</mat-card-subtitle>
-          <p>{{card.extension_1.correct_answer}}</p>
-        </span>
-        <span class="ext_1_explanation" *ngIf="card.extension_1.explanation">
-          <mat-card-subtitle> Explanation:</mat-card-subtitle>
+       
+        </mat-card>
+        <button mat-raised-button color="primary" (click)="showExtension2()">Go to Extension 2</button>
+        <button mat-raised-button color="primary" (click)="showMain()" >Back to main statement</button>
 
-          <p [innerHTML]="card.extension_1.explanation"></p>  
-        </span>
-      </mat-card>
+      </div>
+      <div *ngIf="showExtension2Content">
+        <mat-card class="extension_2" *ngIf="card.extension_2">
+          <mat-card-title>Extension 2</mat-card-title>
+          <span class="ext_2_statement" *ngIf="card.extension_2.statement"> 
+            <mat-card-subtitle> Statement:</mat-card-subtitle>
+          <p [innerHTML]="card.extension_2.statement"></p>
+          </span>
+          <button mat-raised-button color="primary" (click)="extension2Hint()">{{showExtension2Hint?"Hide Hint": "Show Hint to Answer"}}</button>
+          <div *ngIf="showExtension2Hint">
+          <span class="ext_2_hint" *ngIf="card.extension_2.hint">
+            <mat-card-subtitle> Hint:</mat-card-subtitle>
+      
+            <p [innerHTML]="card.extension_2.hint"></p>
+            <button mat-raised-button color="primary" (click)="extension2Answer()">{{showExtension2Answer?"Hide Answer": "Show Answer"}}</button>
+      
+          </span>
+      
+          <div *ngIf="showExtension2Answer">
+            <span class="ext_2_answer" *ngIf="card.extension_2.correct_answer">
+              <mat-card-subtitle> Correct Answer:</mat-card-subtitle>
+              <p>{{card.extension_2.correct_answer}}</p>
+              <button mat-raised-button color="primary" (click)="extension2Explanation()">{{showExtension2Explanation?"Hide Extension Explanation": "Show Explanation"}}</button>
+            </span>
+            <div *ngIf="showExtension2Explanation">
+              <span class="ext_2_explanation" *ngIf="card.extension_2.explanation">
+                <mat-card-subtitle> Explanation:</mat-card-subtitle>
+      
+                <p [innerHTML]="card.extension_2.explanation"></p>  
+              </span>
+            </div>
+          </div>
+          </div>
+          </mat-card>
+          <button mat-raised-button color="primary" (click)="showExtension1()">Go to Extension 1</button>
+          <button mat-raised-button color="primary" (click)="showMain()" >Back to main statement</button>
+      </div>
+
   
 
-    <mat-card class="extension_2" *ngIf="card.extension_2">
-    <mat-card-title>Extension 2</mat-card-title>
-        <span class="ext_2_statement" *ngIf="card.extension_2.statement">
-          <mat-card-subtitle> Statement:</mat-card-subtitle>
-          <p [innerHTML]="card.extension_2.statement"></p>  
-        </span>
-        <span class="ext_2_hint" *ngIf="card.extension_2.hint">
-          <mat-card-subtitle> Hint:</mat-card-subtitle>
-          <p [innerHTML]="card.extension_2.hint"></p>  
-        </span>
-        <span class="ext_2_answer" *ngIf="card.extension_2.correct_answer">
-          <mat-card-subtitle> Correct Answer:</mat-card-subtitle>
-          <p [innerHTML]="card.extension_2.correct_answer"></p>
-        </span>
-        
-        <span class="ext_2_explanation" *ngIf="card.extension_2.explanation">
-          <mat-card-subtitle> Explanation:</mat-card-subtitle>
-          <p [innerHTML]="card.extension_2.explanation"></p>
-        </span>
-    </mat-card>
-   
-    <mat-card>
+
+   <!--
+   <mat-card>
       <div class="additional_information" *ngIf="card.additional_information">
         <mat-card-title>Additonal Information</mat-card-title>
         <span *ngIf="card.additional_information.about">
@@ -157,8 +205,10 @@
         </span>
       </div>
     </mat-card>
+   -->
+ 
    </div>
-  </div>
+  
     <div class="references">
       <button mat-raised-button color="accent" (click)="showReferences()">
         <mat-icon>library_books</mat-icon>
