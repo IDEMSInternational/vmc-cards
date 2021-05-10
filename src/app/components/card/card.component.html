@@ -150,7 +150,7 @@
         
        
         </mat-card>
-        <button mat-raised-button color="primary" (click)="showExtension2()">Go to Extension 2</button>
+        <button *ngIf="card.extension_2" mat-raised-button color="primary" (click)="showExtension2()">Go to Extension 2</button>
         <button mat-raised-button color="primary" (click)="showMain()" >Back to main statement</button>
 
       </div>
