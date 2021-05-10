@@ -28,6 +28,21 @@ export class CardComponent implements OnInit {
   showExplanationContent: Boolean = false;
   showExtensionsContent: Boolean = false;
   showReferencesContent: Boolean = false;
+
+  showExtension1Content: Boolean = false;
+  showExtension2Content: Boolean = false;
+  showMainContent: Boolean = true;
+
+  //Extension 1 variables
+  showExtension1Hint: Boolean = false;
+  showExtension1Answer: Boolean = false;
+  showExtension1Explanation: Boolean = false;
+
+  //Extension 2 variables
+  showExtension2Hint: Boolean = false;
+  showExtension2Answer: Boolean = false;
+  showExtension2Explanation: Boolean = false;
+
   answer: string;
   durationInSeconds = 5;
 
@@ -64,7 +79,7 @@ export class CardComponent implements OnInit {
   showExplanation() {
     this.showExplanationContent = this.showExplanationContent ? false : true;
   }
-  showReferences(){
+  showReferences() {
     this.showReferencesContent = this.showReferencesContent ? false : true;
   }
   showExtension() {
@@ -72,7 +87,52 @@ export class CardComponent implements OnInit {
     this.showHintContent = false;
     this.showAnswerContent = false;
     this.showExplanationContent = false;
+    this.showExtension1();
   }
+
+  showMain() {
+    this.showMainContent = this.showMainContent ? false : true;
+    this.showExtension1Content = false;
+    this.showExtension2Content = false;
+  }
+  showExtension1() {
+    this.showExtension1Content = this.showExtension1Content ? false : true;
+    // this.showExtensionsContent = this.showExtensionsContent ? false : true;
+    this.showExtension2Content = false;
+    this.showMainContent = false;
+  }
+  showExtension2() {
+    this.showExtension2Content = this.showExtension2Content ? false : true;
+    this.showExtension1Content = false;
+    this.showMainContent = false;
+
+
+    // this.showExtensionsContent = this.showExtensionsContent ? false : true;
+  }
+  extension1Hint() {
+    this.showExtension1Hint = this.showExtension1Hint ? false : true;
+  }
+  extension1Answer() {
+    this.showExtension1Answer = this.showExtension1Answer ? false : true;
+  }
+  extension1Explanation() {
+    this.showExtension1Explanation = this.showExtension1Explanation
+      ? false
+      : true;
+  }
+
+  extension2Hint() {
+    this.showExtension2Hint = this.showExtension2Hint ? false : true;
+  }
+  extension2Answer() {
+    this.showExtension2Answer = this.showExtension2Answer ? false : true;
+  }
+  extension2Explanation() {
+    this.showExtension2Explanation = this.showExtension2Explanation
+      ? false
+      : true;
+  }
+
   onSubmit() {
     this.feedback.cardtitle = this.card.title;
     this.feedbackService.submitFeedback(this.feedback).subscribe(
