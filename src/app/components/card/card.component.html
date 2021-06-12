@@ -209,113 +209,144 @@
  
    </div>
   
-    <div class="references">
-      <button mat-raised-button color="accent" (click)="showReferences()">
-        <mat-icon>library_books</mat-icon>
-        {{showReferencesContent?"Hide References": "Show References"}}
-      </button>
-      <div *ngIf="showReferencesContent">
-        <span *ngIf="card.additional_information.references">
-          <mat-card>
-            <mat-card-subtitle>
-              References
-            </mat-card-subtitle>
-            <span *ngFor="let reference of card.additional_information.references">
-              <a [href]="reference"></a>
-              <p [innerHTML]="reference"></p>
-            </span>
-          </mat-card>
-         
-        </span>
-      </div>
+   
+    <section class="references">
+      <mat-expansion-panel>
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            Additonal Information
+          </mat-panel-title>
+          <mat-panel-description>
+            Click here to see References and other additional information
+          </mat-panel-description>
+        </mat-expansion-panel-header>
+
+
+        <button mat-raised-button color="accent" (click)="showReferences()">
+          <mat-icon>library_books</mat-icon>
+          {{showReferencesContent?"Hide References": "Show References"}}
+        </button>
+        <div *ngIf="showReferencesContent">
+          <span *ngIf="card.additional_information.references">
+            <mat-card>
+              <mat-card-subtitle>
+                References
+              </mat-card-subtitle>
+              <span *ngFor="let reference of card.additional_information.references">
+                <a [href]="reference"></a>
+                <p [innerHTML]="reference"></p>
+              </span>
+            </mat-card>
+           
+          </span>
+        </div>
+
+
+        <button mat-raised-button color="accent" (click)="showAbout()">
+          <mat-icon>info</mat-icon>
+          {{showAboutContent?"Hide About Information": "Show About Information"}}
+        </button>
+        <div *ngIf="showAboutContent">
+          <span *ngIf="card.additional_information.about">
+            <mat-card>
+              <mat-card-subtitle>
+                About
+              </mat-card-subtitle>
+                <p [innerHTML]="card.additional_information.about"></p>
+            </mat-card>
+           
+          </span>
+        </div>
+      </mat-expansion-panel>
+      
   
-    </div>
-
+    </section>
+    <section class="feedback">
+      <mat-expansion-panel>
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            Feedback?
+          </mat-panel-title>
+          <mat-panel-description>
+            Click here to leave us a message!
+            <mat-icon>contact_support</mat-icon>
+          </mat-panel-description>
+        </mat-expansion-panel-header>
+      <div>
+        Share feedback
+       <form (ngSubmit)="onSubmit()" >
+        <table>
+          <tr>
+            <td>
+              <div>
+                <mat-form-field appearance="outline">
+                  <mat-label>Name</mat-label>
+                  <input matInput placeholder="Insert your name" id="name" name="name" type="text" [(ngModel)]="feedback.name">
+                  <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+                  <mat-hint>Name</mat-hint>
+                </mat-form-field>
+              </div>
+            </td>
+          </tr>
+          
+          <tr>
+            <td>
+              <div>
+                <mat-form-field appearance="outline">
+                  <mat-label>Country</mat-label>
+                  <input matInput placeholder="Country" id="country" name="country" type="text" [(ngModel)]="feedback.country">
+                  <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+                  <mat-hint>Country</mat-hint>
+                </mat-form-field>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div>
+                <mat-form-field appearance="outline">
+                  <mat-label>Email</mat-label>
+                  <input matInput placeholder="Insert your email" id="email" name="email" type="text" [(ngModel)]="feedback.email">
+                  <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+                  <mat-hint>Email</mat-hint>
+                </mat-form-field>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div>
+                <mat-form-field appearance="outline">
+                  <mat-label>Feedback</mat-label>
+                  <input matInput placeholder="Enter your feedback" id="feedback" name="feedback" type="text" [(ngModel)]="feedback.feedback">
+                  <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+                  <mat-hint>Feedback</mat-hint>
+                </mat-form-field>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div hidden="true">
+                <label for="cardtitle">
+                Card title              
+              </label>
+                <input id="cardtitle" name="cardtitle" type="text">
+                {{feedback.cardtitle}}
+              </div>
+            </td>
+          </tr>
+        </table>
+      
+         <p>
+             <button type="submit" mat-raised-button>Submit</button>
+         </p>
+     </form>
+      </div>
+    </mat-expansion-panel>
+  
+    </section>
 
   </section>
-  <section class="feedback">
-    <mat-expansion-panel>
-      <mat-expansion-panel-header>
-        <mat-panel-title>
-          Feedback?
-        </mat-panel-title>
-        <mat-panel-description>
-          Click here to leave us a message!
-          <mat-icon>contact_support</mat-icon>
-        </mat-panel-description>
-      </mat-expansion-panel-header>
-    <div>
-      Share feedback
-     <form (ngSubmit)="onSubmit()" >
-      <table>
-        <tr>
-          <td>
-            <div>
-              <mat-form-field appearance="outline">
-                <mat-label>Name</mat-label>
-                <input matInput placeholder="Insert your name" id="name" name="name" type="text" [(ngModel)]="feedback.name">
-                <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
-                <mat-hint>Name</mat-hint>
-              </mat-form-field>
-            </div>
-          </td>
-        </tr>
-        
-        <tr>
-          <td>
-            <div>
-              <mat-form-field appearance="outline">
-                <mat-label>Country</mat-label>
-                <input matInput placeholder="Country" id="country" name="country" type="text" [(ngModel)]="feedback.country">
-                <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
-                <mat-hint>Country</mat-hint>
-              </mat-form-field>
-            </div>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <div>
-              <mat-form-field appearance="outline">
-                <mat-label>Email</mat-label>
-                <input matInput placeholder="Insert your email" id="email" name="email" type="text" [(ngModel)]="feedback.email">
-                <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
-                <mat-hint>Email</mat-hint>
-              </mat-form-field>
-            </div>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <div>
-              <mat-form-field appearance="outline">
-                <mat-label>Feedback</mat-label>
-                <input matInput placeholder="Enter your feedback" id="feedback" name="feedback" type="text" [(ngModel)]="feedback.feedback">
-                <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
-                <mat-hint>Feedback</mat-hint>
-              </mat-form-field>
-            </div>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <div hidden="true">
-              <label for="cardtitle">
-              Card title              
-            </label>
-              <input id="cardtitle" name="cardtitle" type="text">
-              {{feedback.cardtitle}}
-            </div>
-          </td>
-        </tr>
-      </table>
-    
-       <p>
-           <button type="submit" mat-raised-button>Submit</button>
-       </p>
-   </form>
-    </div>
-  </mat-expansion-panel>
 
-  </section>
 </section>
