@@ -139,6 +139,7 @@ export class CardComponent implements OnInit {
 
   onSubmit() {
     this.feedback.cardtitle = this.card.title;
+    this.feedback.suit = this.card.slug;
     this.feedbackService.submitFeedback(this.feedback).subscribe(
       (response) => {
         console.log("response", response);
