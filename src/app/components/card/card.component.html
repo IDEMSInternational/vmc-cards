@@ -89,21 +89,21 @@
      </div>
      <div *ngIf="card.card_suit === 'spade'">
       <!--Game-->
-      <button mat-raised-button color="primary" (click)="showHint()">{{showHintContent?"Hide tips": "Show strategy tips"}}</button>
-      <div *ngIf="showHintContent">
+      <button mat-raised-button color="primary" (click)="showExplanation()">{{showHintContent?"Hide instructions": "Show instructions"}}</button>
+      <div *ngIf="showExplanationContent">
        <mat-card class="main_version" *ngIf="card.main_version">
      
-         <span class="main_tip" *ngIf="card.main_version.strategy_tips">
-           <mat-card-subtitle > Tip:</mat-card-subtitle>
-           <p [innerHTML]="card.main_version.strategy_tips"></p>
+         <span class="main_explanation" *ngIf="card.main_version.further_instructions">
+           <mat-card-subtitle > Explanation:</mat-card-subtitle>
+           <p [innerHTML]="card.main_version.further_instructions"></p>
  
-           <button mat-raised-button color="primary" (click)="showExplanation()">{{showExplanationContent?"Hide instructions": "Show further instructions"}}</button>
+           <button mat-raised-button color="primary" (click)="showHint()">{{showHintContent?"Hide tips": "Show strategy tips"}}</button>
          </span>  
    
-           <div class="instructions" *ngIf="showExplanationContent">
-             <span class="main_explanation" *ngIf="card.main_version.further_instructions">
-               <mat-card-subtitle> Explanation:</mat-card-subtitle>
-               <p [innerHTML]="card.main_version.further_instructions"></p>
+           <div *ngIf="showHintContent">
+             <span class="main_tip" *ngIf="card.main_version.strategy_tips">
+               <mat-card-subtitle> Tip:</mat-card-subtitle>
+               <p [innerHTML]="card.main_version.strategy_tips"></p>
              </span>
         
              <button mat-raised-button color="accent" (click)="showExtension()">{{showExtensionsContent?"Hide Extensions": "Show Extensions"}}</button>
