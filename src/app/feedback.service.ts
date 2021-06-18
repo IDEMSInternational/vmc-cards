@@ -9,7 +9,7 @@ import { Observable } from "rxjs";
 export class FeedbackService {
   constructor(private http: HttpClient) {}
 
-  url = "https://api.apispreadsheets.com/data/10291/";
+  url = "https://api.apispreadsheets.com/data/14273/";
   public submitFeedback(feedback: Feedback): Observable<Feedback> {
     console.log("data", feedback);
     return this.http.post(this.url, {
@@ -20,6 +20,7 @@ export class FeedbackService {
           country: feedback.country,
           feedback: feedback.feedback,
           cardtitle: feedback.cardtitle,
+          suit: feedback.suit,
         },
       ],
     });

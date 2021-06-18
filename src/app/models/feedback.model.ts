@@ -4,4 +4,5 @@ export interface Feedback {
   email?: string;
   feedback?: string;
   cardtitle?: string;
+  suit?: string;
 }

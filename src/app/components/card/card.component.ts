@@ -28,6 +28,7 @@ export class CardComponent implements OnInit {
   showExplanationContent: Boolean = false;
   showExtensionsContent: Boolean = false;
   showReferencesContent: Boolean = false;
+  showAboutContent: Boolean = false;
 
   showExtension1Content: Boolean = false;
   showExtension2Content: Boolean = false;
@@ -82,6 +83,9 @@ export class CardComponent implements OnInit {
   showReferences() {
     this.showReferencesContent = this.showReferencesContent ? false : true;
   }
+  showAbout(){
+    this.showAboutContent = this.showAboutContent ? false : true;
+  }
   showExtension() {
     this.showExtensionsContent = this.showExtensionsContent ? false : true;
     this.showHintContent = false;
@@ -135,6 +139,7 @@ export class CardComponent implements OnInit {
 
   onSubmit() {
     this.feedback.cardtitle = this.card.title;
+    this.feedback.suit = this.card.slug;
     this.feedbackService.submitFeedback(this.feedback).subscribe(
       (response) => {
         console.log("response", response);
