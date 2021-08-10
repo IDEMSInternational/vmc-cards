@@ -1,0 +1,13 @@
+<mat-form-field style="max-width: 100px">
+    <mat-select
+        [value]=""
+    >
+      <mat-option
+        *ngFor="let languageCode of languages"
+        [value]="languageCode"
+      >
+        {{languageCode }}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+  
