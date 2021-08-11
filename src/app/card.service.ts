@@ -2,21 +2,31 @@ import { Injectable } from "@angular/core";
 import { HttpClient } from "@angular/common/http";
 import { Router, ActivatedRoute } from "@angular/router";
 import { map } from "rxjs/operators";
-import { Observable } from "rxjs";
+import { observable, Observable } from "rxjs";
 import { Card, CardMetadata } from "./models/card.model";
+import { ILanguageCode } from "./services/language.service";
+import { AppService } from "./services/app.service";
+import { BehaviorSubject } from "rxjs";
 
 @Injectable({
   providedIn: "root",
 })
 export class CardService {
   cards: CardMetadata[];
+  public cards$ = new BehaviorSubject(undefined);
 
   constructor(
     private http: HttpClient,
     private router: Router,
-    private route: ActivatedRoute
-  ) {}
+    private route: ActivatedRoute,
+    private appService: AppService
+  ) {
+    this.init();
+  }
 
+  private async init() {
+    this._subscribeToRouteChanges();
+  }
   public getCard(slug: string): Observable<Card> {
     let actualSlug = slug;
     const cardRegex = /([A|2-9|10|J|Q|K]+)([C|S|H|D]+)/;
@@ -48,12 +58,35 @@ export class CardService {
     );
   }
 
-  public readAllCards(): Observable<CardMetadata[]> {
-    const url = "assets/card-content/metadata.json";
+  private async readAllCards(language: ILanguageCode) {
+    // notify that the cards are not yet loaded
+    this.cards$.next(undefined);
+
+    const url = `assets/card-content/${language}/metadata.json`;
+    /*
     let observable = this.http.get<CardMetadata[]>(url, { observe: "body" });
     observable.subscribe((cards: CardMetadata[]) => {
       this.cards = cards;
     });
     return observable;
+  */
+
+    let cards = await this.http.get<CardMetadata[]>(url, { observe: "body" });
+    cards.subscribe((cards: CardMetadata[]) => {
+      this.cards = cards;
+    });
+    console.log("Cards from card service", cards);
+    this.cards$.next(this.cards);
+  }
+
+  private _subscribeToRouteChanges() {
+    this.appService.routeParams$.subscribe(async (params) => {
+      if (params.lang) {
+        console.log("Route changed");
+        await this.readAllCards(params.lang as any);
+        console.log("Cards from card service", this.cards$);
+
+      }
+    });
   }
 }

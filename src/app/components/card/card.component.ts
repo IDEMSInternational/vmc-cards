@@ -53,7 +53,7 @@ export class CardComponent implements OnInit {
     public feedbackService: FeedbackService,
     private _snackBar: MatSnackBar
   ) {
-    this.cardService.readAllCards().subscribe((data) => {
+    /*this.cardService.readAllCards().subscribe((data) => {
       this.cardService
         .getCard(this.route.snapshot.params.slug)
         .subscribe((card) => {
@@ -61,6 +61,7 @@ export class CardComponent implements OnInit {
           console.log(this.card);
         });
     });
+    */
   }
 
   ngOnInit(): void {}

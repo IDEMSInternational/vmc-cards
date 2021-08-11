@@ -7,6 +7,7 @@ import { CardsComponent } from "./components/cards/cards.component";
 const routes: Routes = [
   { path: ":lang/card/:slug", component: CardComponent },
   { path: ":lang", component: CardsComponent },
+  { path: "", redirectTo: "en", pathMatch: "full" },
 ];
 
 @NgModule({

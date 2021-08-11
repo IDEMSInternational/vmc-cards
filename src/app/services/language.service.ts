@@ -36,6 +36,7 @@ export class LanguageService {
       localStorage.setItem("vmc_language", languageCode);
       const { pathname } = this.document.location;
       if (pathname === "/") {
+        console.log("Path name slash", languageCode);
         this.router.navigate([languageCode]);
       } else {
         const oldLang = this.appService.routeParams$.value?.lang;
@@ -46,7 +47,6 @@ export class LanguageService {
         });
       }
       this.activeLanguage$.next(languageCode);
-      console.log("Active Language", this.activeLanguage$);
     }
   }
 
