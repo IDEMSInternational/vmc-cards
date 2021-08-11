@@ -46,6 +46,7 @@ export class LanguageService {
         });
       }
       this.activeLanguage$.next(languageCode);
+      console.log("Active Language", this.activeLanguage$);
     }
   }
 

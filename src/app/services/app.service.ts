@@ -33,6 +33,7 @@ export class AppService {
         const params = this.route.root.firstChild.snapshot
           .params as IRouteParams;
         this.routeParams$.next(params);
+        console.log("Router Params$", this.routeParams$)
         // set default title when not on card page
         if (!params.slug) {
           this.setTitle();
