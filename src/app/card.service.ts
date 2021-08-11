@@ -71,12 +71,14 @@ export class CardService {
     return observable;
   */
 
-    let cards = await this.http.get<CardMetadata[]>(url, { observe: "body" });
-    cards.subscribe((cards: CardMetadata[]) => {
-      this.cards = cards;
-    });
-    console.log("Cards from card service", cards);
-    this.cards$.next(this.cards);
+    let cards = await this.http
+      .get<CardMetadata[]>(url)
+      .toPromise()
+      .catch(() => {
+        this.router.navigate(["/"]);
+        return [];
+      });
+    this.cards$.next(cards);
   }
 
   private _subscribeToRouteChanges() {
@@ -84,8 +86,6 @@ export class CardService {
       if (params.lang) {
         console.log("Route changed");
         await this.readAllCards(params.lang as any);
-        console.log("Cards from card service", this.cards$);
-
       }
     });
   }

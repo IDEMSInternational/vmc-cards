@@ -8,19 +8,9 @@ import { AppService } from "src/app/services/app.service";
   styleUrls: ["../cards.component.scss"],
   encapsulation: ViewEncapsulation.None,
 })
-export class CardsComponent implements OnInit{
-  deck = null;
-
-  constructor(public cardService: CardService, public appService: AppService) {
-    //  this.combineData();
-  }
-  ngOnInit(){
-    this.loadcards();
-  }
-  loadcards() {
-    console.log("Observed cards", this.cardService.cards$.value);
-    console.log("Route Value Cards", this.appService.routeParams$.value);
-  }
+export class CardsComponent implements OnInit {
+  constructor(public cardService: CardService, public appService: AppService) {}
+  ngOnInit() {}
   /*
   combineData() {
     this.cardService.readAllCards().subscribe((cardDeck) => {

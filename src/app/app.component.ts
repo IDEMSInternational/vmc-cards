@@ -1,4 +1,5 @@
 import { ChangeDetectorRef, Component, ViewEncapsulation } from "@angular/core";
+import { AppService } from "./services/app.service";
 @Component({
   selector: "app-root",
   templateUrl: "./app.component.html",
@@ -8,5 +9,5 @@ import { ChangeDetectorRef, Component, ViewEncapsulation } from "@angular/core";
 export class AppComponent {
   title = "vmc-cards";
 
-  constructor(private cdr: ChangeDetectorRef) {}
+  constructor(private cdr: ChangeDetectorRef, public appService: AppService) {}
 }
