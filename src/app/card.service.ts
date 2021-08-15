@@ -27,59 +27,64 @@ export class CardService {
   private async init() {
     this._subscribeToRouteChanges();
   }
-  public getCard(slug: string): Observable<Card> {
-    let actualSlug = slug;
-    const cardRegex = /([A|2-9|10|J|Q|K]+)([C|S|H|D]+)/;
-    const matchResult = slug.toUpperCase().match(cardRegex);
-    if (matchResult) {
-      let suitMap = {
-        C: "club",
-        S: "spade",
-        H: "heart",
-        D: "diamond",
-      };
-      let value = matchResult[1];
-      let suit = suitMap[matchResult[2]];
-      if (value && suit) {
-        let matchingCard = this.cards.find((card) => {
-          return card.card_suit === suit && card.card_value === value;
-        });
-        actualSlug = matchingCard.slug;
-      }
-    }
-    const url = `assets/card-content/cards/${actualSlug}.json`;
+
+  public getCard(slug: string, lang: string): Observable<Card> {
+    let actualSlug = slug.replace(/.html*/, "");
+
+    // const cardRegex = /([A|2-9|10|J|Q|K]+)([C|S|H|D]+)/;
+    // const matchResult = slug.toUpperCase().match(cardRegex);
+    // if (matchResult) {
+    //   let suitMap = {
+    //     C: "club",
+    //     S: "spade",
+    //     H: "heart",
+    //     D: "diamond",
+    //   };
+    //   let value = matchResult[1];
+    //   let suit = suitMap[matchResult[2]];
+    //   if (value && suit) {
+    //     let matchingCard = this.cards.find((card) => {
+    //       return card.card_suit === suit && card.card_value === value;
+    //     });
+    //     actualSlug = matchingCard.slug;
+    //   }
+    // }
+    
+    const url = `assets/card-content/${lang}/cards/${actualSlug}.json`;
     return this.http.get(url).pipe(
       map((cardContent) => {
+        console.log(cardContent)
         const cardMetadata = this.cards.find(
           (cardMetadata) => cardMetadata.slug === actualSlug
         );
+        console.log(cardMetadata);
         return { ...cardContent, ...cardMetadata };
       })
     );
   }
 
-  private async readAllCards(language: ILanguageCode) {
+  public async readAllCards(language: ILanguageCode) {
     // notify that the cards are not yet loaded
     this.cards$.next(undefined);
-
     const url = `assets/card-content/${language}/metadata.json`;
-    /*
-    let observable = this.http.get<CardMetadata[]>(url, { observe: "body" });
-    observable.subscribe((cards: CardMetadata[]) => {
-      this.cards = cards;
-    });
-    return observable;
-  */
+    
+    // let observable = this.http.get<CardMetadata[]>(url, { observe: "body" });
+    // observable.subscribe((cards: CardMetadata[]) => {
+    //   this.cards = cards;
+    // });
+    // return observable;
+  
 
-    let cards = await this.http
+    this.cards = await this.http
       .get<CardMetadata[]>(url)
       .toPromise()
       .catch(() => {
         this.router.navigate(["/"]);
         return [];
       });
-    this.cards$.next(cards);
+    this.cards$.next(this.cards);
   }
+
 
   private _subscribeToRouteChanges() {
     this.appService.routeParams$.subscribe(async (params) => {

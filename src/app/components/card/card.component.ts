@@ -1,10 +1,11 @@
-import { Component, Inject, OnInit, ViewEncapsulation } from "@angular/core";
+import { Component, OnInit, ViewEncapsulation } from "@angular/core";
 import { CardService } from "src/app/card.service";
 import { ActivatedRoute } from "@angular/router";
 import { Card } from "src/app/models/card.model";
 import { Feedback } from "src/app/models/feedback.model";
 import { FeedbackService } from "src/app/feedback.service";
 import { MatSnackBar } from "@angular/material/snack-bar";
+import { async } from "rxjs/internal/scheduler/async";
 
 @Component({
   selector: "app-card",
@@ -13,8 +14,7 @@ import { MatSnackBar } from "@angular/material/snack-bar";
   encapsulation: ViewEncapsulation.None,
 })
 export class CardComponent implements OnInit {
-  card: Card;
-  //feedback: Feedback;
+  card: Card | undefined;
   public feedback: Feedback = {
     name: "",
     country: "",
@@ -47,24 +47,30 @@ export class CardComponent implements OnInit {
   answer: string;
   durationInSeconds = 5;
 
+  private lang;
+  private slug;
+
+
   constructor(
     public cardService: CardService,
     private route: ActivatedRoute,
     public feedbackService: FeedbackService,
     private _snackBar: MatSnackBar
-  ) {
-    /*this.cardService.readAllCards().subscribe((data) => {
-      this.cardService
-        .getCard(this.route.snapshot.params.slug)
-        .subscribe((card) => {
-          this.card = this.replaceImageURLs(card);
-          console.log(this.card);
-        });
-    });
-    */
+  ) {}
+
+  ngOnInit(){
+    this.lang = this.route.snapshot.params.lang;
+    this.slug = this.route.snapshot.params.slug;
+
+    this.displayCard();
   }
 
-  ngOnInit(): void {}
+  displayCard(){
+    this.cardService.getCard(this.slug, this.lang)
+      .subscribe((card) => (this.card = card));
+    console.log("Is this your card?", this.card);
+  }
+
 
   replaceImageURLs(cardContent: Card): Card {
     const originalContent = JSON.stringify(cardContent);
