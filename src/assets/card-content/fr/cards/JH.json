@@ -1,7 +1,7 @@
 {
   "title": "Benford's Law",
   "metadata": {
-    "type": "funfact"
+    "type": "fait amusant"
   },
   "main_version": {
     "statement": "<p>When you look at numbers found in real-world data sets, for most sets of numbers the first digit is more often a 1 than any other digit. 2 is a more common first digit than 3, and so on up to 9. In fact, the first digits often follow the same pattern (distribution).</p>\n<p><img alt=\"\" src=\"images/Benford_s_Law_image_0.png\" class=\"Benford_s_Law_image_0\" /></p>",

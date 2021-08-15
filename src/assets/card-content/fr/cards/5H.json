@@ -1,20 +1,20 @@
 {
   "title": "Ramanujan",
   "metadata": {
-    "type": "funfact"
+    "type": "fait amusant"
   },
   "main_version": {
-    "statement": "<p>1729 is the smallest number that can be written as a sum of two cubed numbers in two different ways.</p>",
-    "hint": "<p>72 can be expressed as 2\u00b3 + 4\u00b3 but it is the only way with two positive cubes. Can you find the two ways to make 1729?</p>",
-    "explanation": "<p>1\u00b3 + 12\u00b3 = 1 + 1728 = 1729 and also 9\u00b3 + 10\u00b3 = 729 + 1000 = 1729</p>"
+    "statement": "<p>1729 est le plus petit nombre qui peut être écrit comme une somme de deux nombres cubes de deux manières différentes.</p>",
+    "hint": "<p>72 peut être exprimé comme 2³ + 4³ mais c'est la seule manière avec deux cubes positifs. Pouvez-vous trouver les deux manières de calculer 1729?</p>",
+    "explanation": "<p>1\u00b3 + 12\u00b3 = 1 + 1728 = 1729 et aussi 9\u00b3 + 10\u00b3 = 729 + 1000 = 1729</p>"
   },
   "extension_1": {
-    "statement": "<p>If you change the problem to allow the cube of a negative number e.g. (-3)\u00b3=27 then the smallest number you can make is under a 100. Can you find the number and the two ways to make it?</p>",
-    "hint": "<p>The number is between 90 and 100.</p>",
-    "explanation": "<p>91 can be written as 6\u00b3+(-5)\u00b3 = 216 - 125 =91 or 4\u00b3+3\u00b3=64+27=91</p>"
+    "statement": "<p>Si vous modifiez le problème pour permettre d'avoir un cube d'un nombre négatif, par ex. (-3)³=27 alors le plus petit nombre que vous pouvez calculer est inférieur à 100. Pouvez-vous trouver le nombre et les deux façons de le faire?</p>",
+    "hint": "<p>Le nombre est compris entre 90 et 100</p>",
+    "explanation": "<p>91 peut être écrit comm 6\u00b3+(-5)\u00b3 = 216 - 125 =91 ou 4\u00b3+3\u00b3=64+27=91</p>"
   },
   "additional_information": {
-    "about": "<p>Bernard Fr\u00e9nicle de Bessy wrote about the number 1729 in 1657, but it was made popular by G. H. Hardy telling a story about Srinivasa Ramanujan in about 1919: \"I remember once going to see him when he was ill at Putney. I had ridden in taxi cab number 1729 and remarked that the number seemed to me rather a dull one, and that I hoped it was not an unfavourable omen. \"No,\" he replied, \"it is a very interesting number; it is the smallest number expressible as the sum of two cubes in two different ways.\" 1729 is now called a \"taxicab\" number. It is the second taxi cab number. The first is 2 because it is the smallest number that can be written in one way as the sum of two cubes. 87539319 is the third taxi cab number because it is the smallest number that can be written in three different ways as the sum of two cubes. No one knows what the taxicab numbers are above the 6th one. </p>",
+    "about": "<p>Bernard Fr\u00e9nicle de Bessy a écrit sur le nombre 1729 en 1657, mais il a été rendu populaire par G. H. Hardy racontant une histoire sur Srinivasa Ramanujan vers 1919: \"Je me souviens d'avoir allé le visiter quand il était malade à Putney. J'avais pris un taxi dont le numéro était 1729 et j'ai remarqué que le nombre me paraissait plutôt ennuyeux, et que j'espérais que ce n'était pas un mauvais présage. \"Non\", répondit-il, \"c'est un nombre très intéressant; c'est le plus petit nombre exprimable comme la somme de deux cubes de deux manières différentes. Le nombre 1729 est maintenant appelé \"taxicab\", c'est le deuxième numéro \"taxicab\". Le premier est 2 parce que c'est le plus petit nombre qui peut être écrit d'une seule manière que la somme de deux cubes. 87539319 est le troisième numéro \"taxicab\" c'est le plus petit nombre qui peut être écrit de trois manières différentes comme la somme de deux cubes. Personne ne sait ce que les numéros de taxicab sont supérieurs au 6ème </p>",
     "references": [
       "<p><a href=\"https://en.wikipedia.org/wiki/Bernard_Fr%C3%A9nicle_de_Bessy\" target=”_blank”>https://en.wikipedia.org/wiki/Bernard_Fr%C3%A9nicle_de_Bessy</a> </p>",
       "<p><a href=\"https://en.wikipedia.org/wiki/1729_(number)\" target=”_blank”>https://en.wikipedia.org/wiki/1729_(number)</a> </p>",

@@ -67,14 +67,7 @@ export class CardService {
     // notify that the cards are not yet loaded
     this.cards$.next(undefined);
     const url = `assets/card-content/${language}/metadata.json`;
-    
-    // let observable = this.http.get<CardMetadata[]>(url, { observe: "body" });
-    // observable.subscribe((cards: CardMetadata[]) => {
-    //   this.cards = cards;
-    // });
-    // return observable;
   
-
     this.cards = await this.http
       .get<CardMetadata[]>(url)
       .toPromise()

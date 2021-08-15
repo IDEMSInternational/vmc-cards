@@ -5,7 +5,6 @@ import { Card } from "src/app/models/card.model";
 import { Feedback } from "src/app/models/feedback.model";
 import { FeedbackService } from "src/app/feedback.service";
 import { MatSnackBar } from "@angular/material/snack-bar";
-import { async } from "rxjs/internal/scheduler/async";
 
 @Component({
   selector: "app-card",
@@ -50,7 +49,6 @@ export class CardComponent implements OnInit {
   private lang;
   private slug;
 
-
   constructor(
     public cardService: CardService,
     private route: ActivatedRoute,
@@ -61,23 +59,14 @@ export class CardComponent implements OnInit {
   ngOnInit(){
     this.lang = this.route.snapshot.params.lang;
     this.slug = this.route.snapshot.params.slug;
-
     this.displayCard();
   }
 
   displayCard(){
     this.cardService.getCard(this.slug, this.lang)
       .subscribe((card) => (this.card = card));
-    console.log("Is this your card?", this.card);
   }
 
-
-  replaceImageURLs(cardContent: Card): Card {
-    const originalContent = JSON.stringify(cardContent);
-    const updatedContent = originalContent.replace(/\images/g, "assets/images");
-    const newContent = JSON.parse(updatedContent);
-    return newContent as Card;
-  }
   showHint() {
     this.showHintContent = this.showHintContent ? false : true;
   }
@@ -116,9 +105,6 @@ export class CardComponent implements OnInit {
     this.showExtension2Content = this.showExtension2Content ? false : true;
     this.showExtension1Content = false;
     this.showMainContent = false;
-
-
-    // this.showExtensionsContent = this.showExtensionsContent ? false : true;
   }
   extension1Hint() {
     this.showExtension1Hint = this.showExtension1Hint ? false : true;

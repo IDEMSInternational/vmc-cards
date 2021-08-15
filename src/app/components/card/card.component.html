@@ -13,8 +13,8 @@
   <div class="main_version_statements" *ngIf="showMainContent">   
   <div *ngIf="card.card_suit === 'diamond' || card.card_suit === 'club'">
      <!--Puzzles and Counting-->
-     <button mat-raised-button color="primary" (click)="showHint()">{{showHintContent?"Hide Hint": "Show Hint to Answer"}}</button>
 
+     <button mat-raised-button color="primary" (click)="showHint()">{{showHintContent?"Hide Hint": "Show Hint to Answer"}}</button>
 
      <div *ngIf="showHintContent">
       <mat-card class="main_version" *ngIf="card.main_version">

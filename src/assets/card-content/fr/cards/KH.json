@@ -1,7 +1,7 @@
 {
   "title": "Collatz Conjecture",
   "metadata": {
-    "type": "funfact"
+    "type": "fait amusant"
   },
   "main_version": {
     "statement": "<p>Think of a positive integer (whole number). If it is even, divide it by 2. It if is odd, multiply it by 3 and add 1. Repeat the process with your new number and keep going. Stop if you get to the number 1. Nobody knows if a number exists that doesn't end up at 1.</p>",

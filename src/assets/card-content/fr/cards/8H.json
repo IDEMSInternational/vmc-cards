@@ -1,7 +1,7 @@
 {
   "title": "Prime Removal",
   "metadata": {
-    "type": "funfact"
+    "type": "fait amusant"
   },
   "main_version": {
     "statement": "<p>73939133 is the largest prime number that, if you keep removing digits from the right, will always leave a prime number.</p>",
