@@ -56,22 +56,18 @@ export class CardComponent implements OnInit {
     private _snackBar: MatSnackBar
   ) {}
 
-  ngOnInit(){
+  ngOnInit() {
     this.lang = this.route.snapshot.params.lang;
     this.slug = this.route.snapshot.params.slug;
     this.displayCard();
   }
 
-  displayCard(){
-    this.cardService.getCard(this.slug, this.lang)
+  displayCard() {
+    this.cardService
+      .getCard(this.slug, this.lang)
       .subscribe((card) => (this.card = card));
   }
 
-  pageReload(_event){
-    if(this.cardService._subscribeToRouteChanges()){
-      window.location.reload()
-    }
-  }
   showHint() {
     this.showHintContent = this.showHintContent ? false : true;
   }
@@ -84,7 +80,7 @@ export class CardComponent implements OnInit {
   showReferences() {
     this.showReferencesContent = this.showReferencesContent ? false : true;
   }
-  showAbout(){
+  showAbout() {
     this.showAboutContent = this.showAboutContent ? false : true;
   }
   showExtension() {

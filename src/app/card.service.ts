@@ -49,11 +49,11 @@ export class CardService {
     //     actualSlug = matchingCard.slug;
     //   }
     // }
-    
+
     const url = `assets/card-content/${lang}/cards/${actualSlug}.json`;
     return this.http.get(url).pipe(
       map((cardContent) => {
-        console.log(cardContent)
+        console.log(cardContent);
         const cardMetadata = this.cards.find(
           (cardMetadata) => cardMetadata.slug === actualSlug
         );
@@ -67,7 +67,7 @@ export class CardService {
     // notify that the cards are not yet loaded
     this.cards$.next(undefined);
     const url = `assets/card-content/${language}/metadata.json`;
-  
+
     this.cards = await this.http
       .get<CardMetadata[]>(url)
       .toPromise()
@@ -77,7 +77,6 @@ export class CardService {
       });
     this.cards$.next(this.cards);
   }
-
 
   public _subscribeToRouteChanges() {
     this.appService.routeParams$.subscribe(async (params) => {
