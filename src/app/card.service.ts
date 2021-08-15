@@ -79,12 +79,13 @@ export class CardService {
   }
 
 
-  private _subscribeToRouteChanges() {
+  public _subscribeToRouteChanges() {
     this.appService.routeParams$.subscribe(async (params) => {
       if (params.lang) {
         console.log("Route changed");
         await this.readAllCards(params.lang as any);
       }
     });
+    return true;
   }
 }

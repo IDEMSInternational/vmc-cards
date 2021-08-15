@@ -67,6 +67,11 @@ export class CardComponent implements OnInit {
       .subscribe((card) => (this.card = card));
   }
 
+  pageReload(_event){
+    if(this.cardService._subscribeToRouteChanges()){
+      window.location.reload()
+    }
+  }
   showHint() {
     this.showHintContent = this.showHintContent ? false : true;
   }

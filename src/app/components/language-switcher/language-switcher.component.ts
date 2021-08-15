@@ -24,6 +24,10 @@ export class LanguageSwitcherComponent implements OnInit {
     const selected: ILanguageCode = event.value;
     if (selected !== this.languageService.activeLanguage$.value) {
       this.languageService.setLanguage(selected);
+      setTimeout(()=>{
+        window.location.reload();
+      }, 400);
+      
     }
   }
 }
