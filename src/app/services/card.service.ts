@@ -3,9 +3,9 @@ import { HttpClient } from "@angular/common/http";
 import { Router, ActivatedRoute } from "@angular/router";
 import { map } from "rxjs/operators";
 import { observable, Observable } from "rxjs";
-import { Card, CardMetadata } from "./models/card.model";
-import { ILanguageCode } from "./services/language.service";
-import { AppService } from "./services/app.service";
+import { Card, CardMetadata } from "../models/card.model";
+import { ILanguageCode } from "./language.service";
+import { AppService } from "./app.service";
 import { BehaviorSubject } from "rxjs";
 
 @Injectable({
@@ -30,25 +30,6 @@ export class CardService {
 
   public getCard(slug: string, lang: string): Observable<Card> {
     let actualSlug = slug.replace(/.html*/, "");
-
-    // const cardRegex = /([A|2-9|10|J|Q|K]+)([C|S|H|D]+)/;
-    // const matchResult = slug.toUpperCase().match(cardRegex);
-    // if (matchResult) {
-    //   let suitMap = {
-    //     C: "club",
-    //     S: "spade",
-    //     H: "heart",
-    //     D: "diamond",
-    //   };
-    //   let value = matchResult[1];
-    //   let suit = suitMap[matchResult[2]];
-    //   if (value && suit) {
-    //     let matchingCard = this.cards.find((card) => {
-    //       return card.card_suit === suit && card.card_value === value;
-    //     });
-    //     actualSlug = matchingCard.slug;
-    //   }
-    // }
 
     const url = `assets/card-content/${lang}/cards/${actualSlug}.json`;
     return this.http.get(url).pipe(

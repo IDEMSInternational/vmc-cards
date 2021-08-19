@@ -1,9 +1,9 @@
 import { Component, OnInit, ViewEncapsulation } from "@angular/core";
-import { CardService } from "src/app/card.service";
+import { CardService } from "src/app/services/card.service";
 import { ActivatedRoute } from "@angular/router";
 import { Card } from "src/app/models/card.model";
 import { Feedback } from "src/app/models/feedback.model";
-import { FeedbackService } from "src/app/feedback.service";
+import { FeedbackService } from "src/app/services/feedback.service";
 import { MatSnackBar } from "@angular/material/snack-bar";
 
 @Component({

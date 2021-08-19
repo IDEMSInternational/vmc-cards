@@ -1,5 +1,5 @@
 import { Component, OnInit, ViewEncapsulation } from "@angular/core";
-import { CardService } from "src/app/card.service";
+import { CardService } from "src/app/services/card.service";
 import { AppService } from "src/app/services/app.service";
 
 @Component({

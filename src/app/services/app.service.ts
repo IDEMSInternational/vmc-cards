@@ -21,10 +21,6 @@ export class AppService {
     this.title$.next(title);
   }
 
-  goBack() {
-    this.router.navigate([".."], { relativeTo: this.route, replaceUrl: true });
-  }
-
   private _processRouteChanges() {
     this.router.events.subscribe((event) => {
       if (event instanceof NavigationEnd) {
