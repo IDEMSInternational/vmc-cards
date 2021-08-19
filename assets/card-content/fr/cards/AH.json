@@ -1,0 +1,23 @@
+{
+  "title": "Probabilité d'anniversaire",
+  "metadata": {
+    "type": "fait amusant"
+  },
+  "main_version": {
+    "statement": "<p>Dans une chambre de 23 personnes, la probabilité que deux personnes aient le même anniversaire dépasse 50 %.</p>",
+    "hint": "<p>La probabilité que deux personnes aient le même anniversaire n'est que de 1 moins la probabilité que l'anniversaire de chacun soit différent.</p>\n<p>Vous devriez vous poser les questions suivantes :</p>\n<p>Si nous n'avons que 2 personnes, quelle est la probabilité que leur anniversaire soit différent?</p><p>Si nous avions 5 personnes, de combien de façons pouvons-nous en choisir deux pour comparer leurs anniversaires?</p>\n<p>Qu'obtenons-nous si nous adoptons la même approche pour 23 personnes?</p>",
+    "explanation": "<p>La probabilité que deux personnes aient des anniversaires différents est d'environ 364 ∕ 365. Il y a 253 paires de personnes différentes dans une salle de 23 personnes, donc la probabilité qu'ils aient tous des anniversaires différents est d'environ 364/365 à la puissance 253. Ceci est 0,4995 légèrement moins que 50% donc la probabilité d'avoir 2 personnes dans la salle avec le même anniversaire est un peu plus de 50%. En fait, nous devrions inclure des années bissextiles, mais le résultat est toujours vrai si vous le faites.</p>"
+  },
+  "extension_1": {
+    "statement": "<p>S'il y a 50 personnes dans une pièce, quelle est la chance que deux personnes partagent un anniversaire?</p>",
+    "hint": "<p>Réfléchissez à ces questions : </p>\n<p>Combien de paires possible y a-t-il dans une chambre avec 50 personnes? </p>\n<p>Quelle est la chance que chaque paire de personnes aient des anniversaires différents les uns des autres?</p>",
+    "explanation": "<p>Le nombre de paires de personnes est de 50x49 ∕ 2 = 1225. La probabilité d'une paire unique est 364 ∕ 365. La probabilité de 1225 paires uniques est (364 ∕ 365)¹²²⁵ = 0.0347. La probabilité d'au moins un match est de 1 - 0,0347 = 0,9653, ce qui est 96,53%. Alors incroyablement probable!</p>"
+  },
+  "additional_information": {
+    "about": "<p>Ce problème n'est pas un paradoxe mais il est contre-intuitif. Le nombre de personnes nécessaires semble étonnamment petit, peut-être parce que nous nous imaginons comme l'une des personnes présentes dans la salle et que nous ne pensons qu'à 22 possibilités qui correspondent, plutôt que de penser aux 253 paires de personnes différentes dans la salle. </p>\n<p>Vous pouvez étendre le problème d'anniversaire - vous n'aurez besoin que de 88 personnes pour avoir plus de 50% de chances que 3 personnes partagent un anniversaire.</p>\n<p>Avez-vous connu une coïncidence surprenante dans votre vie ? </p>\n<p>Des coïncidences telles que rencontrer quelqu'un avec exactement le même anniversaire que vous sont des événements improbables par eux-mêmes. Cependant, comme pour le problème d'anniversaire, le nombre d'événements peut augmenter exponentiellement, ce qui signifie que, dans un groupe ou au fil du temps, il est plus probable d'avoir des coïncidences que pas!</p>\n<p>Si vous n'avez pas encore eu de coïncidence, ne vous inquiétez pas. Si vous continuez à chercher, il est peu probable que rien de peu vous arrivera ! </p>",
+    "references": [
+      "<p><a href=\"https://betterexplained.com/articles/understanding-the-birthday-paradox/\" target=”_blank”>https://betterexplained.com/articles/understanding-the-birthday-paradox/</a></p>",
+      "<p><a href=\"https://oeis.org/A014088\" target=”_blank”>https://oeis.org/A014088</a></p>"
+    ]
+  }
+}

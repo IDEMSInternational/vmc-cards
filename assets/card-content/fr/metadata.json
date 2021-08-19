@@ -1,0 +1,11 @@
+[  
+    {"title": "Probabilité d'anniversaire", "type": "funfact", "slug": "AH", "card_value":"A", "card_suit":"heart"},
+    {"title": "Nombre de Kaprekar", "type": "funfact", "slug": "2H", "card_value":"2", "card_suit":"heart"},
+    {"title": "Palindrome Cube", "type": "funfact", "slug": "3H", "card_value":"3", "card_suit":"heart"},
+    {"title": "Quatre couleurs", "type": "funfact", "slug": "4H", "card_value":"4", "card_suit":"heart"},
+    {"title": "Ramanujan", "type": "funfact", "slug": "5H", "card_value":"5", "card_suit":"heart"},
+    {"title": "Nombres abondants", "type": "funfact", "slug": "6H", "card_value":"6", "card_suit":"heart"},
+    {"title": "Papier plié", "type": "funfact", "slug": "7H", "card_value":"7", "card_suit":"heart"},
+    {"title": "Nombres carrés et nombres triangulaires", "type": "funfact", "slug": "10H", "card_value":"10", "card_suit":"heart"}
+
+]
