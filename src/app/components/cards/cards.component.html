@@ -1,5 +1,5 @@
-<section class="cards-container" *ngIf="deck">
-  <section *ngFor="let card of deck">
+<section class="cards-container" *ngIf="cardService.cards$ | async as cards">
+  <section *ngFor="let card of cards">
     <mat-card class="card-mat">
       <mat-card-subtitle>{{card.title}}</mat-card-subtitle>
       <img 

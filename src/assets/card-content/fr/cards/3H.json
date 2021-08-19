@@ -1,0 +1,23 @@
+{
+  "title": "Palindrome Cube",
+  "metadata": {
+    "type": "fait amusant"
+  },
+  "main_version": {
+    "statement": "<p>10662526601 = 2201³ est le seul cube palindromique connu dont la racine cube n’est pas palindromique (un palindrome est un nombre qui reste pareil qu'on le lise de gauche à droite ou de droite à gauche).</p>",
+    "hint": "<p>Prenez le numéro 1030301. C'est un palindrome. Sa racine cubique est 101, qui est aussi un palindrome. Pouvez-vous trouver d'autres exemples de paires où le nombre et sa racine cubique sont aussi des palindromes? (N'oubliez pas que tous les nombres à un seul chiffre sont des palindromes!)   </p>",
+    "explanation": "<p>Selon l'Encyclopédie en ligne des séquences d'entiers, On-line Encyclopedia of Integer Sequences, la séquence d'entiers positifs dont le cube est palindromique commence:</p>\n<p>1, 2, 7, 11, 101, 111, 1001, 2201, 10001, 10101, \u2026</p>\n<p>La séquence correspondante des cubes palindromiques commence :</p>\n<p>1, 8, 343, 1331, 1030301, 1367631, 1003003001, 10662526601, 1000300030001, \u2026</p>\n<p>2201 est le plus petit nombre (et seulement connu jusqu'à présent) qui est lui-même non palindromique. </p>"
+  },
+  "extension_1": {
+    "statement": "<p>Il y a 5 nombres carrés palindromiques entre 1 et 100 (inclus) dont la racine carrée est également un palindrome. Pouvez-vous tous les trouver?</p>",
+    "hint": "<p>Rappelez-vous que tous les nombres à un chiffre sont des palindromes.</p>",
+    "explanation": "<p>Les cinq nombres sont 1\u00b2=1, 2\u00b2=4, 3\u00b2=9, 11\u00b2=121, 22\u00b2=484</p>"
+  },
+  "additional_information": {
+    "about": "<p>Les gens ont utilisé les ordinateurs pour essayer de trouver un autre numéro palindromique dont la racine cube n'est pas palindromique mais personne n'en a trouvé un. Cela peut être dû au fait qu'il en existe un qui est plus grand que les nombres qui ont été testés jusqu'à présent. ou il se peut qu'ils n'existent plus d'autres.</p>",
+    "references": [
+      "<p><a href=\"https://oeis.org/\" target=”_blank”>https://oeis.org/</a> </p>",
+      "<p><a href=\"https://proofwiki.org/wiki/Sequence_of_Palindromic_Cubes\" target=”_blank”>https://proofwiki.org/wiki/Sequence_of_Palindromic_Cubes</a> </p>"
+    ]
+  }
+}

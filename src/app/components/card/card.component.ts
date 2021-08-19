@@ -1,9 +1,9 @@
-import { Component, Inject, OnInit, ViewEncapsulation } from "@angular/core";
-import { CardService } from "src/app/card.service";
+import { Component, OnInit, ViewEncapsulation } from "@angular/core";
+import { CardService } from "src/app/services/card.service";
 import { ActivatedRoute } from "@angular/router";
 import { Card } from "src/app/models/card.model";
 import { Feedback } from "src/app/models/feedback.model";
-import { FeedbackService } from "src/app/feedback.service";
+import { FeedbackService } from "src/app/services/feedback.service";
 import { MatSnackBar } from "@angular/material/snack-bar";
 
 @Component({
@@ -13,8 +13,7 @@ import { MatSnackBar } from "@angular/material/snack-bar";
   encapsulation: ViewEncapsulation.None,
 })
 export class CardComponent implements OnInit {
-  card: Card;
-  //feedback: Feedback;
+  card: Card | undefined;
   public feedback: Feedback = {
     name: "",
     country: "",
@@ -47,30 +46,28 @@ export class CardComponent implements OnInit {
   answer: string;
   durationInSeconds = 5;
 
+  private lang;
+  private slug;
+
   constructor(
     public cardService: CardService,
     private route: ActivatedRoute,
     public feedbackService: FeedbackService,
     private _snackBar: MatSnackBar
-  ) {
-    this.cardService.readAllCards().subscribe((data) => {
-      this.cardService
-        .getCard(this.route.snapshot.params.slug)
-        .subscribe((card) => {
-          this.card = this.replaceImageURLs(card);
-          console.log(this.card);
-        });
-    });
+  ) {}
+
+  ngOnInit() {
+    this.lang = this.route.snapshot.params.lang;
+    this.slug = this.route.snapshot.params.slug;
+    this.displayCard();
   }
 
-  ngOnInit(): void {}
-
-  replaceImageURLs(cardContent: Card): Card {
-    const originalContent = JSON.stringify(cardContent);
-    const updatedContent = originalContent.replace(/\images/g, "assets/images");
-    const newContent = JSON.parse(updatedContent);
-    return newContent as Card;
+  displayCard() {
+    this.cardService
+      .getCard(this.slug, this.lang)
+      .subscribe((card) => (this.card = card));
   }
+
   showHint() {
     this.showHintContent = this.showHintContent ? false : true;
   }
@@ -83,7 +80,7 @@ export class CardComponent implements OnInit {
   showReferences() {
     this.showReferencesContent = this.showReferencesContent ? false : true;
   }
-  showAbout(){
+  showAbout() {
     this.showAboutContent = this.showAboutContent ? false : true;
   }
   showExtension() {
@@ -109,9 +106,6 @@ export class CardComponent implements OnInit {
     this.showExtension2Content = this.showExtension2Content ? false : true;
     this.showExtension1Content = false;
     this.showMainContent = false;
-
-
-    // this.showExtensionsContent = this.showExtensionsContent ? false : true;
   }
   extension1Hint() {
     this.showExtension1Hint = this.showExtension1Hint ? false : true;

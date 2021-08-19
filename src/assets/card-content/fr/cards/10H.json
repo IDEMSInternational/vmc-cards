@@ -1,0 +1,24 @@
+{
+  "title": "Nombres carrés et nombres triangulaires",
+  "metadata": {
+    "type": "fait amusant"
+  },
+  "main_version": {
+    "statement": "<p>Les six premiers nombres triangulaires sont 1, 3, 6, 10 et 15</p>\n<p>Les six premiers numéros carrés sont 1, 4, 9, 16 et 25</p>\n<p>Tout nombre carré supérieur à 1 est la somme de deux nombres triangulaires consécutifs.</p>",
+    "hint": "<p>Les nombres triangulaires peuvent être dessinés avec des points en forme de triangle. Les numéros carrés peuvent être dessinés avec des points en forme de grille carrée. Voyez si vous pouvez représenter cela visuellement en premier. Pouvez-vous aussi l'exprimer algébriquement?</p>",
+    "explanation": "<p>D'abord, nous montrons cela visuellement, dans l'image ci-dessous, vous pouvez voir que 4 = 1 + 3, 9 = 3 + 6, 16 = 6 + 10, et 25 = 10 + 15. </p>\n<p><img alt=\"\" src=\"images/Square_Numbers_and_Triangular_Numbers_image_0.png\" class=\"Square_Numbers_and_Triangular_Numbers_image_0\" /></p>\n<p>Si nous prenons T = triangulaire et S = carré, alors nous pouvons dessiner le nombre S en tant que grille S de points, le plus petit nombre T forme le T supérieur des points, le plus grand nombre T forme le T inférieur ET la diagonale des points.</p>\n<p>Ce sont des nombres triangulaires consécutifs qui forment un carré.  </p>\n<p>La longueur latérale en points du plus grand nombre T est la racine carrée du nombre S. </p>"
+  },
+  "extension_1": {
+    "statement": "<p>Trouvez le 250\u1d57\u02b0 nombre triangulaire.</p>",
+    "hint": "<p>Commencer par un petit nombre triangulaire peut vous aider. Pouvez-vous utiliser le modèle de triangles et de carrés pour vous aider ? Quel carré pourrait être la somme du 250\u1d57\u02b0 nombre triangulaire et d'un autre nombre triangulaire? Pensez au 250\u1d57\u02b0 nombre carré et à son rapport avec le 250\u1d57\u02b0 nombre triangulaire.</p>",
+    "explanation": "<p>Regardons d'abord un plus petit exemple. Nous pourrions trouver le 5\u1d57\u02b0 numéro triangulaire en utilisant ce carré:</p>\n<p><img alt=\"\" src=\"images/Square_Numbers_and_Triangular_Numbers_image_1.png\" class=\"Square_Numbers_and_Triangular_Numbers_image_1\" /></p>\n<p>Nous recherchons le nombre de carrés violets. Nous pouvons calculer \u00bd\u00d7(5\u00d75 - 5) = 10 pour obtenir le triangle rose. Et en ajoutant sur les 5 carrés de la diagonale, on obtient le triangle violet. Du coup nous avons 15.</p>\n<p><img alt=\"\" src=\"images/Square_Numbers_and_Triangular_Numbers_image_2.png\" class=\"Square_Numbers_and_Triangular_Numbers_image_2\" /></p>\n<p>Pour le 250\u1d57\u02b0 nombre triangulaire, nous recherchons le nombre de carrés dans le \"triangle\" noir. Il sera environ \u00bd\u00d7250\u00d7250, sauf que la diagonale sera incluse. On calcule donc \u00bd\u00d7(250\u00d7250 - 5) pour trouver le triangle bleu, puis on ajoute 250 pour trouver le triangle noir, la réponse est 31375.</p>\n<p>On peut étendre cette logique pour trouver une formule pour le n-ième nombre triangulaire</p>\n<p>\u00bd\u00d7(n\u00d7n - n) + n = \u00bd\u00d7(n\u00b2 +2\u00d7n - n) = \u00bd\u00d7(n\u00b2 + n) = \u00bd\u00d7n\u00d7(n + 1)</p>\n<p>Vérifier: \u00bd\u00d7250\u00d7251 = 31375</p>\n<p>En utilisant la formule, on peut également voir que les nombres triangulaires consécutifs ajoutent à un nombre carré. Les nombres triangulaires consécutifs peuvent être représentés par \u00bd\u00d7(n - 1)\u00d7n and \u00bd\u00d7n\u00d7(n + 1).</p>\n<p>Si on ajoute ces nombres triangulaires consécutifs et qu'on simplifie, on peut trouver:</p>\n<p>\u00bd\u00d7(n - 1)\u00d7n + \u00bd\u00d7n\u00d7(n + 1)=  \u00bd\u00d7((n - 1)\u00d7n + n\u00d7(n + 1)) = \u00bd\u00d7(n\u00b2 - n + n\u00b2  + n) = n\u00b2 </p>"
+  },
+  "additional_information": {
+    "about": "<p>La formule pour le n\u1d57\u02b0 triangulaire est aussi exactement égale à la somm 1 + 2 + 3 + \u2026 + n et c'est donc un moyen rapide pour ajouter des listes de nombres consécutifs! Cette formule a été écrite par le moine irlandais Dicuil environ 816AD mais était probablement déjà connue des Pythagores au Ve siècle av. J.-C.</p>",
+    "references": [
+      "<p><a href=\"https://www.geogebra.org/m/ZXAP0QPv\" target=”_blank”>https://www.geogebra.org/m/ZXAP0QPv</a> </p>",
+      "<p><a href=\"https://nrich.maths.org/2274\" target=”_blank”>https://nrich.maths.org/2274</a></p>",
+      "<p><a href=\"https://en.wikipedia.org/wiki/Triangular_number#Applications\" target=”_blank”>https://en.wikipedia.org/wiki/Triangular_number#Applications</a></p>"
+    ]
+  }
+}
