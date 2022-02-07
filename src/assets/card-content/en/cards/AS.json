@@ -9,7 +9,7 @@
     "strategy_tips": "<p>Write down all the combinations of three numbers that add up to 15. How can you be sure that you have found all the combinations? Which numbers appear in 2, 3, and 4 of these combinations?</p>\n<p>Think about other games you might have played that this is similar to. Is it an advantage to go first or second?</p>"
   },
   "extension_1": {
-    "statement": "<p>Try playing the game again, but with the cards arranged like this to start with. </p>\n<p><img alt=\"\" src=\"images/Fifteen_image_0.png\" class=\"Fifteen_image_0\" /></p>\n<p>What do you notice about the way the numbers are arranged? Does it remind you of any other game?</p>"
+    "statement": "<p>Try playing the game again, but with the cards arranged like this to start with. </p>\n<p><img alt=\"\" src=\"assets/images/Fifteen_image_0.png\" class=\"Fifteen_image_0\" /></p>\n<p>What do you notice about the way the numbers are arranged? Does it remind you of any other game?</p>"
   },
   "additional_information": {
     "about": "<p>This game is interesting because it is the same as the game tic-tac-toe/naughts and crosses. The technical term for this is <em>isomorphic. </em>In mathematics it is often helpful, when faced with a new problem, to relate it to one you already know how to solve.</p>",
