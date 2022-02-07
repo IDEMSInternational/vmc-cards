@@ -15,8 +15,14 @@
     "correct_answer": "7",
     "explanation": "<p>If you start with the point at the top, you will notice that after following all the lines, you end up at the start again. But this means you went in a loop! So you can start anywhere along this loop and simply follow the lines the same way you did before, and you will end up where you started. This means you can start from any of the vertices and visit all lines. </p>"
   },
+  "extension_2": {
+    "statement": "<p>Remember that an Euler Path visits every edge once, and an Euler circuit does the same but starts and ends in the same point. How many of these graphs are Euler circuits?</p>",
+    "hint": "<p>Look to see how many nodes have an odd number of edges.</p>",
+    "correct_answer": "4",
+    "explanation":"<p>If there are no odd nodes or if there are two odd nodes, that means that the network is traversable. Graphs with only two odd nodes are in an Euler path and graphs with no odd nodes are in an Euler circuit. 2, 3, 7 and 9 have no odd nodes so they are the four graphs with Euler circuits.</p>"
+  },
   "additional_information": {
-    "about": "<p>A version of this problem was originally solved by Leonard Euler. In a city consisting of 4 islands linked by bridges, he wondered if it is possible to go for a walk and cross each bridge exactly once. If you draw a vertex for each island, and a line between two vertices for each bridge, you get a drawing like in this puzzle.</p>",
+    "about": "<p>A version of this problem was originally solved by Leonard Euler. In a city consisting of 4 islands linked by bridges, the people of the town wondered if it was possible to go for a walk and cross each bridge exactly once. Euler solved this problem first by simplifying it with a vertex for each island, and a line between two vertices for each bridge to get a drawing like in this puzzle. In this way the study of Topology was born. The second extension gives lots of practice looking for Euler circuits and was taken from the brilliant NRICH website.</p>",
     "references": [
       "<p><a href=\"https://en.wikipedia.org/wiki/Seven_Bridges_of_K%C3%B6nigsberg\" target=”_blank”>https://en.wikipedia.org/wiki/Seven_Bridges_of_K%C3%B6nigsberg</a> </p>"
     ]
