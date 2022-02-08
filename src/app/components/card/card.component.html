@@ -9,7 +9,7 @@
   </mat-card>
   <section>
     <img class="card-image" src="{{'assets/print-cards/' +card.card_value.toLowerCase()+card.card_suit.charAt(0).toLowerCase()+'.png'}}"/>
-    <div class="references">
+    <div class="references" *ngIf="card.card_suit === 'diamond' || card.card_suit === 'club' || card.card_suit ==='heart'">
       <button mat-raised-button color="primary" (click)="showHint()">{{
         showHintContent ?"Hide Hint to Main Statement Answer": "Show Hint to Main Statement Answer"}}</button>
     </div>
@@ -115,7 +115,7 @@
             <mat-card-subtitle> Statement:</mat-card-subtitle>
           <p [innerHTML]="card.extension_1.statement"></p>
           </span>
-          <button mat-raised-button color="primary" (click)="extension1Hint()">{{showExtension1Hint?"Hide Hint": "Show Hint to Answer"}}</button>
+          <button *ngIf="card.extension_1.hint" mat-raised-button color="primary" (click)="extension1Hint()">{{showExtension1Hint?"Hide Hint": "Show Hint to Answer"}}</button>
          
           <div *ngIf="showExtension1Hint">
           <span class="ext_1_hint" *ngIf="card.extension_1.hint">
