@@ -70,6 +70,8 @@ export class CardComponent implements OnInit {
 
   showHint() {
     this.showHintContent = this.showHintContent ? false : true;
+    this.showMainContent = true;
+
   }
   showAnswer() {
     this.showAnswerContent = this.showAnswerContent ? false : true;

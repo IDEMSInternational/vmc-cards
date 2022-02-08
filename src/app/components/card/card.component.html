@@ -9,13 +9,18 @@
   </mat-card>
   <section>
     <img class="card-image" src="{{'assets/print-cards/' +card.card_value.toLowerCase()+card.card_suit.charAt(0).toLowerCase()+'.png'}}"/>
- 
-  <div class="main_version_statements" *ngIf="showMainContent">   
+    <div class="references">
+      <button mat-raised-button color="primary" (click)="showHint()">{{
+        showHintContent ?"Hide Hint to Main Statement Answer": "Show Hint to Main Statement Answer"}}</button>
+    </div>
+  
+  <div class="main_version_statements" *ngIf="showMainContent">
+   
   <div *ngIf="card.card_suit === 'diamond' || card.card_suit === 'club'">
      <!--Puzzles and Counting-->
 
-     <button mat-raised-button color="primary" (click)="showHint()">{{
-       showHintContent ?"Hide Hint": "Show Hint to Answer"}}</button>
+     
+
 
      <div *ngIf="showHintContent">
       <mat-card class="main_version" *ngIf="card.main_version">
@@ -46,13 +51,12 @@
               <mat-card-subtitle> Strategy Tips:</mat-card-subtitle>
               <p [innerHTML]="card.main_version.strategy_tips"></p>
             </span>
-            <button mat-raised-button color="accent" (click)="showExtension()">{{showExtensionsContent?"Hide Extensions": "Show Extensions"}}</button>
           </div>
         </div>
         </mat-card>
     </div>
     </div>
-
+    
     <div *ngIf="card.card_suit === 'heart'">
       <!--Fun Fact-->
       <button mat-raised-button color="primary" (click)="showHint()">{{showHintContent?"Hide Hint": "Show Hint to Funfact"}}</button>
@@ -199,7 +203,9 @@
  
    </div>
   
-   
+   <div class="references">
+    <button mat-raised-button color="accent" (click)="showExtension()">Extensions</button>
+  </div>
     <section class="references">
       <mat-expansion-panel>
         <mat-expansion-panel-header>
