@@ -4,7 +4,7 @@
     "type": "puzzle"
   },
   "main_version": {
-    "statement": "<p>Below is a single sheet from a newspaper. Given that each sheet has four pages, how many sheets are there altogether?</p>\n<p><img alt=\"\" src=\"images/Newspaper_image_0.png\" class=\"Newspaper_image_0\" /></p>",
+    "statement": "<p>Below is a single sheet from a newspaper. Given that each sheet has four pages, how many sheets are there altogether?</p>\n<p><img alt=\"\" src=\"assets/images/Newspaper_image_0.png\" class=\"Newspaper_image_0\" /></p>",
     "correct_answer": "17",
     "hint": "<p>Can you work backwards from 8 to work out how many sheets would be underneath this one? You might want to use bits of paper and number them to help.</p>",
     "explanation": "<p>On the back of the number 8 there must be the number 7. The sheet below must have the numbers 6 and 5. Keeping going there will be 4 and 3 and finally 2 and 1. So there are three sheets underneath. Adding on 7 to the 61 gives the last page as 68. Given each sheet has four pages, there are 68 \u2215 4 = 17 sheets.</p>"

@@ -9,14 +9,17 @@
   </mat-card>
   <section>
     <img class="card-image" src="{{'assets/print-cards/' +card.card_value.toLowerCase()+card.card_suit.charAt(0).toLowerCase()+'.png'}}"/>
- 
-  <div class="main_version_statements" *ngIf="showMainContent">   
+    <div class="references" *ngIf="card.card_suit === 'diamond' || card.card_suit === 'club' || card.card_suit ==='heart'">
+      <button mat-raised-button color="primary" (click)="showHint()">{{
+        showHintContent ?"Hide Hint to Main Statement Answer": "Show Hint to Main Statement Answer"}}</button>
+    </div>
+  
+  <div class="main_version_statements" *ngIf="showMainContent">
+   
   <div *ngIf="card.card_suit === 'diamond' || card.card_suit === 'club'">
      <!--Puzzles and Counting-->
 
-     <button mat-raised-button color="primary" (click)="showHint()">{{
-       showHintContent ?"Hide Hint": "Show Hint to Answer"}}</button>
-
+     
      <div *ngIf="showHintContent">
       <mat-card class="main_version" *ngIf="card.main_version">
     
@@ -46,13 +49,12 @@
               <mat-card-subtitle> Strategy Tips:</mat-card-subtitle>
               <p [innerHTML]="card.main_version.strategy_tips"></p>
             </span>
-            <button mat-raised-button color="accent" (click)="showExtension()">{{showExtensionsContent?"Hide Extensions": "Show Extensions"}}</button>
           </div>
         </div>
         </mat-card>
     </div>
     </div>
-
+    
     <div *ngIf="card.card_suit === 'heart'">
       <!--Fun Fact-->
       <button mat-raised-button color="primary" (click)="showHint()">{{showHintContent?"Hide Hint": "Show Hint to Funfact"}}</button>
@@ -63,7 +65,7 @@
           <mat-card-subtitle > Hint:</mat-card-subtitle>
           <p [innerHTML]="card.main_version.hint"></p>
 
-          <button mat-raised-button color="primary" (click)="showExplanation()">{{showExplanationContent?"Hide Explanation": "Show Explanation"}}</button>
+          <button mat-raised-button color="primary" (click)="showExplanation()">{{showExplanationContent?"Hide Answer": "Show Answer"}}</button><!--Changed the button text to Answer, lablled explanation in dataset-->
         </span>  
   
           <div class="explanation" *ngIf="showExplanationContent">
@@ -111,7 +113,7 @@
             <mat-card-subtitle> Statement:</mat-card-subtitle>
           <p [innerHTML]="card.extension_1.statement"></p>
           </span>
-          <button mat-raised-button color="primary" (click)="extension1Hint()">{{showExtension1Hint?"Hide Hint": "Show Hint to Answer"}}</button>
+          <button *ngIf="card.extension_1.hint" mat-raised-button color="primary" (click)="extension1Hint()">{{showExtension1Hint?"Hide Hint": "Show Hint to Answer"}}</button>
          
           <div *ngIf="showExtension1Hint">
           <span class="ext_1_hint" *ngIf="card.extension_1.hint">
@@ -199,7 +201,9 @@
  
    </div>
   
-   
+   <div class="references">
+    <button mat-raised-button color="accent" (click)="showExtension()">Extensions</button>
+  </div>
     <section class="references">
       <mat-expansion-panel>
         <mat-expansion-panel-header>
