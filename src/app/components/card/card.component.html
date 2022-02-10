@@ -20,8 +20,6 @@
      <!--Puzzles and Counting-->
 
      
-
-
      <div *ngIf="showHintContent">
       <mat-card class="main_version" *ngIf="card.main_version">
     
@@ -67,7 +65,7 @@
           <mat-card-subtitle > Hint:</mat-card-subtitle>
           <p [innerHTML]="card.main_version.hint"></p>
 
-          <button mat-raised-button color="primary" (click)="showExplanation()">{{showExplanationContent?"Hide Explanation": "Show Explanation"}}</button>
+          <button mat-raised-button color="primary" (click)="showExplanation()">{{showExplanationContent?"Hide Answer": "Show Answer"}}</button><!--Changed the button text to Answer, lablled explanation in dataset-->
         </span>  
   
           <div class="explanation" *ngIf="showExplanationContent">
