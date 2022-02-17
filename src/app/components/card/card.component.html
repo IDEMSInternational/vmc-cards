@@ -125,6 +125,11 @@
           </span>
   
           <div *ngIf="showExtension1Answer">
+            <div *ngIf="card.card_suit === 'heart'">
+              <span class="ext_1_answer"></span>
+              <mat-card-subtitle> Explanation:</mat-card-subtitle>
+              <p [innerHTML]="card.extension_1.explanation"></p>
+            </div> 
             <span class="ext_1_answer" *ngIf="card.extension_1.correct_answer">
               <mat-card-subtitle> Correct Answer:</mat-card-subtitle>
               <p>{{card.extension_1.correct_answer}}</p>
@@ -153,7 +158,7 @@
             <mat-card-subtitle> Statement:</mat-card-subtitle>
           <p [innerHTML]="card.extension_2.statement"></p>
           </span>
-          <button mat-raised-button color="primary" (click)="extension2Hint()">{{showExtension2Hint?"Hide Hint": "Show Hint to Answer"}}</button>
+          <button *ngIf="card.extension_1.hint" mat-raised-button color="primary" (click)="extension2Hint()">{{showExtension2Hint?"Hide Hint": "Show Hint to Answer"}}</button>
           <div *ngIf="showExtension2Hint">
           <span class="ext_2_hint" *ngIf="card.extension_2.hint">
             <mat-card-subtitle> Hint:</mat-card-subtitle>
