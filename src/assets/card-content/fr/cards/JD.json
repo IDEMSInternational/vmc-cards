@@ -1,0 +1,31 @@
+{
+  "title": "Chemins Différents",
+  "metadata": {
+    "type": "comptage"
+  },
+  "main_version": {
+    "statement": "<p>Il y a 5 chemins différents que vous pouvez prendre pour aller de chez vous à l'école. En une semaine (du lundi au vendredi), vous souhaitez essayer un chemin différent chaque jour. De combien de façons différentes pouvez-vous organiser votre marche vers l'école pour la semaine ?</p>",
+    "correct_answer": "120",
+    "hint": "<p>Pensez à combien d'options vous avez pour choisir le premier chemin, puis combien vous en avez pour le deuxième, et ainsi de suite. Faites attention à ne pas choisir le même chemin deux fois dans la semaine.</p>",
+    "explanation": "<p>Vous avez 5 jours possibles de la semaine et vous souhaitez avoir un chemin différent par jour. Le premier jour, vous avez un choix de 5 chemins. Le deuxième jour, vous n'avez plus que 4 chemins parmi lesquels choisir car vous ne pouvez pas prendre celui que vous avez pris le lundi. Le troisième jour, vous avez 3 chemins disponibles, et ainsi de suite. La solution est donc 5 × 4 × 3 × 2 × 1 = 120. Cela correspond au nombre de façons d'organiser 5 objets (chemins) en 5 positions (jours de la semaine). Il s'agit d'un problème de <em>permutations</em> (sans répétition).</p>\n<p>Le symbole mathématique ! est appelé <em>factoriel</em> et représente la multiplication par des entiers décroissants jusqu'à atteindre 1. Ainsi, 5 × 4 × 3 × 2 × 1 peut être écrit comme 5!</p>"
+  },
+  "extension_1": {
+    "statement": "<p>Et si vous deviez aller à l'école le samedi également et que vous trouviez un nouveau chemin ? De combien de façons pouvez-vous organiser votre semaine de sorte que chaque jour vous alliez à l'école en empruntant un chemin différent ?</p>",
+    "hint": "<p>Y a-t-il un moyen d'utiliser le résultat du problème précédent ? Pensez à combien de façons vous pouvez maintenant marcher à l'école le lundi.</p>",
+    "correct_answer": "720",
+    "explanation": "<p>Vous avez maintenant 6 jours possibles dans la semaine et 6 chemins différents. Vous souhaitez avoir un chemin différent chaque jour. La solution est obtenue en comptant combien de façons vous pouvez organiser 6 objets (chemins) en 6 positions (jours de la semaine). La solution est donc obtenue par 6 × 5 × 4 × 3 × 2 × 1 = 720. Remarquez que c'est 6 fois la solution précédente (6 fois 120). Vous venez de découvrir une propriété récursive des factorielles : n! = n × (n - 1)!</p>"
+  },
+  "extension_2": {
+    "statement": "<p>Vous devez maintenant aller à l'école le dimanche également et vous avez trouvé quatre nouveaux chemins, il y a donc maintenant 10 chemins au total. De combien de façons pouvez-vous organiser votre semaine de sorte que chaque jour vous alliez à l'école en empruntant un chemin différent ?</p>",
+    "hint": "<p>Est-ce exactement le même style de problème qu'auparavant ? Pensez à combien de façons vous pouvez maintenant marcher à l'école le lundi, etc., mais lorsque vous arrivez au dimanche, il y aura encore plus d'une option à choisir.</p>",
+    "correct_answer": "604800",
+    "explanation": "<p>Vous avez maintenant 7 jours possibles dans la semaine et 10 chemins différents. Vous souhaitez avoir un chemin différent chaque jour. La solution est obtenue en comptant combien de façons vous pouvez organiser 10 objets (chemins) en 7 positions (jours de la semaine). La solution est obtenue par 10 × 9 × 8 × 7 × 6 × 5 × 4 = 604800. Si vous vouliez calculer cela en utilisant des factorielles, 10! est proche de la réponse, mais nous ne voulons pas 3 × 2 × 1 à la fin. 3 × 2 × 1 est 3!, donc nous pouvons faire 10! / 3! = 604800.</p>"
+  },
+  "additional_information": {
+    "about": "<p>Les factorielles ont été utilisées pour compter les permutations dès le XIIe siècle par des érudits indiens. La notation n! a été introduite par le mathématicien français Christian Kramp en 1808.</p>\n<p>Les factorielles augmentent très rapidement. 5! = 120, mais 20! = 2432902008176640000.</p>",
+    "references": [
+      "<p><a href=\"https://en.wikipedia.org/wiki/Factorial\" target=\"_blank\">https://en.wikipedia.org/wiki/Factorial</a></p>",
+      "<p><a href=\"https://www.mathsisfun.com/numbers/factorial.html\" target=\"_blank\">https://www.mathsisfun.com/numbers/factorial.html</a></p>"
+    ]
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "title": "Mastermind",
+  "metadata": {
+    "type": "game"
+  },
+  "main_version": {
+    "statement": "<p>Il s'agit d'un jeu à deux joueurs. Le Joueur 1 choisit secrètement quatre cartes et les dispose en ligne face cachée. Le Joueur 2 a sept tentatives pour deviner les couleurs (trèfle, carreau, cœur, pique) de ces cartes, dans l'ordre. Le Joueur 2 devine en plaçant quatre cartes en ligne face visible. Le Joueur 1 regarde les couleurs et lui indique combien de couleurs ont été devinées à la bonne position (x) et combien d'autres couleurs ont été correctement devinées mais à la mauvaise position (o). Le Joueur 2 utilise ces informations pour faire une meilleure supposition la prochaine fois.</p>",
+    "further_instructions": "<p>Voici comment un jeu peut se dérouler :</p>\n<p>Le Joueur 1 choisit : 1) 4 de Cœur, 2) 3 de Trèfle, 3) 8 de Pique, 4) 10 de Pique et les place face cachée.</p>\n<p>Le Joueur 2 place par exemple : 1) 6 de Cœur, 2) 4 de Pique, 3) J de Carreau, 4) 3 de Pique.</p>\n<p>Le Joueur 2 a trois couleurs correctes (Cœur, Pique et Pique) et deux à la bonne position - 1) et 4) donc le Joueur 1 dirait \"vous avez deux à la bonne position et une à la mauvaise position\", mais ne précise pas lesquelles - une façon facile de noter cela serait xxo. Ensuite, le joueur 2 devinerait à nouveau. Il pourrait penser que ce sont les deux dernières cartes qui étaient parfaitement correctes, donc les garder et deviner une autre première et une autre deuxième. Noter les résultats sur papier sera nécessaire et ressemblerait à ceci :</p>\n<p>CCDP  xxo</p>\n<p>TCDP  xoo </p>\n<p>Notez que c'est seulement les couleurs qui nous intéressent, pas les numéros. Le Joueur 1 ne dit pas lesquelles sont correctes, juste combien sont correctes. Le Joueur 2 continue de deviner jusqu'à ce que les quatre soient correctes. </p>",
+    "strategy_tips": "<p>Pour le devineur : Votre première supposition sera aléatoire mais après cela vous devriez utiliser la logique pour trouver ce que pourrait être la solution. Une bonne stratégie pour les débutants est de ne changer qu'une carte à la fois, mais à mesure que vous jouez davantage, vous pourriez trouver une meilleure stratégie optimale.</p>\n<p>Pour le fixeur : Réfléchissez à savoir s'il est préférable d'avoir toutes les mêmes couleurs, toutes différentes, ou certaines identiques. </p>"
+  },
+  "extension_1": {
+    "statement": "<p>Essayez de jouer au jeu en devant deviner les numéros des cartes - 1 (A) à 10 - au lieu des couleurs. Il y aura plus d'options donc ce sera beaucoup plus difficile. Vous pouvez même utiliser J, Q, K aussi.</p>"
+  },
+  "additional_information": {
+    "about": "<p>Ce jeu peut être joué avec des numéros, des lettres, des symboles ou des couleurs comme dans le jeu de société populaire.</p>",
+    "references": [
+      "<p><a href=\"https://en.wikipedia.org/wiki/Mastermind_(board_game)\" target=”_blank”>https://en.wikipedia.org/wiki/Mastermind_(board_game)</a> </p>",
+      "<p><a href=\"https://lycee.samicharity.co.uk/2017/09/21/mastermind-problems\" target=”_blank”>https://lycee.samicharity.co.uk/2017/09/21/mastermind-problems</a> </p>"
+    ]
+  }
+}

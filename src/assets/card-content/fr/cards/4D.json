@@ -1,0 +1,28 @@
+{
+  "title": "Coloration",
+  "metadata": {
+    "type": "counting"
+  },
+  "main_version": {
+    "statement": "<p>Combien de drapeaux tricolores sont possibles avec 5 couleurs disponibles de sorte que deux bandes adjacentes ne doivent PAS être de la même couleur.</p>\n<p><img alt=\"\" src=\"assets/images/Colouring_image_0.png\" class=\"Colouring_image_0\" /></p>",
+    "correct_answer": "80",
+    "hint": "<p>Pensez au nombre de couleurs différentes pouvant aller dans la première section, puis dans la deuxième ...</p>",
+    "explanation": "<p>Il y a un choix de 5 couleurs pour la première section. Une fois qu'une couleur a été choisie, la deuxième section ne peut pas être la même. Il n'y a donc que quatre couleurs à choisir pour la deuxième section. Pour la troisième section, il y a quatre couleurs à choisir, car elle ne peut pas être de la même couleur que la deuxième mais elle peut être de la même couleur que la première. Ainsi, le nombre de drapeaux tricolores avec 5 couleurs à choisir est de 5\u00d74\u00d74 = 80.</p>"
+  },
+  "extension_1": {
+    "statement": "<p>De combien de façons différentes puis-je peindre les cinq murs d'une pièce pentagonale en utilisant de la peinture rouge, bleue et verte de sorte que deux murs adjacents ne soient pas de la même couleur ?</p>\n<p><img alt=\"\" src=\"assets/images/Colouring_image_1.png\" class=\"Colouring_image_1\" /></p>",
+    "hint": "<p>Fixez une couleur, disons commencez avec le mur du haut en rouge, et essayez de lister toutes les différentes options pour les autres murs.</p>",
+    "correct_answer": "30",
+    "explanation": "<p><img alt=\"\" src=\"assets/images/Colouring_image_2.png\" class=\"Colouring_image_2\" /></p>\n<p><em>Adapté ci-dessus de nrich? https://nrich.maths.org/600/solution</em></p>"
+  },
+  "extension_2": {
+    "statement": "<p>[Énoncé d'une extension au puzzle, fait amusant, jeu ou activité]</p>",
+    "hint": "<p>[Pour les puzzles : un indice vers la solution de l'extension]</p>",
+    "correct_answer": "[Pour les puzzles : la bonne réponse pour l'extension]",
+    "explanation": "<p>[Explication du fait amusant ou de la solution à l'extension du puzzle.]</p>"
+  },
+  "additional_information": {
+    "about": "<p>[Informations générales, par exemple trivia, d'où vient le puzzle, ...]</p>",
+    "references": ""
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "title": "Latin Squares",
+  "metadata": {
+    "type": "game"
+  },
+  "main_version": {
+    "statement": "<p>Sélectionnez les 16 cartes J, Q, K et A d'un jeu. Essayez de les placer dans un carré de 4 par 4 de manière à ce que chaque rang (J, Q, K, A) et chaque couleur (Trèfle, Carreau, Cœur, Pique) apparaisse une seule fois dans chaque ligne et chaque colonne.</p>",
+    "further_instructions": "<p>Ceci peut être un puzzle pour un joueur ou vous pouvez inviter un groupe de personnes à essayer ensemble, car c'est assez difficile !</p>",
+    "strategy_tips": "<p>Commencez par ignorer les couleurs et essayez de placer les rangs dans un carré de manière à ce que chaque rang apparaisse une seule fois dans chaque ligne et chaque colonne.</p>"
+  },
+  "extension_1": {
+    "statement": "<p>Créez un carré avec les mêmes règles mais cette fois-ci incluez également les cartes 10, de manière à obtenir un carré de 5 par 4.</p>"
+  },
+  "additional_information": {
+    "about": "<p>Ce puzzle est un exemple de carré latin. Fait intéressant, si le problème impliquait 6 rangs de cartes à jouer, il serait impossible de trouver une solution. Mais avec 7 rangs, il est assez facile de trouver une solution. Les carrés latins sont utilisés dans les essais médicaux pour s'assurer que chaque participant est attribué à chaque traitement pour la même période afin de prouver quel est le meilleur traitement.</p>",
+    "references": [
+      "<p><a href=\"https://www.mathsisfun.com/puzzles/index.html\" target=”_blank”>https://www.mathsisfun.com/puzzles/index.html</a></p>",
+      "<p><a href=\"https://www.wikiwand.com/en/Mutually_orthogonal_Latin_squares\" target=”_blank”>https://www.wikiwand.com/en/Mutually_orthogonal_Latin_squares</a></p>"
+    ]
+  }
+}

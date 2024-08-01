@@ -1,0 +1,21 @@
+{
+  "title": "Nim",
+  "metadata": {
+    "type": "jeu"
+  },
+  "main_version": {
+    "statement": "<p>|</p>\n<p>| | |</p>\n<p>| | | | |</p>\n<p>Arrangez 9 bâtons en 3 rangées comme indiqué. Deux joueurs jouent à tour de rôle pour retirer un ou plusieurs bâtons d'une seule rangée. Le perdant est la personne qui prend le dernier bâton. Pouvez-vous trouver une stratégie gagnante ?</p>",
+    "further_instructions": "<p>Vous pouvez retirer autant de bâtons que vous le souhaitez à chaque tour tant qu'ils proviennent de la même rangée. Par exemple, un coup d'ouverture pourrait consister à prendre les 5 bâtons de la rangée du bas. Vous devez prendre au moins un bâton à chaque tour. Vous essayez de laisser un seul bâton à votre adversaire pour qu'il soit obligé de le prendre et perde ainsi la partie.</p>",
+    "strategy_tips": "<p>Essayez de penser à quelques coups à l'avance. Par exemple, si vous pouvez retirer un bâton pour laisser ce schéma</p>\n<p>| |</p>\n<p>| | </p>\n<p>alors vous pourrez gagner.</p>\n<p>Essayez de déterminer s'il est préférable de jouer en premier ou en deuxième.</p>"
+  },
+  "extension_1": {
+    "statement": "<p>Essayez de changer le nombre et le schéma de bâtons de départ. Vous pourriez essayer des rangées de 3, 5, 7 ou 1, 3, 5, 7 bâtons.</p>"
+  },
+  "additional_information": {
+    "about": "<p>C'est un jeu ancien qui doit son nom actuel à Charles Bouton, qui a également développé une théorie sur la façon de toujours jouer pour gagner. Sa stratégie implique des nombres binaires et peut être trouvée ici <a href=\"https://plus.maths.org/content/play-win-nim\">https://plus.maths.org/content/play-win-nim</a>. Vous pouvez jouer à différentes variantes du jeu (également appelées drips) en ligne ici https://wild.maths.org/tags/fun-drips</p>",
+    "references": [
+      "<p><a href=\"wild.maths.org/tags/fun-drips\" target=”_blank”>wild.maths.org/tags/fun-drips</a> </p>",
+      "<p><a href=\"https://plus.maths.org/content/play-win-nim\" target=”_blank”>https://plus.maths.org/content/play-win-nim</a> </p>"
+    ]
+  }
+}

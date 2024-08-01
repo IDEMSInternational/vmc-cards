@@ -1,0 +1,31 @@
+{
+  "title": "Moyenne",
+  "metadata": {
+    "type": "puzzle"
+  },
+  "main_version": {
+    "statement": "<p>La moyenne (arithmétique) de 16 entiers positifs différents est de 16. Quelle est la plus grande valeur possible que l'un de ces entiers puisse avoir ?</p>",
+    "correct_answer": "136",
+    "hint": "<p>Faites en sorte que les 15 premiers nombres (différents) soient aussi petits que possible. Que cela nous dit-il sur le 16e nombre ?</p>",
+    "explanation": "<p>Si la moyenne de 16 nombres est 16, alors le total de tous les nombres est 16\u00d716 = 256. Nous voulons faire en sorte qu'un des nombres soit aussi grand que possible, donc nous devrions faire en sorte que les 15 autres nombres soient aussi petits que possible. Les entiers doivent être différents, donc nous devrions choisir 1, 2, 3, ..., 15. Si vous les additionnez, cela donne 120 (un moyen rapide de le faire est \u00bd\u00d715\u00d716 = 120). Donc le plus grand nombre est 256 - 120 = 136.</p>"
+  },
+  "extension_1": {
+    "statement": "<p>La moyenne (arithmétique) des âges de 7 personnes est de 16 ans. Étant donné que tous leurs âges sont des entiers positifs différents, quel est le nombre maximum de personnes qui pourraient avoir plus de 16 ans ?</p>",
+    "hint": "<p>Est-ce que tout le monde pourrait avoir plus de 16 ans ? Si non, pouvez-vous essayer de trouver le nombre maximum de personnes qui pourraient avoir plus de 16 ans si seulement une des personnes est aussi jeune que possible ?</p>",
+    "correct_answer": "5",
+    "explanation": "<p>Vous ne pouvez pas faire en sorte que les 7 personnes aient plus de 16 ans parce que la moyenne est de 16. Vous pourriez commencer avec la personne la plus jeune ayant 1 an, et essayer de faire en sorte que les 6 autres personnes aient plus de 16 ans, mais le total doit être 7\u00d716 = 112. Avec cette stratégie, 112 - 1 = 111 et 16 + 17 + 18 + 19 + 20 + 21 = 111 donc cela ne donne que 5 personnes plus âgées que 16 ans car vous ne pouvez pas compter 16 lui-même. Cela montre que vous ne pouvez pas le faire avec 6 personnes plus âgées que 16 ans, mais parce que vous avez une possibilité avec 5, c'est le plus grand nombre que vous pouvez avoir.</p>"
+  },
+  "extension_2": {
+    "statement": "<p>Il y a des personnes dans la pièce. Quand Albert est entré dans la pièce, la moyenne d'âge a augmenté de 4 ans. Quand Belinda est ensuite entrée dans la pièce, la moyenne d'âge a augmenté de 3 ans supplémentaires. Albert et Belinda sont jumeaux. Combien de personnes étaient dans la pièce avant qu'Albert n'entre ?</p>",
+    "hint": "<p>Pensez à Albert donnant 4 ans à toutes les personnes dans la pièce et Belinda donnant 3 ans à tout le monde (y compris Albert).</p>",
+    "correct_answer": "6",
+    "explanation": "<p>Il existe différentes façons de résoudre ce puzzle. Pour chaque méthode, soit n le nombre de personnes dans la pièce.</p>\n<p>Si Albert et Belinda entraient ensemble, ils auraient ajouté entre eux (n + 2)\u00d77 au total de tous les âges dans la pièce. Si seulement Albert entrait, alors il aurait ajouté (n + 1)\u00d74 au total. C'est pareil pour Belinda, donc s'ils entraient tous les deux ensemble, ce serait le double de ce montant. Donc (n + 2)\u00d77 = 2\u00d7(n + 1)\u00d74. En résolvant cela, on obtient n = 6.</p>\n<p>Autrement, soit a l'âge d'Albert et Belinda. La nouvelle moyenne après l'entrée d'Albert est (a - 4\u00d7n) parce qu'Albert a partagé 4 ans à tout le monde dans la pièce pour que son âge soit le même. Après que Belinda entre, la moyenne est (a - 3\u00d7(n + 1)) parce qu'elle a donné 3 ans à tout le monde dans la pièce, y compris Albert. Nous savons que cette deuxième expression doit être de 3 de plus que la première expression car la moyenne a augmenté de 3 lorsque Belinda est entrée. Donc, nous pouvons résoudre (a - 3\u00d7(n + 1)) = a - 4\u00d7n + 3 ce qui donne n = 6.</p>\n<p>Voici une autre méthode. Soit m la moyenne initiale. La somme de tous les âges est initialement (m\u00d7n). Soit a l'âge d'Albert. Lorsque Albert entre, la nouvelle moyenne est (m + 4). Cela doit être égal à (m\u00d7n + a) \u2215 (n + 1). Quand Belinda entre dans la pièce, la nouvelle moyenne est (m + 7). Cela doit être égal à (m\u00d7n + 2\u00d7a) \u2215 (n + 2). En réarrangeant ces équations, on obtient </p>\n<p>m\u00d7n + a = m\u00d7n + m + 4\u00d7n + 4</p>\n<p>et</p>\n<p>m\u00d7n + 2\u00d7a = m\u00d7n + 2\u00d7m + 7\u00d7n + 14</p>\n<p>Ce qui se simplifie en</p>\n<p>a = m + 4\u00d7n + 4 et 2\u00d7a = 2\u00d7m + 7\u00d7n + 14.</p>\n<p>En multipliant la première équation par 2 et en soustrayant la seconde, on obtient n = 6. Donc, il y a 6 personnes dans la pièce au départ.</p>"
+  },
+  "additional_information": {
+    "about": "<p>La moyenne est un moyen de décrire un ensemble de données avec un seul nombre. La médiane est un autre moyen de décrire l'ensemble de données avec un nombre. Si l'énigme avait demandé \"La médiane de 16 entiers positifs différents est de 16. Quelle est la plus grande valeur possible que l'un de ces entiers puisse avoir ?\", alors il n'y aurait pas de solution car vous pourriez choisir n'importe quel nombre aussi grand que vous le souhaitez pour le plus grand nombre, car la valeur de la médiane de 16 nombres dépend uniquement des huitième et neuvième plus grands nombres !</p>",
+    "references": [
+      "<p><a href=\"https://www.mathsisfun.com/mean.html\" target=”_blank”>https://www.mathsisfun.com/mean.html</a></p>",
+      "<p><a href=\"https://www.mathsisfun.com/median.html\" target=”_blank”>https://www.mathsisfun.com/median.html</a></p>"
+    ]
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "title": "Pieces of Cake",
+  "metadata": {
+    "type": "counting"
+  },
+  "main_version": {
+    "statement": "<p>Quel est le plus grand nombre de morceaux d'un gâteau circulaire que l'on peut obtenir avec 5 coupures droites ? Les coupures doivent être faites sur le dessus du gâteau.</p>",
+    "correct_answer": "16",
+    "hint": "<p>Commence avec un petit nombre de coupures, par exemple 1, 2, 3. Comment ajouter une autre coupure pour obtenir le plus grand nombre de morceaux ? Souviens-toi qu'il n'est pas nécessaire que les morceaux soient de la même taille ! Que se passe-t-il si plusieurs coupures passent par le même point ?</p>",
+    "explanation": "<p>Avec une coupure, vous obtenez toujours 2 morceaux. Avec deux coupures, vous pouvez obtenir 4 morceaux. Avec trois coupures, si toutes les coupures passent par le même point, vous obtenez 6 morceaux. Cependant, vous pouvez obtenir 7 morceaux si la troisième coupure ne passe pas par le même point que les deux précédentes. Utilisez cette idée pour obtenir le maximum avec quatre coupures. Pour obtenir le plus de morceaux, assurez-vous que pas plus de deux coupures passent par le même point, sinon vous obtiendrez moins de morceaux. Avec quatre coupures, vous pouvez obtenir 11 morceaux. Faites de même pour cinq coupures, commencez avec les quatre coupures qui donnent 7 morceaux et ajoutez une coupure sans passer par les points de rencontre (intersections), et vous pouvez obtenir 16 morceaux.</p>\n<p><img alt=\"\" src=\"assets/images/Pieces_of_Cake_image_0.png\" class=\"Pieces_of_Cake_image_0\" /></p>"
+  },
+  "extension_1": {
+    "statement": "<p>Quel est le plus grand nombre de morceaux de gâteau que vous pouvez obtenir avec 7 coupures ?</p>",
+    "hint": "<p>À mesure que le nombre de coupures augmente, dessiner et compter peut devenir trop compliqué : pouvez-vous repérer le modèle dans la séquence des nombres obtenus à partir des exemples précédents ? Pour 7 coupures, calculez d'abord la réponse pour 6 coupures, puis utilisez ce résultat.</p>",
+    "correct_answer": "29",
+    "explanation": "<p>Vous remarquerez peut-être qu'il existe une formule pour obtenir le nombre suivant dans la séquence à partir du précédent. Vous pouvez le voir en calculant le nombre de nouveaux morceaux créés lorsque vous ajoutez une coupure supplémentaire. Par exemple, ajouter une quatrième coupure aux 7 morceaux obtenus avec 3 coupures ajoute 4 nouveaux morceaux (11). Ajouter une cinquième coupure à cela ajoute 5 nouveaux morceaux (16). (Voyez-vous pourquoi cela est vrai en général en réfléchissant à la manière dont nous croisons les coupures existantes pour créer le plus de morceaux ?)</p>\n<p>Donc, si C est le nombre de coupures et P(C) est le nombre maximum de morceaux avec C coupures, alors la formule est : </p>\n<p>P(C + 1) = P(C) + C + 1</p>\n<p>Par conséquent :\nP(6) = P(5) + 5 + 1 = 16 + 6 = 22\nP(7) = P(6) + 6 + 1 = 22 + 7 = 29</p>"
+  },
+  "extension_2": {
+    "statement": "<p>Pouvez-vous déterminer le plus grand nombre de morceaux que vous pouvez obtenir avec 99 coupures ?</p>",
+    "hint": "<p>Une fois que vous avez trouvé le modèle, essayez de trouver une formule simple pour le nombre maximum de morceaux. Les nombres triangulaires pourraient aider.</p>",
+    "correct_answer": "4951",
+    "explanation": "<p>Nous avons trouvé la formule P(C + 1) = P(C) + C + 1 pour le nombre maximum de morceaux donnés les coupures. Cependant, cela n'est pas pratique à utiliser pour le cas de 99 coupures car nous devrions d'abord connaître le nombre de morceaux pour 98 coupures, puis le nombre de morceaux pour 97 coupures, et ainsi de suite. Vous devez penser comment obtenir la formule explicite : P(C) = ½×C×(C + 1) + 1.</p>\n<p>Soit par intuition ou en utilisant la formule pour revenir de P(C) à P(1) :\nP(C) = P(C - 1) + C - 1 + 1 \n<p>= P(C - 1) + C </p>\n<p>= P(C - 2) + (C - 1) + C</p>\n<p>= P(C - 3) + (C - 2) + (C - 1) + C</p>\n<p>\u2026 </p>\n<p>= P(1) + 2 + 3 \u2026 + (C - 2) + (C - 1) + C</p>\n<p>= 2 + (2 + 3 + \u2026 + C)</p>\n<p>= 1 + (1 + 2 + 3 + \u2026 + C) </p>\n<p>= 1 + ½×C×(C + 1)</p>\n<p>La dernière étape est obtenue à partir de ce que nous savons sur les nombres triangulaires.\nPar conséquent, P(99) = ½×99×100 = 4951.</p>\n<p>Ce problème est lié au nombre de régions (morceaux du gâteau) dans un plan délimité par une configuration générique de lignes (coupures). \"Générique\" signifie qu'il n'y a pas de lignes parallèles et qu'aucune ligne ne se croise plus de deux fois en un même point. Cela garantit que le nombre de morceaux de gâteau est maximal. Étant donné C lignes sur un plan (dans une configuration générique), alors ajouter une ligne supplémentaire telle qu'elle coupe toutes les lignes précédentes créerait (C+1) nouvelles régions (autour de chaque point d'intersection de la nouvelle ligne avec les lignes précédentes, nous ajoutons deux nouvelles régions. Cependant, une des deux est également comptée dans le point d'intersection suivant). Cela conduit à P(C + 1) = P(C) + C + 1.</p>"
+  },
+  "additional_information": {
+    "about": "<p>Si vous étiez autorisé à couper le gâteau dans toutes les directions, pas seulement par le dessus, avec seulement trois coupures, vous pourriez le diviser en 8 morceaux (plutôt qu'en 6) !</p>",
+    "references": [
+      "<p><a href=\"http://www.murderousmaths.co.uk/teacher/pizza.htm\" target=\"_blank\">http://www.murderousmaths.co.uk/teacher/pizza.htm</a></p>"
+    ]
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "title": "Gomoku",
+  "metadata": {
+    "type": "game"
+  },
+  "main_version": {
+    "statement": "<p>Commencez par dessiner une grille carrée de 15 par 15 lignes. Deux joueurs jouent à tour de rôle pour placer un jeton sur un point d'intersection des lignes. Le joueur qui aligne cinq de ses jetons en ligne droite gagne. La ligne peut être verticale, horizontale ou diagonale.</p>",
+    "further_instructions": "<p>Ce jeu se joue traditionnellement avec des jetons noirs et blancs, mais vous pouvez utiliser d'autres jetons différents ou de petits morceaux de papier. Vous pouvez également dessiner la grille au stylo, puis utiliser un crayon pour marquer x ou o pour chaque joueur et ensuite les effacer lorsque vous avez terminé pour pouvoir réutiliser la grille.</p>",
+    "strategy_tips": "<p>Il est très important de surveiller les mouvements de votre adversaire tout en essayant de créer une ligne de 5 vous-même. Si votre adversaire a trois jetons alignés avec rien aux deux extrémités - cela s'appelle \"open 3\" - alors il est conseillé d'utiliser votre tour pour bloquer une extrémité. S'ils réussissent à obtenir un \"open 4\", vous avez certainement perdu ! Une bonne stratégie offensive pourrait être de viser deux lignes chevauchantes d'open 3 - comme une croix - afin qu'il soit très difficile pour votre adversaire de défendre.</p>"
+  },
+  "extension_1": {
+    "statement": "<p>Pour les joueurs avancés, le premier joueur a un grand avantage. Cet avantage peut être supprimé en commençant le jeu en utilisant la règle \"Swap 2\". Supposons qu'au début du jeu, le joueur un est croix (x) et le joueur deux est rond (o).</p>\n<p>Le joueur un commence le jeu en marquant 3 intersections (deux avec x, et une avec o), le joueur deux choisit ensuite l'une de ces trois options (i) il prend les croix, mettant fin à son tour (le joueur un devient rond et c'est maintenant son tour), (ii) il reste avec les ronds et ajoute un rond comme d'habitude, (iii) il ajoute deux ronds au tableau, mais le joueur un peut alors décider s'il veut voler les ronds. Après cela, jouez normalement.</p>"
+  },
+  "additional_information": {
+    "about": "<p>Il existe un tournoi mondial de Gomoku. Depuis 2009, il utilise la règle Swap 2 pour rendre le jeu équitable, peu importe qui commence. Il y a aussi des championnats pour les ordinateurs jouant au Gomoku ! Les gens écrivent un programme d'intelligence artificielle et leur programme joue contre celui d'un autre pour voir qui gagne. Il y a aussi des compétitions ordinateur contre humain - en 2017, un ordinateur nommé Yixin a battu le champion mondial Rudolf Dupszki 2-0.</p>",
+    "references": [
+      "<p><a href=\"https://en.wikipedia.org/wiki/Gomoku\" target=\"_blank\">https://en.wikipedia.org/wiki/Gomoku</a></p>"
+    ]
+  }
+}

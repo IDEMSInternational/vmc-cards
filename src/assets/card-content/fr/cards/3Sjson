@@ -1,0 +1,21 @@
+{
+  "title": "Vingt-et-un",
+  "metadata": {
+    "type": "game"
+  },
+  "main_version": {
+    "statement": "<p>Deux joueurs prennent à tour de rôle pour compter, en commençant par 1 et en comptant 1, 2 ou 3 nombres à la fois. Chaque joueur continue de compter là où l'autre s'est arrêté. Le joueur qui dit 21 perd.</p>",
+    "further_instructions": "<p>Un exemple de jeu : P1 = Joueur 1, P2 = Joueur 2. </p>\n<p>P1 : 1,2,3       P2 : 4 </p>\n<p>P1 : 5,6          P2 : 7,8,9 </p>\n<p>P1 : 10           P2 : 11,12,13</p>\n<p>P1 : 14,15,16 P2 :17,18,19</p>\n<p>P1 : 20           P2 : 21</p>\n<p>Le joueur 1 gagne !</p>",
+    "strategy_tips": "<p>La personne qui dit 20 gagne, car elle force la personne suivante à dire 21. Comment pouvez-vous vous assurer de dire 20 ? Essayez de travailler à rebours. Après avoir joué plusieurs fois, vous pourriez comprendre qui va gagner avant d'atteindre 20 - réfléchissez à comment vous le savez. Pouvez-vous déterminer s'il est préférable d'aller en premier ou en deuxième ? Pouvez-vous vous assurer de toujours gagner ?</p>"
+  },
+  "extension_1": {
+    "statement": "<p>Il existe de nombreuses façons de changer ce jeu. Vous pourriez être autorisé à dire jusqu'à 4 nombres consécutifs au lieu de 3, ou changer le nombre cible de 21 à quelque chose de différent, ou changer la règle pour que le joueur qui dit 21 soit maintenant le gagnant, et non le perdant. Pouvez-vous toujours déterminer comment gagner lorsque les règles sont modifiées ? </p>\n<p>Le jeu original peut être modifié pour un groupe de joueurs qui jouent en cercle, en commençant dans le sens des aiguilles d'une montre. Juste pour le plaisir, vous pouvez avoir de nouvelles règles où si quelqu'un dit deux nombres de suite, la direction est inversée. Si quelqu'un dit trois nombres de suite, vous sautez une personne dans le cercle. La personne qui dit 21 invente une nouvelle règle, par exemple \"Au lieu du numéro 5, vous devez dire pomme de terre\". Le jeu recommence au numéro 1 mais vous devez vous souvenir de la nouvelle règle ! Si quelqu'un fait une erreur, vous recommencez à 1. Vous pouvez jouer que si quelqu'un fait deux erreurs, il est hors du jeu. La dernière personne encore en jeu est le gagnant !</p>"
+  },
+  "additional_information": {
+    "about": "<p>21 est une version simple de la série de jeux, Nim. Il est parfois appelé un jeu de Misère - signifiant un jeu auquel vous jouez pour perdre. On pense qu'il est originaire de Chine et il est mentionné pour la première fois dans l'histoire européenne au début du 16e siècle. Le jeu était à l'origine joué avec 21 pierres, et vous devez prendre 1, 2 ou 3 pierres à la fois et le perdant est le dernier à prendre une pierre.</p>",
+    "references": [
+      "<p><a href=\"https://en.wikipedia.org/wiki/Nim\" target=”_blank”>https://en.wikipedia.org/wiki/Nim</a></p>",
+      "<p><a href=\"https://en.wikipedia.org/wiki/Nim#The_21_game\" target=”_blank”>https://en.wikipedia.org/wiki/Nim#The_21_game</a></p>"
+    ]
+  }
+}

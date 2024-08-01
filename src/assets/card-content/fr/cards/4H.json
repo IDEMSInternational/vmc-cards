@@ -10,7 +10,7 @@
   },
   "extension_1": {
     "statement": "<p>Pouvez-vous tracer une carte avec 12 pays de telle sorte que chaque pays a exactement cinq voisins, puis la colorier en utilisant seulement 4 couleurs?</p>",
-    "hint": "<p>Votre carte devrait essentiellement ressembler à ceci:</p>\n<p><img alt=\"\" src=\"images/Four_Colours_image_2.png\" class=\"Four_Colours_image_2\" /></p>",
+    "hint": "<p>Votre carte devrait essentiellement ressembler à ceci:</p>\n<p><img alt=\"\" src=\"assets/images/Four_Colours_image_2.png\" class=\"Four_Colours_image_2\" /></p>",
     "explanation": "<p>L'idée de prouver le théorème à quatre couleurs est de trouver les conditions nécessaires pour avoir un contre-exemple minimal (cela signifie une carte minimale 4-non-coloriables) et donc de se concentrer sur les cartes avec ces conditions nécessaires. L'une de ces nombreuses conditions nécessaires est de montrer que, dans un petit contre-exemple avec 12 pays, tous les pays doivent avoir exactement cinq voisins. Cependant cela peut être coloré comme ceci:</p>\n<p><img alt=\"\" src=\"images/Four_Colours_image_3.png\" class=\"Four_Colours_image_3\" /></p>\n<p>La preuve est de vérifier environ 1500 cartes de ce genre !</p>"
   },
   "additional_information": {

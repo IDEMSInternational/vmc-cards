@@ -1,0 +1,25 @@
+{
+  "title": "Restaurant",
+  "metadata": {
+    "type": "puzzle"
+  },
+  "main_version": {
+    "statement": "<p>Dans un restaurant, chaque table a 3 pieds, chaque chaise a 4 pieds et tous les clients et les trois membres du personnel ont 2 pieds chacun. Il y a quatre chaises à chaque table. Trois quarts des chaises sont occupées par des clients, et il y a au total 206 pieds dans le restaurant. Combien de chaises le restaurant a-t-il ?</p>",
+    "correct_answer": "32",
+    "hint": "<p>Pouvez-vous calculer combien de pieds il y a à chaque table si trois quarts des chaises sont occupées par des personnes ?</p>",
+    "explanation": "<p>Les trois membres du personnel ont six pieds, donc il faut soustraire cela du total, donnant 206 - 6 = 200. Maintenant, les tables, les chaises et les clients ont 200 pieds. En moyenne, à chaque table il y a 3 pieds de table, 16 pieds de chaise et 6 pieds de client (car seulement trois quarts des chaises sont occupées). Cela donne 3 + 16 + 6 = 25 pieds par table. Le nombre de tables est donc 200 / 25 = 8, d'où le nombre de chaises est 8 * 4 = 32.</p>"
+  },
+  "extension_1": {
+    "statement": "<p>J'ai 30 pièces. Certaines sont de 1 centime, certaines sont de 2 centimes et d'autres de 6 centimes. La valeur des pièces de 6 centimes est égale à la valeur totale des pièces de 1 centime et de 2 centimes combinées. Étant donné que j'ai un nombre différent de chaque type de pièce, quelle est la valeur totale de toutes les pièces (en centimes) ?</p>",
+    "hint": "<p>Commencez par considérer combien de pièces de 6 centimes je pourrais avoir... si j'en ai trop, je ne pourrai pas égaler leur valeur avec les pièces de 1 centime et de 2 centimes.</p>",
+    "correct_answer": "84",
+    "explanation": "<p>Supposons d'abord que nous avons 8 pièces de 6 centimes, ce qui représente une valeur de 48 centimes, avec 22 pièces restantes. La valeur cible est toujours un multiple de six et donc paire, nous aurons donc besoin d'un nombre pair de pièces de 1 centime pour compléter le total pair. Le plus grand total pair parmi les pièces restantes est 20 pièces de 2 centimes + 2 pièces de 1 centime = 42 centimes, ce qui est inférieur à 48 centimes.</p>\n<p>Donc, au maximum, nous pouvons avoir 7 pièces de 6 centimes = 42 centimes, avec 23 pièces restantes. Dans ce cas, le plus grand total pair est 21 pièces de 2 centimes + 2 pièces de 1 centime = 44 centimes. Notre objectif était de 42 centimes, nous incluons donc plus de pièces de 1 centime et moins de pièces de 2 centimes. Le prochain plus grand total pair est 19 pièces de 2 centimes + 4 pièces de 1 centime = 42 centimes, atteignant notre objectif.</p>\n<p>Donc, la valeur totale de toutes les pièces est 7 pièces de 6 centimes + 19 pièces de 2 centimes + 4 pièces de 1 centime = 84 centimes.</p>\n<p>Pour compléter, le nombre minimum de pièces de 6 centimes est 5 (choisir 4 donne un total de 24 centimes avec 26 pièces restantes). La solution avec 5 pièces de 6 centimes est 5 pièces de 2 centimes et 10 pièces de 1 centime. La solution pour 6 pièces de 6 centimes est 12 pièces de 2 centimes et 12 pièces de 1 centime. Cependant, aucune de ces solutions n'a un nombre différent de chaque pièce.</p>"
+  },
+  "additional_information": {
+    "about": "<p>Ce puzzle était à l'origine un problème d'un défi mathématique UKMT.</p>",
+    "references": [
+      "<p><a href=\"https://nrich.maths.org/2458\" target=\"_blank\">https://nrich.maths.org/2458</a></p>",
+      "<p><a href=\"https://www.ukmt.org.uk/\" target=\"_blank\">https://www.ukmt.org.uk/</a></p>"
+    ]
+  }
+}

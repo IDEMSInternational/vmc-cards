@@ -1,0 +1,26 @@
+{
+  "title": "Pong Hau K'i",
+  "metadata": {
+    "type": "game"
+  },
+  "main_version": {
+    "statement": "<p><img alt=\"\" src=\"assets/images/Pong_Hau_K_i_image_0.png\" class=\"Pong_Hau_K_i_image_0\" /></p>\n<p>Dessinez la grille montrée avec cinq points et sept lignes de connexion. Deux joueurs placent deux jetons de la même couleur/design dans la grille comme indiqué.</p>\n<p>Décidez qui commencera. Le premier joueur déplace l'un de ses jetons vers le point central. Ensuite, les joueurs se relaient pour déplacer un jeton le long d'une ligne vers un point vide jusqu'à ce qu'un joueur ne puisse plus déplacer ses jetons et perde la partie.</p>",
+    "further_instructions": "<p>Si les mêmes mouvements sont répétés trois fois, vous pouvez décider que le jeu est nul. Chaque fois que vous jouez, vous devriez changer l'ordre des tours ou échanger les positions de départ (si vous étiez dans les deux positions supérieures la première fois, prenez les deux positions inférieures la prochaine fois).</p>",
+    "strategy_tips": "<p>Pensez s'il est préférable de commencer ou de jouer en second. Quelle est la position que vous devez atteindre pour bloquer l'autre joueur ?</p>"
+  },
+  "extension_1": {
+    "statement": "<p><img alt=\"\" src=\"assets/images/Pong_Hau_K_i_image_1.png\" class=\"Pong_Hau_K_i_image_1\" /></p>\n<p>Ce jeu s'appelle Shisima et se joue au Kenya. Deux joueurs ont chacun besoin de 3 jetons de la même couleur/design.</p>\n<p>Placez les jetons sur trois points consécutifs à l'extérieur de l'octogone, en face l'un de l'autre. Il doit y avoir un point vide à chaque extrémité de chaque ensemble de jetons du joueur.</p>\n<p>Les joueurs se relaient pour déplacer leurs jetons d'un espace le long d'une ligne.</p>\n<p>Pour gagner la partie, un joueur doit aligner trois de ses pièces, y compris un jeton au centre (shisima).</p>"
+  },
+  "extension_2": {
+    "statement": "<p><img alt=\"\" src=\"assets/images/Pong_Hau_K_i_image_2.png\" class=\"Pong_Hau_K_i_image_2\" /></p>\n<p>Deux joueurs ont chacun besoin de 3 jetons de la même couleur/design. Chacun leur tour, ajoutez un jeton à la grille jusqu'à ce que tous les six jetons soient placés. Ensuite, les joueurs se relaient pour déplacer un jeton vers un espace vide jusqu'à ce qu'un joueur ait réussi à aligner trois de ses jetons.</p>"
+  },
+  "additional_information": {
+    "about": "<p>Pong Hau K'i est un jeu de société simple venant de Chine. C'est également un jeu traditionnel en Corée, où il est connu sous le nom d'Ou-moul-ko-no. Des jeux similaires se jouent au Togo. Si les deux joueurs jouent parfaitement, le jeu devrait se terminer par un match nul.</p>",
+    "references": [
+      "<p><a href=\"https://multiculturalkidblogs.com/2015/09/28/traditional-chinese-game/\" target=\"_blank\">https://multiculturalkidblogs.com/2015/09/28/traditional-chinese-game/</a> </p>",
+      "<p><a href=\"https://en.wikipedia.org/wiki/Pong_Hau_K%27i\" target=\"_blank\">https://en.wikipedia.org/wiki/Pong_Hau_K%27i</a> </p>",
+      "<p><a href=\"https://www.whatdowedoallday.com/shisima/\" target=\"_blank\">https://www.whatdowedoallday.com/shisima/</a> </p>",
+      "<p><a href=\"https://www.whatdowedoallday.com/nine-holes-game\" target=\"_blank\">https://www.whatdowedoallday.com/nine-holes-game</a> </p>"
+    ]
+  }
+}

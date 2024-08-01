@@ -1,0 +1,33 @@
+{
+  "title": "Shaking Hands",
+  "metadata": {
+    "type": "counting"
+  },
+  "main_version": {
+    "statement": "<p>Lors de l'anniversaire de votre ami, il y a 8 enfants. Chaque enfant serre la main de tous les autres enfants présents à la fête. Combien de poignées de main ont eu lieu au total ?</p>",
+    "correct_answer": "28",
+    "hint": "<p>Commencez avec un petit nombre d'enfants, par exemple 3, 4 ou 5. Combien de poignées de main devez-vous ajouter si un autre enfant rejoint la fête ?</p>",
+    "explanation": "<p>En comptant à partir de petits exemples, vous pouvez réaliser que chaque fois que vous ajoutez une personne à la fête avec n enfants, le nombre de poignées de main augmente de n.</p>\n<p>Si nous avons 2 enfants (disons A et B), nous avons juste 1 poignée de main AB.</p>\n<p>Lorsque nous avons 3 enfants (disons A, B et C), nous avons 3 poignées de main : AB, AC et BC. Il y a la poignée de main originale et 2 supplémentaires maintenant que C est arrivé. 1 + 2 = 3.</p>\n<p>Si nous ajoutons un autre enfant (disons D), il doit serrer la main de A, B et C et toutes les autres poignées de main ont toujours lieu. Donc, il y aura 1 + 2 + 3 = 6 poignées de main.</p>\n<p>Si nous ajoutons un autre enfant à ce groupe de 4, il y aura encore 4 poignées de main. Donc 1 + 2 + 3 + 4 = 10 poignées de main.</p>\n<p>Si nous suivons ce modèle, nous pouvons trouver que pour 8 enfants, c'est 1 + 2 + 3 + 4 + 5 + 6 + 7 = 28.</p>\n<p>Une autre façon de penser est que si vous êtes l'un des 8 enfants, vous devez serrer la main des 7 autres personnes. C'est le cas pour chaque autre enfant à la fête. Comme il y a 8 d'entre vous, et que chacun serre la main de 7 autres personnes, il devrait y avoir 8 × 7 poignées de main. Cependant, comme il faut 2 personnes pour une poignée de main, nous avons compté chaque poignée de main deux fois. Donc, nous divisons par deux et la réponse est 8 × 7 / 2 = 28.</p>"
+  },
+  "extension_1": {
+    "statement": "<p>Toute l'école est venue à la fête d'anniversaire : il y a maintenant 100 enfants ! Combien de poignées de main ont lieu ?</p>",
+    "hint": "<p>Pouvez-vous trouver une formule pour le nombre de poignées de main lorsqu'il y a n enfants à la fête d'anniversaire ? Pensez à la stratégie que vous avez utilisée pour répondre à la question précédente et essayez de la généraliser pour tout nombre d'enfants.</p>",
+    "correct_answer": "4950",
+    "explanation": "<p>En généralisant ce que vous avez trouvé plus tôt, vous pouvez établir la règle selon laquelle pour une fête d'anniversaire avec n enfants, vous avez 1 + 2 + … + (n - 1) poignées de main. Vous pouvez alors utiliser une formule (n × (n - 1) / 2) pour calculer le nombre de poignées de main. Pour 100 enfants, il y a 100 × 99 / 2 = 4950 poignées de main. Cela équivaut à additionner les nombres 1 + 2 + 3 + … + 99.</p>"
+  },
+  "extension_2": {
+    "statement": "<p>Une plus grande école a organisé une fête. Il y avait 28 680 poignées de main ! Combien d'enfants y avait-il ?</p>",
+    "hint": "<p>Essayez d'utiliser la formule que nous avons dérivée pour le nombre total de poignées de main pour n enfants.</p>",
+    "correct_answer": "240",
+    "explanation": "<p>La formule pour le nombre de poignées de main pour n enfants est n × (n - 1) / 2. Nous devons trouver la valeur de n telle que n × (n - 1) / 2 = 28 680. En multipliant par deux, nous obtenons n × (n - 1) = 57 360. Remarquez que nous voulons à peu près n × n = 57 360, donc essayez de prendre la racine carrée de 57 360. Cela donne environ 239,49947… Essayons donc 240, ce qui donne effectivement 240 × 239 / 2 = 28 680.</p>"
+  },
+  "additional_information": {
+    "about": "<p>Il s'agit d'une énigme classique qui existe depuis de nombreuses années. Il existe de nombreuses stratégies de résolution de problèmes qui peuvent être utilisées pour trouver la solution : jouer le problème, dessiner un diagramme, rechercher un modèle, résoudre un problème plus simple, faire une liste organisée, créer un tableau, utiliser un raisonnement logique, etc. La solution a des propriétés mathématiques profondes et est un résultat clé dans le domaine de la combinatoire. Le nombre de poignées de main est toujours un <strong>nombre triangulaire</strong>. Les dix premiers nombres triangulaires sont 1, 3, 6, 10, 15, 21, 28, 36, 45, 55, …</p>",
+    "references": [
+      "<p><a href=\"https://nrich.maths.org/6708\" target=”_blank”>https://nrich.maths.org/6708</a></p>",
+      "<p><a href=\"https://www.nctm.org/Publications/Teaching-Children-Mathematics/Blog/Reflecting-on-the-Handshake-Problem/\" target=”_blank”>https://www.nctm.org/Publications/Teaching-Children-Mathematics/Blog/Reflecting-on-the-Handshake-Problem/</a></p>",
+      "<p><a href=\"https://www.mathsisfun.com/algebra/triangular-numbers.html\" target=”_blank”>https://www.mathsisfun.com/algebra/triangular-numbers.html</a></p>",
+      "<p><a href=\"https://en.wikipedia.org/wiki/Triangular_number\" target=”_blank”>https://en.wikipedia.org/wiki/Triangular_number</a></p>"
+    ]
+  }
+}
