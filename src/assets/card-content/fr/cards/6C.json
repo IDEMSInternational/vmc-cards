@@ -1,0 +1,32 @@
+{
+  "title": "Alphanumerics",
+  "metadata": {
+    "type": "puzzle"
+  },
+  "main_version": {
+    "statement": "<p>Dans la somme CAR + CAT = RARE, chaque lettre représente un chiffre différent de 0 à 9. Quelle est la valeur du mot RARE ?</p>",
+    "correct_answer": "1510",
+    "hint": "<p>Quel chiffre doit représenter la lettre R ? Si vous additionnez deux nombres à trois chiffres, quelle est la somme maximale que vous pourriez obtenir ?</p>",
+    "explanation": "<p>R doit être égal à 1 car seul le chiffre 1 peut se reporter de la colonne des centaines à la colonne des milliers. Nous avons donc CA1 + CAT = 1A1E.</p>\n<p>Si nous regardons la colonne des dizaines, nous avons A + A = 1 (ou se termine par 1). Comme A + A est pair, la seule façon pour qu'il se termine par le chiffre 1 est qu'il y ait un report de la colonne des unités.</p>\n<p>Cela nous donne A = 5 ou A = 0.</p>\n<p>Comme nous savons qu'il y a eu un report de la colonne des unités, T = 9 et donc E = 0. Cela signifie que A = 5 car chaque lettre représente un chiffre différent. Par conséquent, le mot RARE = 1510. (Bien que cela ne soit pas nécessaire, il peut être vérifié que C = 7). Enfin, nous avons 751 + 759 = 1510.</p>"
+  },
+  "extension_1": {
+    "statement": "<p>Dans la somme TWO + TWO = FOUR, chaque lettre représente un chiffre différent de 0 à 9. Il y a 7 solutions différentes pour cette somme. Pour ces 7 solutions, quelle est la valeur maximale du mot FOUR ?</p>",
+    "hint": "<p>Une fois que vous avez trouvé quel chiffre F représente, vous devez ensuite considérer quelle pourrait être la valeur maximale de O.</p>",
+    "correct_answer": "1876",
+    "explanation": "<p>F doit être égal à 1 car seul le chiffre 1 peut se reporter de la colonne des centaines.</p>\n<p>Nous avons maintenant TWO + TWO = 1OUR.</p>\n<p>Comme nous essayons de trouver la valeur maximale possible de FOUR, nous essayons ensuite O = 9. Ce qui donnerait TW9 + TW9 = 19UR. Ensuite, la seule possibilité est T = 9 mais cela n'est pas autorisé car O = 9, ce qui fait que O = T.</p>\n<p>Nous essayons ensuite O = 8. Donc TW8 + TW8 = 18UR. Ce qui conduit à R = 6 et T = 9. Et nous avons alors 9W8 + 9W8 = 18U6.</p>\n<p>Nous avons encore le choix des réponses pour W et U.</p>\n<p>Nous exigeons que W soit inférieur à 5 pour éviter un report dans la colonne des centaines. Si nous essayons W = 4, cela conduit à U = 9 mais cela n'est pas possible car T = 9. Nous essayons donc W = 3.</p>\n<p>Nous obtenons 938 + 938 = 1876, et donc la valeur maximale possible du mot FOUR est 1876.</p>"
+  },
+  "extension_2": {
+    "statement": "<p>Dans la somme MATHS + GAMES = DECODE, chaque lettre représente un chiffre différent de 0 à 9. Quelle est la valeur du mot DECODE ?</p>",
+    "hint": "<p>Il y a 10 lettres différentes utilisées dans cette somme donc chaque chiffre de 0 à 9 sera utilisé. Vous aurez besoin d'une approche organisée pour résoudre ce problème. Vous pouvez commencer par le fait que D = 1.</p>",
+    "correct_answer": "164816",
+    "explanation": "<p>Il existe plusieurs façons de résoudre ce puzzle. D'abord, D = 1. Pour continuer, nous devons utiliser toutes les informations données pour éliminer les possibilités. Par exemple, nous observons que E doit être un chiffre pair. S ne peut pas être égal à 0, 1 ou 5. Beaucoup de force brute est nécessaire pour résoudre ce problème, mais avec un tableau pour organiser toutes les informations, vous devriez pouvoir réduire les solutions possibles jusqu'à ce que vous ayez trouvé la bonne réponse. T = 0, D = 1, A = 2, S = 3, C = 4, H = 5, E = 6, M = 7, O = 8, G = 9.</p>"
+  },
+  "additional_information": {
+    "about": "<p>Ces types d'énigmes sont appelés 'Cryptarithmes' ou 'Arithmétique verbale'. L'exemple le plus classique a été publié dans le numéro de juillet 1924 du Strand Magazine par le mathématicien anglais Henry Dudeney.</p>\n<p>SEND + MORE = MONEY</p>\n<p>Étant donné le nombre potentiellement élevé de possibilités, des programmes informatiques sont souvent utilisés pour générer et résoudre ces types d'énigmes.</p>",
+    "references": [
+      "<p><a href=\"https://en.wikipedia.org/wiki/Verbal_arithmetic\" target=”_blank”>https://en.wikipedia.org/wiki/Verbal_arithmetic</a> </p>",
+      "<p><a href=\"https://www.dcode.fr/cryptarithm-solver\" target=”_blank”>https://www.dcode.fr/cryptarithm-solver</a> </p>",
+      "<p><a href=\"http://www.iread.it/cryptarithms.php\" target=”_blank”>http://www.iread.it/cryptarithms.php</a> </p>"
+    ]
+  }
+}

@@ -41,7 +41,6 @@
     {"title": "Lychrel Numbers", "type": "funfact", "slug": "QH", "card_value":"Q", "card_suit":"heart"},
     {"title": "Collatz Conjecture", "type": "funfact", "slug": "KH", "card_value":"K", "card_suit":"heart"},
 
-
     {"title": "Fifteen", "type": "game", "slug": "AS", "card_value":"A", "card_suit":"spade"},
     {"title": "Patience", "type": "game", "slug": "2S", "card_value":"2", "card_suit":"spade"},
     {"title": "Twenty-one", "type": "game", "slug": "3S", "card_value":"3", "card_suit":"spade"},

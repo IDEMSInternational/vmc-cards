@@ -5,6 +5,7 @@ import { Card } from "src/app/models/card.model";
 import { Feedback } from "src/app/models/feedback.model";
 import { FeedbackService } from "src/app/services/feedback.service";
 import { MatSnackBar } from "@angular/material/snack-bar";
+import { LanguageService } from "src/app/services/language.service"
 
 @Component({
   selector: "app-card",
@@ -48,15 +49,18 @@ export class CardComponent implements OnInit {
 
   private lang;
   private slug;
+  languageCode: string;
 
   constructor(
     public cardService: CardService,
+    public languageService: LanguageService,
     private route: ActivatedRoute,
     public feedbackService: FeedbackService,
     private _snackBar: MatSnackBar
   ) {}
 
   ngOnInit() {
+    this.subscribeToLanguageChanges()
     this.lang = this.route.snapshot.params.lang;
     this.slug = this.route.snapshot.params.slug;
     this.displayCard();
@@ -131,6 +135,12 @@ export class CardComponent implements OnInit {
     this.showExtension2Explanation = this.showExtension2Explanation
       ? false
       : true;
+  }
+
+  subscribeToLanguageChanges() {
+    this.languageService.activeLanguage$.subscribe((languageCode) => {
+      this.languageCode = languageCode
+    })
   }
 
   onSubmit() {

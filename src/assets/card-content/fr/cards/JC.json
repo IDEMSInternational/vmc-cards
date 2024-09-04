@@ -1,0 +1,30 @@
+{
+  "title": "Distribution des Cartes",
+  "metadata": {
+    "type": "casse-tête"
+  },
+  "main_version": {
+    "statement": "<p>Des enfants sont assis en cercle, et un enseignant tourne autour du cercle en distribuant des cartes. L'enseignant donne un Valet à chaque deuxième enfant, et une Dame à chaque troisième enfant.</p>\n<p>Après avoir tourné quatre fois, le sixième enfant dans le cercle à partir de l'endroit où l'enseignant a commencé a deux Valets et deux Dames.</p>\n<p>Quel est le plus petit nombre possible d'enfants dans le cercle ?</p>",
+    "correct_answer": "7",
+    "hint": "<p>Le nombre d'enfants doit-il être pair ou impair ?</p>",
+    "explanation": "<p>L'enseignant tourne autour du cercle quatre fois. S'il y avait un nombre pair d'enfants, le sixième enfant recevrait toujours un Valet à chaque fois et aurait quatre Valets à la fin. Comme il n'a que deux Valets, il doit y avoir un nombre impair d'enfants dans le cercle.</p>\n<p>Le sixième enfant reçoit une Dame au premier tour car 6 est un multiple de 3. Il ne reçoit qu'une Dame de plus, donc le nombre de n'enfants ne peut pas être un multiple de 3.</p>\n<p>Les options sont 7, 11, 13, 17, 19, etc., et donc 7 est le plus petit nombre d'enfants.</p>"
+  },
+  "extension_1": {
+    "statement": "<p>Des enfants sont assis en cercle, et un enseignant tourne autour du cercle en distribuant des cartes. L'enseignant donne un Valet à chaque deuxième enfant, une Dame à chaque troisième enfant et un Roi à chaque cinquième enfant. </p>\n<p>Après avoir tourné quatre fois, le sixième enfant à partir de l'endroit où l'enseignant a commencé a quatre Valets, deux Dames et aucun Roi.</p>\n<p>Quel est le plus petit nombre d'enfants possible ?</p>",
+    "hint": "<p>Pensez à savoir si le nombre doit être pair ou impair et s'il doit être divisible par 3 ou 5.</p>",
+    "correct_answer": "10",
+    "explanation": "<p>L'enfant reçoit quatre Valets donc il doit y avoir un nombre pair d'enfants, mais il reçoit seulement deux Dames donc le nombre d'enfants ne peut pas être un multiple de 3. Comme l'enfant ne reçoit aucun Roi, 6 et 10 seraient tous deux des options (essayez ces chiffres avec des cartes ou avec un stylo et du papier pour vérifier). Mais 6 est un multiple de 3, donc la réponse doit être 10.</p>"
+  },
+  "extension_2": {
+    "statement": "<p>1000 élèves sont assis en cercle, et un enseignant tourne autour du cercle en distribuant des cartes. L'enseignant donne un Valet à chaque deuxième enfant, et une Dame à chaque troisième enfant.</p>\n<p>Après que l'enseignant ait tourné 1000 fois, combien de cartes au total le sixième enfant aura-t-il ?</p>",
+    "hint": "<p>Quel enfant recevra une Dame après que l'enfant 999ᵉ ait reçu une au premier tour ?</p>",
+    "correct_answer": "1334",
+    "explanation": "<p>Il y a un nombre pair d'enfants donc le sixième enfant sera toujours dans une position à chaque tour pour recevoir un Valet. Il aura donc 1000 cartes de cette règle. Pour les Dames, au premier tour, les élèves recevant une Dame seront en position 3, 6, 9, 12, 15, ..., 999, puis ce sera 2, 5, 8, ..., 998 et enfin 1, 4, 7, ..., 997, 1000, et revenir à 3, 6, 9, ..., 999. Donc tous les trois tours, il recevra une Dame. Comme 1000 ÷ 3 donne 333 avec un reste de 1, il recevra aussi une Dame au 1000ᵉ tour. Donc 1000 + 334 = 1334 est le nombre total de cartes.</p>"
+  },
+  "additional_information": {
+    "about": "<p>Ce casse-tête a été écrit par un élève du Lycée Français Charles de Gaulle pour un casse-tête de Noël impliquant la distribution de cadeaux rouges et bleus.</p>",
+    "references": [
+      "<p><a href=\"https://lycee.samicharity.co.uk/2018/12/03/wrapping-presents/\" target=\"_blank\">https://lycee.samicharity.co.uk/2018/12/03/wrapping-presents/</a></p>"
+    ]
+  }
+}

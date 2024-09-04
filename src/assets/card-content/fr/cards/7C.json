@@ -1,0 +1,30 @@
+{
+  "title": "Newspaper",
+  "metadata": {
+    "type": "puzzle"
+  },
+  "main_version": {
+    "statement": "<p>Ci-dessous se trouve une feuille d'un journal. Étant donné que chaque feuille a quatre pages, combien de feuilles y a-t-il au total ?</p>\n<p><img alt=\"\" src=\"assets/images/Newspaper_image_0.png\" class=\"Newspaper_image_0\" /></p>",
+    "correct_answer": "17",
+    "hint": "<p>Peux-tu calculer le nombre de feuilles en partant de 8 pour savoir combien de feuilles se trouvent en dessous de celle-ci ? Tu pourrais vouloir utiliser des morceaux de papier et les numéroter pour t'aider.</p>",
+    "explanation": "<p>Au dos du numéro 8 se trouve le numéro 7. La feuille en dessous doit contenir les numéros 6 et 5. En continuant, il y aura les numéros 4 et 3 et enfin 2 et 1. Il y a donc trois feuilles en dessous. En ajoutant 7 au 61, on obtient la dernière page comme 68. Étant donné que chaque feuille a quatre pages, il y a 68 ÷ 4 = 17 feuilles.</p>"
+  },
+  "extension_1": {
+    "statement": "<p>Si il faut 852 chiffres pour numéroter toutes les pages d'un livre, dans l'ordre habituel, quel est le numéro de la dernière page du livre ?</p>",
+    "hint": "<p>Combien y a-t-il de nombres à un chiffre ? Combien y a-t-il de nombres à deux chiffres ?</p>",
+    "correct_answer": "320",
+    "explanation": "<p>Il y a 9 nombres à un chiffre (les nombres de 1 à 9), 90 nombres à deux chiffres (les nombres de 10 à 99) et 900 nombres à trois chiffres (les nombres de 100 à 999). En tout, cela fait 9×1 + 90×2 + 900×3 = 9 + 180 + 2700 = 2889 chiffres, donc le nombre de pages est inférieur à 999. Il y a 852 - 9 - 180 = 663 chiffres utilisés dans les nombres à trois chiffres. 663 ÷ 3 = 221, donc il y a 221 pages avec des nombres à trois chiffres. 99 + 221 = 320 donne la réponse.</p>"
+  },
+  "extension_2": {
+    "statement": "<p>Numéroter les pages d'un livre nécessite d'imprimer 200 nines. Quel est le nombre minimum de pages que le livre pourrait avoir ?</p>",
+    "hint": "<p>Combien de 9 y a-t-il dans les 100 premiers nombres ?</p>",
+    "correct_answer": "918",
+    "explanation": "<p>Pense d'abord aux nombres sous 100. Il y a 10 nombres se terminant par 9, et 10 nombres ayant 9 comme chiffre supérieur (90–99), ce qui fait un total de 20 9. De la même manière, nous avons 20 9 entre 100 et 199, et entre 200 et 299, etc. Nous obtenons donc 9×20 = 180 9 jusqu'à 899. Il nous faut 20 de plus pour atteindre 200 9. À partir de 900–999, chaque nombre commence par 9. Comme 909 a deux 9, nous obtenons les derniers 20 9 des nombres allant de 900 à 918.</p>"
+  },
+  "additional_information": {
+    "about": "<p>Vous pouvez essayer ce puzzle avec un vrai journal : prenez une des feuilles et regardez les numéros sur celle-ci. Calculez combien de feuilles il devrait y avoir et voyez si vous avez raison.</p>",
+    "references": [
+      "<p><a href=\"https://nrich.maths.org/7180\" target=\"_blank\">https://nrich.maths.org/7180</a></p>"
+    ]
+  }
+}

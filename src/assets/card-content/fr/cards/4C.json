@@ -1,0 +1,34 @@
+{
+  "title": "House",
+  "metadata": {
+    "type": "puzzle"
+  },
+  "main_version": {
+    "statement": "<p>De combien de sommets (points) est-il possible de dessiner cette figure sans lever le stylo du papier et en passant par chaque ligne exactement une fois ?</p>\n<p><img alt=\"\" src=\"assets/images/House_image_0.png\" class=\"House_image_0\" /></p>",
+    "correct_answer": "2",
+    "hint": "<p>Essayez de commencer par le sommet en bas à gauche.</p>",
+    "explanation": "<p>Nous pouvons dessiner la figure en un seul mouvement ininterrompu si nous commençons par le sommet en bas à gauche (ou en bas à droite). Par exemple, en commençant par le bas à gauche, nous parcourons les arêtes de 1 à 8 :</p>\n<p><img alt=\"\" src=\"assets/images/House_image_1.png\" class=\"House_image_1\" /></p>\n<p>Ce type de chemin s'appelle un chemin d'Euler, et il est appelé un circuit d'Euler s'il commence et se termine au même point. Le degré d'un sommet est le nombre d'arêtes rejoignant ce sommet, et les sommets sont dits pairs ou impairs selon que le degré est pair ou impair. Les circuits d'Euler n'existent que dans les réseaux où il n'y a pas de sommets impairs, c'est-à-dire où tous les sommets ont un nombre pair d'arêtes qui y aboutissent.</p>\n<p>Deux arêtes sont utilisées chaque fois que le chemin visite et quitte un sommet car le circuit doit utiliser chaque arête une seule fois. Il s'ensuit que si le graphe a un sommet impair, ce sommet doit être le début ou la fin du chemin et, comme un circuit commence et se termine au même sommet, pour qu'un circuit existe, tous les sommets doivent être pairs. Lorsqu'il y a deux sommets impairs, une marche peut avoir lieu qui traverse chaque arête exactement une fois mais ce ne sera pas un circuit.</p>\n<p>Pouvez-vous penser pourquoi il est impossible de dessiner un graphe avec un nombre impair de sommets impairs (par exemple un sommet impair) ? Eh bien, la raison en est que chaque arête a deux extrémités, donc le nombre total de terminaisons est pair, donc la somme des degrés de tous les sommets dans un graphe doit être paire, donc il ne peut pas y avoir un nombre impair de sommets impairs.</p>"
+  },
+  "extension_1": {
+    "statement": "<p>De combien de sommets (points) est-il possible de dessiner cette figure par un mouvement ininterrompu du stylo, en passant par chaque ligne exactement une fois ?</p>\n<p><img alt=\"\" src=\"assets/images/House_image_2.png\" class=\"House_image_2\" /></p>",
+    "hint": "<p>Commencez par le sommet supérieur. Une fois que vous avez suivi chaque ligne, où vous retrouvez-vous ? Pouvez-vous utiliser cette information pour découvrir où vous pourriez également commencer ?</p>",
+    "correct_answer": "7",
+    "explanation": "<p>Si vous commencez par le point en haut, vous remarquerez qu'après avoir suivi toutes les lignes, vous revenez au point de départ. Mais cela signifie que vous avez fait une boucle ! Donc, vous pouvez commencer n'importe où le long de cette boucle et simplement suivre les lignes de la même manière que vous l'avez fait avant, et vous terminerez là où vous avez commencé. Cela signifie que vous pouvez commencer à partir de n'importe lequel des sommets et visiter toutes les lignes. </p>"
+  },
+  "extension_2": {
+    "statement": "<p>Rappelez-vous qu'un chemin d'Euler visite chaque arête une fois, et un circuit d'Euler fait de même mais commence et se termine au même point. Combien de ces graphes sont des circuits d'Euler ?</p>\n<p><img alt=\"\" src=\"assets/images/House_image_3.png\" class=\"House_image_3\" /></p>",
+    "hint": "<p>Regardez combien de nœuds ont un nombre impair d'arêtes.</p>",
+    "correct_answer": "4",
+    "explanation":"<p>S'il n'y a pas de nœuds impairs ou s'il y a deux nœuds impairs, cela signifie que le réseau est traversable. Les graphes avec seulement deux nœuds impairs sont dans un chemin d'Euler et les graphes sans nœuds impairs sont dans un circuit d'Euler. 2, 3, 7 et 9 n'ont pas de nœuds impairs, ils sont donc les quatre graphes avec des circuits d'Euler.</p>"
+  },
+  "additional_information": {
+    "about": "<p>Une version de ce problème a été résolue à l'origine par Leonard Euler. Dans une ville constituée de 4 îles reliées par des ponts, les habitants se demandaient s'il était possible de faire une promenade et de traverser chaque pont exactement une fois. Euler a résolu ce problème d'abord en le simplifiant avec un sommet pour chaque île et une ligne entre deux sommets pour chaque pont, afin d'obtenir un dessin comme dans ce puzzle. Ainsi est née l'étude de la topologie. La deuxième extension donne beaucoup de pratique pour chercher des circuits d'Euler et a été tirée du brillant site NRICH.</p>",
+    "references": [
+      "<p><a href=\"https://en.wikipedia.org/wiki/Seven_Bridges_of_K%C3%B6nigsberg\" target=”_blank”>https://en.wikipedia.org/wiki/Seven_Bridges_of_K%C3%B6nigsberg</a> </p>",
+      "<p><a href=\"https://www.transum.org/Maths/Activity/without/\" target=”_blank”>https://www.transum.org/Maths/Activity/without/</a> </p>",
+      "<p><a href=\"https://datagenetics.com/blog/december22018/index.html\" target=”_blank”>https://datagenetics.com/blog/december22018/index.html</a> </p>",
+      "<p><a href=\"https://nrich.maths.org/2326\" target=”_blank”>https://nrich.maths.org/2326</a> </p>",
+      "<p><a href=\"https://www.youtube.com/watch?v=W18FDEA1jRQ\" target=”_blank”>https://www.youtube.com/watch?v=W18FDEA1jRQ</a> </p>"
+    ]
+  }
+}

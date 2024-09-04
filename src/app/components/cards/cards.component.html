@@ -4,7 +4,7 @@
       <mat-card-subtitle>{{card.title}}</mat-card-subtitle>
       <img 
       class="card-image" 
-      src="{{'assets/print-cards/' +card.card_value.toLowerCase()+card.card_suit.charAt(0).toLowerCase()+'.png'}}" 
+      [src]="'assets/print-cards/' + languageCode + '/' + card.card_value.toLowerCase() + card.card_suit.charAt(0).toLowerCase() + '.png'"
       [routerLink]="'card/'+[card.slug]+'.html'"
       />
     </mat-card>

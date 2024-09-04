@@ -1,0 +1,22 @@
+{
+  "title": "Vingt-quatre",
+  "metadata": {
+    "type": "jeu"
+  },
+  "main_version": {
+    "statement": "<p>Retirez les cartes 10, J, Q, K, et Joker du jeu. Mélangez le reste et distribuez quatre cartes face visible sur la table afin que chaque joueur puisse les voir. Chaque joueur tente de faire le nombre 24 en utilisant les quatre nombres (A compte pour 1), ainsi que les opérations +, −, × et ÷ et les parenthèses () si nécessaire. Le premier joueur à donner une réponse avec une explication gagne et garde les 4 cartes. Continuez à jouer jusqu'à ce qu'il n'y ait plus de cartes.</p>",
+    "further_instructions": "<p>C'est un jeu pour deux joueurs ou plus.</p>\n<p>Certaines combinaisons peuvent être impossibles. Dans ce cas, remettez les cartes dans le jeu et mélangez à nouveau pour en choisir 4 autres.</p>",
+    "strategy_tips": "<p>Pensez aux facteurs de 24 à couvrir, c'est-à-dire 1 × 24, 2 × 12, 3 × 8, et 4 × 6. Si vous avez l'un des facteurs dans votre liste, utilisez les nombres restants pour créer l'autre nombre, ou utilisez vos nombres pour créer des combinaisons.</p>"
+  },
+  "extension_1": {
+    "statement": "<p>Vous pouvez jouer à ce jeu comme au jeu de Snap, avec 2 ou 4 joueurs. Distribuez les cartes (sans les 10, J, Q, K ou Jokers) également à tous les joueurs. Pour deux joueurs, au compte de trois, chacun retourne les deux cartes du dessus de sa pile. Pour quatre joueurs, chacun retourne simplement une carte. Tout le monde essaie de faire 24 en utilisant les quatre cartes. Le premier à le faire prend les cartes et les met au bas de sa pile. Le jeu continue jusqu'à ce qu'un joueur ait épuisé toutes ses cartes - le joueur avec le plus de cartes est alors le gagnant.</p>"
+  },
+  "additional_information": {
+    "about": "<p>Le nombre 24 est utilisé car il a de nombreux facteurs. Cependant, une analyse de toutes les combinaisons possibles de 4 cartes montre que le nombre 2 aurait été le meilleur nombre cible ! 99,19 % des combinaisons pouvaient être résolues, contre 80,20 % pour 24. Si vous êtes autorisé à utiliser des factorielles (par exemple, 3! = 3 × 2 × 1 = 6), alors vous pouvez résoudre beaucoup plus de combinaisons pour 24.</p>",
+    "references": [
+      "<p><a href=\"https://nrich.maths.org/7669\" target=\"_blank\">https://nrich.maths.org/7669</a> </p>",
+      "<p><a href=\"https://nrich.maths.org/1262\" target=\"_blank\">https://nrich.maths.org/1262</a> </p>",
+      "<p><a href=\"https://gottfriedville.net/games/24/index.shtml\" target=\"_blank\">https://gottfriedville.net/games/24/index.shtml</a> </p>"
+    ]
+  }
+}

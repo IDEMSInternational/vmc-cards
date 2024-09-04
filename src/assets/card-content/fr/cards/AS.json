@@ -1,0 +1,21 @@
+{
+  "title": "Quinze",
+  "metadata": {
+    "type": "jeu"
+  },
+  "main_version": {
+    "statement": "<p>C'est un jeu pour deux joueurs (ou un groupe divisé en deux équipes). Prenez les cartes A et 2 à 9 d'un même atout et placez-les face visible dans l'ordre. A = 1 dans ce jeu. À tour de rôle, choisissez une des cartes et placez-la devant vous. Le premier joueur à avoir exactement trois cartes qui totalisent 15 est le gagnant. Vous pouvez avoir plus de trois cartes, mais vous ne gagnez que si trois d'entre elles totalisent 15.</p>",
+    "further_instructions": "<p>Rappelez-vous que vous ne pouvez pas utiliser deux nombres pour faire 15, vous ne pouvez pas utiliser quatre nombres, il faut que ce soit trois nombres. Vous pouvez avoir plus de trois cartes en main et utiliser seulement 3 d'entre elles. Le jeu est un match nul si toutes les cartes ont été choisies et que personne ne peut faire 15.</p>",
+    "strategy_tips": "<p>Écrivez toutes les combinaisons de trois nombres qui totalisent 15. Comment pouvez-vous être sûr que vous avez trouvé toutes les combinaisons ? Quels nombres apparaissent dans 2, 3 et 4 de ces combinaisons ?</p>\n<p>Pensez à d'autres jeux auxquels vous avez pu jouer qui ressemblent à celui-ci. Est-il avantageux de commencer ou de jouer en second ?</p>"
+  },
+  "extension_1": {
+    "statement": "<p>Essayez de jouer au jeu à nouveau, mais avec les cartes arrangées comme ceci au départ. </p>\n<p><img alt=\"\" src=\"assets/images/Fifteen_image_0.png\" class=\"Fifteen_image_0\" /></p>\n<p>Que remarquez-vous sur la façon dont les nombres sont arrangés ? Cela vous rappelle-t-il un autre jeu ?</p>"
+  },
+  "additional_information": {
+    "about": "<p>Ce jeu est intéressant car il est identique au jeu tic-tac-toe / noughts and crosses. Le terme technique pour cela est <em>isomorphe</em>. En mathématiques, il est souvent utile, lorsqu'on est confronté à un nouveau problème, de le comparer à un problème que l'on sait déjà résoudre.</p>",
+    "references": [
+      "<p><a href=\"https://www.ms.uky.edu/~lee/ma310sp15/gameoffifteen.pdf\" target=\"_blank\">https://www.ms.uky.edu/~lee/ma310sp15/gameoffifteen.pdf</a></p>",
+      "<p><a href=\"https://en.wikipedia.org/wiki/Number_Scrabble\" target=\"_blank\">https://en.wikipedia.org/wiki/Number_Scrabble</a></p>"
+    ]
+  }
+}

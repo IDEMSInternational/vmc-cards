@@ -1,0 +1,30 @@
+{
+  "title": "Knockdown",
+  "metadata": {
+    "type": "énigme"
+  },
+  "main_version": {
+    "statement": "<p>Des chevilles numérotées de 1 à 50 sont placées en ordre dans une ligne, avec le numéro 1 à gauche.</p>\n<p>Elles sont ensuite renversées, une à une, en suivant ces deux règles :</p>\n<p>(1.) En commençant par la première cheville debout à gauche, on renverse alternativement les chevilles, jusqu'à ce que la fin de la rangée soit atteinte.</p>\n<p>(2.) Chaque fois que l'on atteint la fin de la rangée, répétez la règle précédente.</p>\n<p>Quel est le numéro de la dernière cheville à être renversée ?</p>",
+    "correct_answer": "32",
+    "hint": "<p>Que se passe-t-il si vous n'avez que 5 chevilles ? Que se passe-t-il pour 10 ou 20 ? Pouvez-vous repérer le modèle ?</p>",
+    "explanation": "<p>Départ : 1 2 3 4 5 6 7 8 9 ...</p>\n<p>Premier tour :  \u2715 2 \u2715 4 \u2715 6 \u2715 8 \u2715  ... seulement les nombres pairs restent</p>\n<p>Deuxième tour : \u2715 4 \u2715 8 \u2715 12 ... seulement les multiples de 4 restent</p>\n<p>Troisième tour : \u2715 8 \u2715 16 \u2715 24  ... seulement les multiples de 8 restent</p>\n<p>Quatrième tour : \u2715 16 \u2715 32 ... seulement les multiples de 16 resteront</p>\n<p>Cinquième tour : \u2715 32 ... seulement les multiples de 32 resteront.</p>\n<p>32 est le seul multiple de 32 inférieur à 50, donc 32 est la dernière cheville restante.</p>"
+  },
+  "extension_1": {
+    "statement": "<p>Des chevilles numérotées de 1 à 1050 sont placées en ordre dans une ligne, avec le numéro 1 à gauche.</p>\n<p>Elles sont ensuite renversées, une à une, en suivant ces deux règles :</p>\n<p>(1.) En commençant par la première cheville debout à gauche, on renverse alternativement les chevilles, jusqu'à ce que la fin de la rangée soit atteinte.</p>\n<p>(2.) Chaque fois que l'on atteint la fin de la rangée, répétez la règle précédente.</p>\n<p>Quel est le numéro de la dernière cheville à être renversée ?</p>",
+    "hint": "<p>Pouvez-vous trouver la puissance de 2 la plus proche inférieure à 1050 ?</p>",
+    "correct_answer": "1024",
+    "explanation": "<p>Comme précédemment, après le premier tour il ne reste que les multiples de 2. Le deuxième tour laisse seulement les multiples de 4, le modèle se poursuit et chaque tour suivant laisse uniquement les multiples de 8, 16, 32, ..., 512, 1024. Tous les multiples de 1024 (à l'exception de 1024 lui-même) sont plus grands que 1050, ce qui signifie que 1024 sera la dernière cheville restante.</p>"
+  },
+  "extension_2": {
+    "statement": "<p>Des chevilles numérotées de 1 à 10000050 sont placées en ordre dans une ligne, avec le numéro 1 à gauche.</p>\n<p>Elles sont ensuite renversées, une à une, en suivant ces deux règles :</p>\n<p>(1.) En commençant par la première cheville debout à gauche, cette fois <strong>9 chevilles sont renversées et la dixième reste debout</strong>, jusqu'à ce que la fin de la rangée soit atteinte.</p>\n<p>(2.) Chaque fois que l'on atteint la fin de la rangée, répétez la règle précédente.</p>\n<p>Quel est le numéro de la dernière cheville à être renversée ?</p>",
+    "hint": "<p>Pensez à la séquence des chevilles restantes dans les parties précédentes 2, 4, 8, ... existe-t-il un autre moyen d'écrire cette séquence ? De quelle manière la séquence changera-t-elle dans ce nouveau cas ?</p>",
+    "correct_answer": "10000000",
+    "explanation": "<p>Cette énigme est similaire aux parties précédentes. Dans ces cas, à chaque tour, nous laissions les multiples des puissances croissantes de 2. La séquence 2, 4, 8, 16,... peut être écrite 2, 2\u00b2, 2\u00b3, 2\u2074,... </p>\n<p>Dans la nouvelle énigme, nous avons des multiples des puissances de 10 restants. En effet, après le premier tour, seuls les multiples de 10 restent. Après le deuxième tour, seuls les multiples de 100 = 10\u00b2 restent, après le troisième tour, seuls les multiples de 1000 = 10\u00b3, et ainsi de suite. Donc 10000000 = 10\u2077 sera la dernière cheville restante, car tous les autres multiples de 10\u2077 sont plus grands que 10000050.</p>"
+  },
+  "additional_information": {
+    "about": "<p>Cette énigme concerne en réalité les puissances de 2 et les nombres binaires), et sa deuxième extension concerne les puissances de 10 et les nombres décimaux.</p>",
+    "references": [
+      "<p><a href=\"https://nrich.maths.org/11677\" target=\"_blank\">https://nrich.maths.org/11677</a></p>"
+    ]
+  }
+}
