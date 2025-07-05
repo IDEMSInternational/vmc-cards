@@ -32,8 +32,8 @@ jobs:
 
       - name: Add Chromium browser to puppeteer
         run: |
-          npx puppeteer browsers install chrome
-          echo "CHROMIUM_PATH=$(npx puppeteer browsers list | grep -i chrome | awk '{print $2}')" >> $GITHUB_ENV
+          ./node_modules/.bin/puppeteer browsers install chrome
+          echo "CHROMIUM_PATH=$(./node_modules/.bin/puppeteer browsers list | grep -i chrome | awk '{print $2}')" >> $GITHUB_ENV
 
       - name: Build
         env:
