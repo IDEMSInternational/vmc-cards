@@ -30,15 +30,11 @@ jobs:
             libatk1.0-0 libcups2 libdbus-1-3 libgdk-pixbuf2.0-0 libnspr4 libnss3 libx11-xcb1 \
             libxcomposite1 libxdamage1 libxrandr2 xdg-utils libu2f-udev libvulkan1
 
-      - name: Add Chromium browser to puppeteer
-        run: |
-          ./node_modules/.bin/puppeteer browsers install chrome
-          echo "CHROMIUM_PATH=$(./node_modules/.bin/puppeteer browsers list | grep -i chrome | awk '{print $2}')" >> $GITHUB_ENV
-
       - name: Build
+        run: npm run build
         env:
-          CHROMIUM_PATH: ${{ env.CHROMIUM_PATH }}
-        run: npm run build -- --serverTimeout=120000
+          # Ensure Puppeteer uses bundled Chromium
+          PUPPETEER_SKIP_CHROMIUM_DOWNLOAD: false
 
       - name: Deploy to Github Pages 🚀
         uses: JamesIves/github-pages-deploy-action@v4.5.0
