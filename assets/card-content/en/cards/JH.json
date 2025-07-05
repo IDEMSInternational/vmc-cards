@@ -16,9 +16,8 @@
   "additional_information": {
     "about": "<p>Benford's Law is used in the real world to check for fraud on big data sets. If they don't follow the law when they should, it is possible they have been falsified!</p>",
     "references": [
-      "<p><a href=\"https://towardsdatascience.com/what-is-benfords-law-and-why-is-it-important-for-data-science-312cb8b61048\" target=”_blank”>https://towardsdatascience.com/what-is-benfords-law-and-why-is-it-important-for-data-science-312cb8b61048</a></p>",
-      "<p><a href=\"https://brilliant.org/wiki/benfords-law/\" target=”_blank”>https://brilliant.org/wiki/benfords-law/</a></p>"
-
+      "<p><a href=\"https://brilliant.org/wiki/benfords-law/\" target=\"_blank\">https://brilliant.org/wiki/benfords-law/</a></p>",
+      "<p><a href=\"https://towardsdatascience.com/what-is-benfords-law-and-why-is-it-important-for-data-science-312cb8b61048\" target=\"_blank\">https://towardsdatascience.com/what-is-benfords-law-and-why-is-it-important-for-data-science-312cb8b61048</a></p>"
     ]
   }
 }

@@ -24,9 +24,9 @@
   "additional_information": {
     "about": "<p>These types of puzzles are called 'Cryptarithms' or 'Verbal Arithmetic'. The most classic example was published in the July 1924 issue of Strand Magazine by English mathematician Henry Dudeney.  </p>\n<p>SEND + MORE = MONEY</p>\n<p>Given the potentially large number of possibilities, computer programs are often used to generate and solve these types of puzzles.</p>",
     "references": [
-      "<p><a href=\"https://en.wikipedia.org/wiki/Verbal_arithmetic\" target=”_blank”>https://en.wikipedia.org/wiki/Verbal_arithmetic</a> </p>",
-      "<p><a href=\"https://www.dcode.fr/cryptarithm-solver\" target=”_blank”>https://www.dcode.fr/cryptarithm-solver</a> </p>",
-      "<p><a href=\"http://www.iread.it/cryptarithms.php\" target=”_blank”>http://www.iread.it/cryptarithms.php</a> </p>"
+      "<p><a href=\"https://en.wikipedia.org/wiki/Verbal_arithmetic\" target=\"_blank\">https://en.wikipedia.org/wiki/Verbal_arithmetic</a></p>",
+      "<p><a href=\"https://www.dcode.fr/cryptarithm-solver\" target=\"_blank\">https://www.dcode.fr/cryptarithm-solver</a></p>",
+      "<p><a href=\"http://www.iread.it/cryptarithms.php\" target=\"_blank\">http://www.iread.it/cryptarithms.php</a></p>"
     ]
   }
 }

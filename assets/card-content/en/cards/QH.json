@@ -16,9 +16,9 @@
   "additional_information": {
     "about": "<p>If you change the base of the problem to binary then 10110 (22 in decimal) is a Lychrel number. The name Lychrel comes from a rough anagram of Wade Van Landingham's girlfriend Cheryl.</p>",
     "references": [
-      "<p><a href=\"https://en.wikipedia.org/wiki/Lychrel_number#196_palindrome_quest\" target=”_blank”>https://en.wikipedia.org/wiki/Lychrel_number#196_palindrome_quest</a></p>",
-      "<p><a href=\"https://lycee.samicharity.co.uk/2020/02/06/lychrel-numbers/\" target=”_blank”>https://lycee.samicharity.co.uk/2020/02/06/lychrel-numbers/</a></p>",
-      "<p><a href=\"http://datagenetics.com/blog/october12015/index.html\" target=”_blank”>http://datagenetics.com/blog/october12015/index.html</a></p>"
+      "<p><a href=\"https://lycee.samicharity.co.uk/2020/02/06/lychrel-numbers/\" target=\"_blank\">https://lycee.samicharity.co.uk/2020/02/06/lychrel-numbers/</a></p>",
+      "<p><a href=\"https://en.wikipedia.org/wiki/Lychrel_number#196_palindrome_quest\" target=\"_blank\">https://en.wikipedia.org/wiki/Lychrel_number#196_palindrome_quest</a></p>",
+      "<p><a href=\"http://datagenetics.com/blog/october12015/index.html\" target=\"_blank\">http://datagenetics.com/blog/october12015/index.html</a></p>"
     ]
   }
 }

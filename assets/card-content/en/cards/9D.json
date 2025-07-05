@@ -24,9 +24,9 @@
   "additional_information": {
     "about": "<p>This is an example of a puzzle where it is best to start with a smaller number and work your way up to the solution. Many questions in maths can be approached in this way. Remember to record all your working neatly and you will be able to spot patterns more easily.</p>",
     "references": [
-      "<p><a href=\"https://mathsclub.samicharity.co.uk/en/counting-squares\" target=”_blank”>https://mathsclub.samicharity.co.uk/en/counting-squares</a></p>",
-      "<p><a href=\"https://mathforlove.com/wp-content/uploads/2019/12/On-the-Grid-1-Square-Counting.pdf\" target=”_blank”>https://mathforlove.com/wp-content/uploads/2019/12/On-the-Grid-1-Square-Counting.pdf</a> </p>",
-      "<p><a href=\"https://brilliant.org/discussions/thread/squares-on-a-grid/\" target=”_blank”>https://brilliant.org/discussions/thread/squares-on-a-grid/</a> </p>"
+      "<p><a href=\"https://mathsclub.samicharity.co.uk/en/counting-squares\" target=\"_blank\">https://mathsclub.samicharity.co.uk/en/counting-squares</a></p>",
+      "<p><a href=\"https://mathforlove.com/wp-content/uploads/2019/12/On-the-Grid-1-Square-Counting.pdf\" target=\"_blank\">https://mathforlove.com/wp-content/uploads/2019/12/On-the-Grid-1-Square-Counting.pdf</a></p>",
+      "<p><a href=\"https://brilliant.org/discussions/thread/squares-on-a-grid/\" target=\"_blank\">https://brilliant.org/discussions/thread/squares-on-a-grid/</a></p>"
     ]
   }
 }

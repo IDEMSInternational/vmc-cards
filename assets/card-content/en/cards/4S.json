@@ -14,8 +14,8 @@
   "additional_information": {
     "about": "<p>This is an ancient game that owes its current name to Charles Bouton, who also developed a theory for how you can always play to win. His strategy involves binary numbers and can be found here <a href=\"https://plus.maths.org/content/play-win-nim\">https://plus.maths.org/content/play-win-nim</a>. You can play different variations of the game (also called drips) online here https://wild.maths.org/tags/fun-drips</p>",
     "references": [
-      "<p><a href=\"wild.maths.org/tags/fun-drips\" target=”_blank”>wild.maths.org/tags/fun-drips</a> </p>",
-      "<p><a href=\"https://plus.maths.org/content/play-win-nim\" target=”_blank”>https://plus.maths.org/content/play-win-nim</a> </p>"
+      "<p><a href=\"https://wild.maths.org/tags/fun-drips\" target=\"_blank\">https://wild.maths.org/tags/fun-drips</a></p>",
+      "<p><a href=\"https://plus.maths.org/content/play-win-nim\" target=\"_blank\">https://plus.maths.org/content/play-win-nim</a></p>"
     ]
   }
 }

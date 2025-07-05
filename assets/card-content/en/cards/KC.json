@@ -24,10 +24,10 @@
   "additional_information": {
     "about": "<p>This is a very famous puzzle that can be found in different contexts - opening and closing lockers is another common one. It is designed to make you think about the properties of different numbers. </p>",
     "references": [
-      "<p><a href=\"https://mathsclub.samicharity.co.uk/en/monkey-business\" target=”_blank”>https://mathsclub.samicharity.co.uk/en/monkey-business</a> </p>",
-      "<p><a href=\"https://nrich.maths.org/countingfactors\" target=”_blank”>https://nrich.maths.org/countingfactors</a> </p>",
-      "<p><a href=\"https://en.wikipedia.org/wiki/Highly_composite_number\" target=”_blank”>https://en.wikipedia.org/wiki/Highly_composite_number</a> </p>",
-      "<p><a href=\"https://tasks.illustrativemathematics.org/content-standards/tasks/938\" target=”_blank”>https://tasks.illustrativemathematics.org/content-standards/tasks/938</a></p>"
+      "<p><a href=\"https://mathsclub.samicharity.co.uk/en/monkey-business\" target=\"_blank\">https://mathsclub.samicharity.co.uk/en/monkey-business</a></p>",
+      "<p><a href=\"https://tasks.illustrativemathematics.org/content-standards/tasks/938\" target=\"_blank\">https://tasks.illustrativemathematics.org/content-standards/tasks/938</a></p>",
+      "<p><a href=\"https://nrich.maths.org/countingfactors\" target=\"_blank\">https://nrich.maths.org/countingfactors</a></p>",
+      "<p><a href=\"https://en.wikipedia.org/wiki/Highly_composite_number\" target=\"_blank\">https://en.wikipedia.org/wiki/Highly_composite_number</a></p>"
     ]
   }
 }

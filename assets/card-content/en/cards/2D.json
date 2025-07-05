@@ -4,10 +4,10 @@
     "type": "counting"
   },
   "main_version": {
-    "statement": "Consider the cake below \u2013 a six-sided hexagon. Now split it into triangles by cutting along diagonals which can only meet at the vertices, one example is given in red. This splitting into triangles is called a triangulation, in how many ways can you do this?\n<p><img alt=\"\" src=\"images/Triangular_Slices_image_0.png\" class=\"Triangular_Slices_image_0\" /></p>",
+    "statement": "<p>Consider the cake below \u2013 a six-sided hexagon. Now split it into triangles by cutting along diagonals that don't cross each other, one example is given in red. This splitting into triangles is called a triangulation, in how many ways can you do this?</p>\n<p><img alt=\"\" src=\"assets/images/Triangular_Slices_image_0.png\" class=\"Triangular_Slices_image_0\" /></p>",
     "correct_answer": "14",
     "hint": "<p>In how many ways could you do it if the cake were a square? What if it were a five-sided pentagon? Can you use the symmetries of your cake to count faster?</p>",
-    "explanation": "<p>It is best to start with a simpler question and look for patterns. Start by looking at a square. There are two different ways we could slice the cake. </p>\n<p><img alt=\"\" src=\"assets/images/Triangular_Slices_image_1.png\" class=\"Triangular_Slices_image_1\" /></p>\n<p>For a pentagon there are five ways:</p>\n<p><img alt=\"\" src=\"assets/images/Triangular_Slices_image_2.png\" class=\"Triangular_Slices_image_2\" /></p>\n<p>For a hexagon there are 14 ways as you can see below:</p>\n<p><img alt=\"\" src=\"assets/images/Triangular_Slices_image_3.png\" class=\"Triangular_Slices_image_3\" /></p>\n<p>In this diagram you can see the solution is found by thinking of 6 + 3 + 2 + 3 = 14, but you can arrive at the solution by doing 5 + 2 + 2 + 5 = 14 where 5 is the answer for a pentagon and 2 is the answer for a square (<em>I'm not sure how to explain this - need to adapt explanation from Extension 1)</em>. </p>\n<p>The equivalent combination for the pentagon is 2+1+2 =5, where 1 is the result of the triangle (which has of course only one option) and 2 is the result for a square.</p>\n<p>This is a more useful technique for moving on to thinking of polygons with more vertices.</p>"
+    "explanation": "<p>It is best to start with a simpler question and look for patterns. Start by looking at a square. There are two different ways we could slice the cake. </p>\n<p><img alt=\"\" src=\"assets/images/Triangular_Slices_image_1.png\" class=\"Triangular_Slices_image_1\" /></p>\n<p>For a pentagon there are five ways:</p>\n<p><img alt=\"\" src=\"assets/images/Triangular_Slices_image_2.png\" class=\"Triangular_Slices_image_2\" /></p>\n<p>For a hexagon there are 14 ways as you can see below:</p>\n<p><img alt=\"\" src=\"assets/images/Triangular_Slices_image_3.png\" class=\"Triangular_Slices_image_3\" /></p>\n<p>In this diagram you can see the solution is found by thinking of 6 + 3 + 2 + 3 = 14, but you can arrive at the solution by doing 5 + 2 + 2 + 5 = 14 where 5 is the answer for a pentagon and 2 is the answer for a square. The equivalent combination for the pentagon is 2 + 1 + 2 = 5, where 1 is the result of the triangle (which has of course only one option) and 2 is the result for a square.</p>\n<p>This is a more useful technique for moving on to thinking of polygons with more vertices.</p>"
   },
   "extension_1": {
     "statement": "<p>Can you find the answer to the same question if the cake has the shape of a seven-sided heptagon? </p>",
@@ -23,6 +23,8 @@
   },
   "additional_information": {
     "about": "<p>These C\u2099 are called <em>Catalan numbers</em> and they are crucial in the world of combinatorics. There is an explicit formula for them, but finding it goes much beyond our scopes: the above recursive definition is more than enough for now! Interestingly there are many different puzzles that lead to these numbers (more than 200!) \u2026 perhaps you have seen another puzzle with the same answers?</p>",
-    "references": ""
+    "references": [
+      "<p><a href=\"https://garethrees.org/2013/06/11/tabular/\" target=\"_blank\">https://garethrees.org/2013/06/11/tabular/</a></p>"
+    ]
   }
 }

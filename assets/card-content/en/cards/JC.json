@@ -19,12 +19,12 @@
     "statement": "<p>1000 students are sitting in a circle, and a teacher walks around the circle, dealing cards. The teacher gives a Jack to every second child, and a Queen to every third child</p>\n<p>After the teacher goes around 1000 times, how many cards in total will the sixth child have?</p>",
     "hint": "<p>Which child will get a Queen next after the 999\u1d57\u02b0 child gets one on the first turn round?</p>",
     "correct_answer": "1334",
-    "explanation": "<p>There are an even number of children so the sixth child will always be in a position on each turn to receive a Jack. So she will have 1000 cards from that rule. For the Queens in the first round the students to receive one will be in position 3, 6, 9, 12, 15, \u2026, 999, then it will be 2, 5, 8, \u2026, 998 and then 1,4,7, ..., 997, 1000, and back to 3, 6, 9, \u2026, 999.  So every third time she will get a Queen. Because 1000 \u2215 3 is 333 with a remainder of 1, she will get one on the 1000\u1d57\u02b0 turn too. So 1000 + 334 = 1334 is the total number of cards.  </p>"
+    "explanation": "<p>There are an even number of children so the sixth child will always be in a position on each turn to receive a Jack. So she will have 1000 cards from that rule. For the Queens in the first round the students to receive one will be in position 3, 6, 9, 12, 15, ..., 999, then it will be 2, 5, 8, ..., 998 and then 1,4,7, ..., 997, 1000, and back to 3, 6, 9, ..., 999.  So every third time she will get a Queen. Because 1000 \u2215 3 is 333 with a remainder of 1, she will get one on the 1000\u1d57\u02b0 turn too. So 1000 + 334 = 1334 is the total number of cards.  </p>"
   },
   "additional_information": {
     "about": "<p>This puzzle was written by a student at the Lycee Francais Charles de Gaulle for a Christmas puzzle involving handing out red and blue presents.</p>",
     "references": [
-      "<p><a href=\"https://lycee.samicharity.co.uk/2018/12/03/wrapping-presents/\" target=”_blank”>https://lycee.samicharity.co.uk/2018/12/03/wrapping-presents/</a></p>"
+      "<p><a href=\"https://lycee.samicharity.co.uk/2018/12/03/wrapping-presents/\" target=\"_blank\">https://lycee.samicharity.co.uk/2018/12/03/wrapping-presents/</a></p>"
     ]
   }
 }

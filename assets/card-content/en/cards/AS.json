@@ -12,10 +12,10 @@
     "statement": "<p>Try playing the game again, but with the cards arranged like this to start with. </p>\n<p><img alt=\"\" src=\"assets/images/Fifteen_image_0.png\" class=\"Fifteen_image_0\" /></p>\n<p>What do you notice about the way the numbers are arranged? Does it remind you of any other game?</p>"
   },
   "additional_information": {
-    "about": "<p>This game is interesting because it is the same as the game tic-tac-toe/naughts and crosses. The technical term for this is <em>isomorphic. </em>In mathematics it is often helpful, when faced with a new problem, to relate it to one you already know how to solve.</p>",
+    "about": "<p>This game is interesting because it is the same as the game tic-tac-toe/naughts and crosses. The technical term for this is <em>isomorphic</em>. In mathematics it is often helpful, when faced with a new problem, to relate it to one you already know how to solve.</p>",
     "references": [
-      "<p><a href=\"https://www.ms.uky.edu/~lee/ma310sp15/gameoffifteen.pdf\" target=”_blank”>https://www.ms.uky.edu/~lee/ma310sp15/gameoffifteen.pdf</a></p>",
-      "<p><a href=\"https://en.wikipedia.org/wiki/Number_Scrabble\" target=”_blank”>https://en.wikipedia.org/wiki/Number_Scrabble</a></p>"
+      "<p><a href=\"https://www.ms.uky.edu/~lee/ma310sp15/gameoffifteen.pdf\" target=\"_blank\">https://www.ms.uky.edu/~lee/ma310sp15/gameoffifteen.pdf</a></p>",
+      "<p><a href=\"https://en.wikipedia.org/wiki/Number_Scrabble\" target=\"_blank\">https://en.wikipedia.org/wiki/Number_Scrabble</a></p>"
     ]
   }
 }

@@ -11,14 +11,13 @@
   "extension_1": {
     "statement": "<p>What happens when you do this process with 3 digit numbers (where not all the digits are the same)? Can you explain why you always end up at the same number? Note that if you find 99 as an answer at any stage, this would then give 099 as the smallest number and 990 as the biggest.</p>",
     "hint": "<p>For example, if you start with 792, the first calculation you have to do is 972 - 279 = 693. </p>",
-    "explanation": "<p>We can write a three digit number abc (imagine it is as big as possible, so a>b>c) as 100\u00d7a + 10\u00d7b + c. If we rearrange the digits to make it as small as possible it would be cba which we can write as 100\u00d7c + 10\u00d7b + a. We then subtract to give 100\u00d7a + 10\u00d7b + c - (100\u00d7c + 10\u00d7b + a) = 99\u00d7a - 99\u00d7c = 99\u00d7(a - c). So after one step, the number will be a multiple of 99. The only 3 digit numbers that are multiples of 99 are 099, 198, 297, 396, 495, 594, 693, 792, 891, and 990. We only need to check the first five of these (as we will be rearranging the digits anyway) and we can verify that all of them end up giving the answer 495.</p>"
+    "explanation": "<p>We can write a three digit number abc (imagine it is as big as possible) as 100\u00d7a + 10\u00d7b + c. If we rearrange the digits to make it as small as possible it would be cba which we can write as 100\u00d7c + 10\u00d7b + a. We then subtract to give 100\u00d7a + 10\u00d7b + c - (100\u00d7c + 10\u00d7b + a) = 99\u00d7a - 99\u00d7c = 99\u00d7(a - c). So after one step, the number will be a multiple of 99. The only 3 digit numbers that are multiples of 99 are 099, 198, 297, 396, 495, 594, 693, 792, 891, and 990. We only need to check the first five of these (as we will be rearranging the digits anyway) and we can verify that all of them end up giving the answer 495.</p>"
   },
   "additional_information": {
     "about": "<p>D. R. Kaprekar (1905 - 1986) was an Indian school maths teacher who loved playing with numbers. He discovered a number of results in number theory and described various properties of numbers.</p>",
     "references": [
-      "<p><a href=\"https://en.wikipedia.org/wiki/D._R._Kaprekar\" target=”_blank”>https://en.wikipedia.org/wiki/D._R._Kaprekar</a></p>",
-      "<p><a href=\"https://plus.maths.org/content/mysterious-number-6174\" target=”_blank”>https://plus.maths.org/content/mysterious-number-6174</a> </p>"
-
+      "<p><a href=\"https://en.wikipedia.org/wiki/D._R._Kaprekar\" target=\"_blank\">https://en.wikipedia.org/wiki/D._R._Kaprekar</a></p>",
+      "<p><a href=\"https://plus.maths.org/content/mysterious-number-6174\" target=\"_blank\">https://plus.maths.org/content/mysterious-number-6174</a></p>"
     ]
   }
 }

@@ -14,9 +14,8 @@
   "additional_information": {
     "about": "<p>This game can be played with numbers, letters, symbols or colours as in the popular board game.</p>",
     "references": [
-      "<p><a href=\"https://en.wikipedia.org/wiki/Mastermind_(board_game)\" target=”_blank”>https://en.wikipedia.org/wiki/Mastermind_(board_game)</a> </p>",
-      "<p><a href=\"https://lycee.samicharity.co.uk/2017/09/21/mastermind-problems\" target=”_blank”>https://lycee.samicharity.co.uk/2017/09/21/mastermind-problems</a> </p>"
-   
+      "<p><a href=\"https://en.wikipedia.org/wiki/Mastermind_(board_game)\" target=\"_blank\">https://en.wikipedia.org/wiki/Mastermind_(board_game)</a></p>",
+      "<p><a href=\"https://lycee.samicharity.co.uk/2017/09/21/mastermind-problems/\" target=\"_blank\">https://lycee.samicharity.co.uk/2017/09/21/mastermind-problems/</a></p>"
     ]
   }
 }
