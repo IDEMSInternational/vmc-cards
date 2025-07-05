@@ -1,13 +1,25 @@
 # Prerequisites
 
-This project requires **Node.js v14.x** and **Yarn 1.x**. You can use a Node version manager such as [nvm](https://github.com/nvm-sh/nvm) or [fnm](https://github.com/Schniz/fnm) to easily switch Node versions:
+This project requires **Node.js v14.x** and **npm v6 or v7**. You can use a Node version manager such as [nvm](https://github.com/nvm-sh/nvm) or [fnm](https://github.com/Schniz/fnm) to easily switch Node versions:
 
-```
+```sh
 nvm install 14
 nvm use 14
 # or, for fnm users:
 fnm install 14
 fnm use 14
+```
+
+Install dependencies:
+
+```sh
+npm install
+```
+
+Build the project:
+
+```sh
+npm run build
 ```
 
 # VmcCards
