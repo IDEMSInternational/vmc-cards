@@ -25,5 +25,12 @@ export const config: ScullyConfig = {
       "--disable-dev-shm-usage",
       "--disable-gpu",
     ],
+    // This helps with cleanup
+    handleSIGINT: false,
+    handleSIGTERM: false,
   },
+  // Force process exit after completion
+  hostName: "localhost",
+  // Add this to help with hanging
+  maxRenderThreads: 1,
 };

@@ -31,7 +31,9 @@ jobs:
             libxcomposite1 libxdamage1 libxrandr2 xdg-utils libu2f-udev libvulkan1
 
       - name: Build
-        run: npm run build
+        # HACK - scully doesn't always properly exit after render, so include 10 minute timeout
+        # Will likely be fixed in newer versions
+        run: timeout 600 npm run build || true
         env:
           # Ensure Puppeteer uses bundled Chromium
           PUPPETEER_SKIP_CHROMIUM_DOWNLOAD: false
