@@ -4,7 +4,6 @@ on:
   push:
     branches:
       - master
-      - core/gh-action-updates
 
 jobs:
   build:
