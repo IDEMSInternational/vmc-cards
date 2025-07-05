@@ -17,3 +17,5 @@ Using stored unhandled routes!.
    To discover new routes in the angular app use "npm run scully -- --scanRoutes"
 ----------------------------------No configuration for route "/:slug" found. Skipping
 
+No configuration for route "/:lang/card/:slug" found. SkippingNo configuration for route "/:lang" found. Skipping
+

@@ -1,4 +1,8 @@
-# Prerequisites
+# VmcCards
+
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.4.
+
+## Prerequisites
 
 This project requires **Node.js v14.x** and **npm v6 or v7**. You can use a Node version manager such as [nvm](https://github.com/nvm-sh/nvm) or [fnm](https://github.com/Schniz/fnm) to easily switch Node versions:
 
@@ -16,15 +20,11 @@ Install dependencies:
 npm install
 ```
 
-Build the project:
+Run the project locally:
 
 ```sh
-npm run build
+npm run start
 ```
-
-# VmcCards
-
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.4.
 
 ## Development server
 
