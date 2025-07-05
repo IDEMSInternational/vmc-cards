@@ -19,8 +19,8 @@
   "additional_information": {
     "about": "<p>The first known classification of numbers as deficient, perfect or abundant was by Nicomachus in his Introductio Arithmetica (circa 100)</p>",
     "references": [
-      "<p><a href=\"https://nrich.maths.org/1011\" target=”_blank”>https://nrich.maths.org/1011</a> </p>",
-      "<p><a href=\"https://en.wikipedia.org/wiki/Abundant_number\" target=”_blank”>https://en.wikipedia.org/wiki/Abundant_number</a> </p>"
+      "<p><a href=\"https://en.wikipedia.org/wiki/Abundant_number\" target=\"_blank\">https://en.wikipedia.org/wiki/Abundant_number</a></p>",
+      "<p><a href=\"https://nrich.maths.org/1011\" target=\"_blank\">https://nrich.maths.org/1011</a></p>"
     ]
   }
 }

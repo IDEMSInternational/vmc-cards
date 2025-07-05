@@ -19,16 +19,16 @@
     "statement": "<p>Remember that an Euler Path visits every edge once, and an Euler circuit does the same but starts and ends in the same point. How many of these graphs are Euler circuits?</p>\n<p><img alt=\"\" src=\"assets/images/House_image_3.png\" class=\"House_image_3\" /></p>",
     "hint": "<p>Look to see how many nodes have an odd number of edges.</p>",
     "correct_answer": "4",
-    "explanation":"<p>If there are no odd nodes or if there are two odd nodes, that means that the network is traversable. Graphs with only two odd nodes are in an Euler path and graphs with no odd nodes are in an Euler circuit. 2, 3, 7 and 9 have no odd nodes so they are the four graphs with Euler circuits.</p>"
+    "explanation": "<p>If there are no odd nodes or if there are two odd nodes, that means that the network is traversable. Graphs with only two odd nodes are in an Euler path and graphs with no odd nodes are in an Euler circuit. 2, 3, 7 and 9 have no odd nodes so they are the four graphs with Euler circuits.</p>"
   },
   "additional_information": {
     "about": "<p>A version of this problem was originally solved by Leonard Euler. In a city consisting of 4 islands linked by bridges, the people of the town wondered if it was possible to go for a walk and cross each bridge exactly once. Euler solved this problem first by simplifying it with a vertex for each island, and a line between two vertices for each bridge to get a drawing like in this puzzle. In this way the study of Topology was born. The second extension gives lots of practice looking for Euler circuits and was taken from the brilliant NRICH website.</p>",
     "references": [
-      "<p><a href=\"https://en.wikipedia.org/wiki/Seven_Bridges_of_K%C3%B6nigsberg\" target=”_blank”>https://en.wikipedia.org/wiki/Seven_Bridges_of_K%C3%B6nigsberg</a> </p>",
-      "<p><a href=\"https://www.transum.org/Maths/Activity/without/\" target=”_blank”>https://www.transum.org/Maths/Activity/without/</a> </p>",
-      "<p><a href=\"https://datagenetics.com/blog/december22018/index.html\" target=”_blank”>https://datagenetics.com/blog/december22018/index.html</a> </p>",
-      "<p><a href=\"https://nrich.maths.org/2326\" target=”_blank”>https://nrich.maths.org/2326</a> </p>",
-      "<p><a href=\"https://www.youtube.com/watch?v=W18FDEA1jRQ\" target=”_blank”>https://www.youtube.com/watch?v=W18FDEA1jRQ</a> </p>"
+      "<p><a href=\"https://en.wikipedia.org/wiki/Seven_Bridges_of_K%C3%B6nigsberg\" target=\"_blank\">https://en.wikipedia.org/wiki/Seven_Bridges_of_K%C3%B6nigsberg</a></p>",
+      "<p><a href=\"https://www.transum.org/Maths/Activity/without/\" target=\"_blank\">https://www.transum.org/Maths/Activity/without/</a></p>",
+      "<p><a href=\"https://datagenetics.com/blog/december22018/index.html\" target=\"_blank\">https://datagenetics.com/blog/december22018/index.html</a></p>",
+      "<p><a href=\"https://nrich.maths.org/2326\" target=\"_blank\">https://nrich.maths.org/2326</a></p>",
+      "<p><a href=\"https://www.youtube.com/watch?v=W18FDEA1jRQ\" target=\"_blank\">https://www.youtube.com/watch?v=W18FDEA1jRQ</a></p>"
     ]
   }
 }

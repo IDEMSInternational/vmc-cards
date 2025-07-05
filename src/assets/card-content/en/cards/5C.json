@@ -5,7 +5,7 @@
   },
   "main_version": {
     "statement": "<p>One gallon of honey provides fuel for one bee to fly for seven million miles.</p>\n<p>How many bees could fly one thousand miles if they had ten gallons of honey?</p>",
-    "correct_answer": "70,000 ",
+    "correct_answer": "70000 ",
     "hint": "<p>How far can one bee travel with ten gallons of honey?</p>",
     "explanation": "<p>10 gallons would allow one bee to travel for 70 million miles. 70000000 \u2215 1000 = 70000 so 70000 bees could travel 1000 miles each.</p>"
   },
@@ -22,10 +22,10 @@
     "explanation": "<p>We can see this with an example with the number of hexagons in the hive. If there are 120 hexagons, then the worker bee makes 2 per minute and the queen bee makes 3 per minute. So together they make 5 per minute. 120 \u2215 5 = 24 . </p>\n<p>The same argument works for any number of hexagons in a hive. Take the total number of hexagons as h. The worker bee will be working at a rate of (h  \u2215 60) hexagons per minute, and the queen bee at a rate of (h  \u2215 40) per minute. By simply adding the rates together, </p>\n<p>(h  \u2215 60) + (h  \u2215 40) = 100\u00d7h  \u2215 2400 = h \u2215 24, we can find the answer, 24 minutes. </p>"
   },
   "additional_information": {
-    "about": "<p>Problems such as \"If A people can dig a trench in B<strong> </strong>days, then how long will it take C<strong> </strong>people to dig the trench?\" can be solved by calculating (A\u00d7B  \u2215 C). This ancient technique is called \"the rule of three\" and was written about in a <u>nursery rhyme</u> in 1570: <strong> \"</strong>Multiplication is vexation; Division is as bad; The Rule of Three doth puzzle me, And Practice drives me mad.\"</p>",
+    "about": "<p>Problems such as \"If A people can dig a trench in B<strong> </strong>days, then how long will it take C<strong> </strong>people to dig the trench?\" can be solved by calculating (A\u00d7B  \u2215 C). This ancient technique is called \"the rule of three\" and was written about in a nursery rhyme in 1570: <strong> \"</strong>Multiplication is vexation;</p>\n<p>Division is as bad; The Rule of Three doth puzzle me, And Practice drives me mad.\"</p>",
     "references": [
-      "<p><a href=\"https://nrich.maths.org/5668\" target=”_blank”>https://nrich.maths.org/5668</a> </p>",
-      "<p><a href=\"https://en.wikipedia.org/wiki/Cross-multiplication#Rule_of_Three\" target=”_blank”>https://en.wikipedia.org/wiki/Cross-multiplication#Rule_of_Three</a> </p>"
+      "<p><a href=\"https://nrich.maths.org/5668\" target=\"_blank\">https://nrich.maths.org/5668</a></p>",
+      "<p><a href=\"https://en.wikipedia.org/wiki/Cross-multiplication#Rule_of_Three\" target=\"_blank\">https://en.wikipedia.org/wiki/Cross-multiplication#Rule_of_Three</a></p>"
     ]
   }
 }

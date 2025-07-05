@@ -17,11 +17,10 @@
   "additional_information": {
     "about": "<p>Pong Hau K'i is a simple board game from China. It is also a traditional game in Korea, where it is known as Ou-moul-ko-no. Similar games are played in Togo. If both players play perfectly the game should end in a draw.</p>",
     "references": [
-      "<p><a href=\"https://multiculturalkidblogs.com/2015/09/28/traditional-chinese-game/\" target=”_blank”>hhttps://multiculturalkidblogs.com/2015/09/28/traditional-chinese-game/</a> </p>",
-      "<p><a href=\"https://en.wikipedia.org/wiki/Pong_Hau_K%27i\" target=”_blank”>https://en.wikipedia.org/wiki/Pong_Hau_K%27i</a> </p>",
-      "<p><a href=\"https://www.whatdowedoallday.com/shisima/\" target=”_blank”>https://www.whatdowedoallday.com/shisima/</a> </p>",
-      "<p><a href=\"https://www.whatdowedoallday.com/nine-holes-game\" target=”_blank”>https://www.whatdowedoallday.com/nine-holes-game</a> </p>"
-
+      "<p><a href=\"https://multiculturalkidblogs.com/2015/09/28/traditional-chinese-game/\" target=\"_blank\">https://multiculturalkidblogs.com/2015/09/28/traditional-chinese-game/</a></p>",
+      "<p><a href=\"https://en.wikipedia.org/wiki/Pong_Hau_K%27i\" target=\"_blank\">https://en.wikipedia.org/wiki/Pong_Hau_K%27i</a></p>",
+      "<p><a href=\"https://www.whatdowedoallday.com/shisima/\" target=\"_blank\">https://www.whatdowedoallday.com/shisima/</a></p>",
+      "<p><a href=\"https://www.whatdowedoallday.com/nine-holes-game\" target=\"_blank\">https://www.whatdowedoallday.com/nine-holes-game</a></p>"
     ]
   }
 }

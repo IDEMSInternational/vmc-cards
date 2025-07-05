@@ -24,8 +24,8 @@
   "additional_information": {
     "about": "<p>Factorials were used to count permutations at least as early as the 12th century, by Indian scholars. The notation n! was introduced by the French mathematician Christian Kramp in 1808.</p>\n<p>Factorials get big very quickly. 5! = 120, but 20! = 2432902008176640000.</p>",
     "references": [
-      "<p><a href=\"https://en.wikipedia.org/wiki/Factorial\" target=”_blank”>https://en.wikipedia.org/wiki/Factorial</a></p>",
-      "<p><a href=\"https://www.mathsisfun.com/numbers/factorial.html\" target=”_blank”>https://www.mathsisfun.com/numbers/factorial.html</a></p>"
+      "<p><a href=\"https://en.wikipedia.org/wiki/Factorial\" target=\"_blank\">https://en.wikipedia.org/wiki/Factorial</a></p>",
+      "<p><a href=\"https://www.mathsisfun.com/numbers/factorial.html\" target=\"_blank\">https://www.mathsisfun.com/numbers/factorial.html</a></p>"
     ]
   }
 }
