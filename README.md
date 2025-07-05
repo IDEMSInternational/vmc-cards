@@ -1,3 +1,15 @@
+# Prerequisites
+
+This project requires **Node.js v14.x** and **Yarn 1.x**. You can use a Node version manager such as [nvm](https://github.com/nvm-sh/nvm) or [fnm](https://github.com/Schniz/fnm) to easily switch Node versions:
+
+```
+nvm install 14
+nvm use 14
+# or, for fnm users:
+fnm install 14
+fnm use 14
+```
+
 # VmcCards
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.4.

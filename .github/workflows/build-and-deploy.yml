@@ -1,35 +1,31 @@
-name: Build and deploy to Github pages
+name: Build and deploy to Github Pages
 
 on:
   push:
     branches:
       - master
-      - workflow-testing
+      - core/gh-action-updates
 
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v1
-        with:
-          lfs: true
+      - uses: actions/checkout@v4
 
-      - uses: actions/cache@v3
+      - name: Setup Node.js with Yarn cache
+        uses: actions/setup-node@v4
         with:
-          path: '**/node_modules'
-          key: ${{ runner.os }}-modules-${{ hashFiles('**/yarn.lock') }}
+          node-version: "14"
+          cache: "yarn"
 
-      - name: Install packages
-        run: yarn install
+      - name: Install dependencies
+        run: yarn install --frozen-lockfile
 
       - name: Build
-        run: npm run build
-        
-      - name: Deploy to Github pages 🚀
-        uses: JamesIves/github-pages-deploy-action@4.1.0
+        run: yarn build
+
+      - name: Deploy to Github Pages 🚀
+        uses: JamesIves/github-pages-deploy-action@v4.5.0
         with:
           branch: gh-pages
           folder: dist/static
-
-
-
