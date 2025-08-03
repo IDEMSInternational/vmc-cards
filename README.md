@@ -1,3 +1,12 @@
+# **ARCHIVED**
+
+**This repository is no longer maintained as of July 2025. It has been redeveloped as a new site**
+
+The new, actively maintained version of this project can be found here:  
+**https://github.com/supportingami/virtual-maths-camp-cards**
+
+---
+
 # VmcCards
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.4.
